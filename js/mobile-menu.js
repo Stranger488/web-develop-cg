@@ -6,10 +6,14 @@ function toggleHamburger(){
       topBar.removeClass("rot45deg");
       middleBar.removeClass("rot-45deg");
       bottomBar.removeClass("hidden");
+
+      $('#overlay').css('background-color', 'rgba(0,0,0,0)');
     } else {
       bottomBar.addClass("hidden");
       topBar.addClass("rot45deg");
       middleBar.addClass("rot-45deg");
+
+      $('#overlay').css('background-color', 'rgba(0,0,0,0.5)');
     }
   
 }

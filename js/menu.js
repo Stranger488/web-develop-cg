@@ -1,11 +1,14 @@
 $( document ).ready(function() {
 
-    $('.dropdown').hover(function() {
-        $('#overlay').css('background-color', 'rgba(0,0,0, 0.5)');
-      }, function() {
-        // on mouseout, reset the background colour
-        $('#overlay').css('background-color', 'rgba(0,0,0,0)');
-      });
+    if (window.innerWidth > 1100) {
+        $('.dropdown').hover(function() {
+            $('#overlay').css('background-color', 'rgba(0,0,0, 0.5)');
+          }, function() {
+            // on mouseout, reset the background colour
+            $('#overlay').css('background-color', 'rgba(0,0,0,0)');
+          });
+    }
+
     
     if (window.innerWidth > 500) {
         $('#menu').css("background-color", "rgba(0,0,0,0)");

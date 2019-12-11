@@ -898,6 +898,11 @@ ul.hamburger li:nth-child(3) {
 .flex div p {
   padding: 4px 20px;
 }
+@media (max-width: 940px) {
+  .flex.training-dark.info-dropdown {
+    padding: 0px 0;
+  }
+}
 .flexcol {
   flex-direction: column;
   align-items: center;
@@ -1177,4 +1182,4 @@ ul.hamburger li:nth-child(3) {
   padding: 20px 0 0 0;
   max-height: 3000px;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=./main.css.map */
