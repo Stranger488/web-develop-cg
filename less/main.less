@@ -258,7 +258,7 @@ body ul li {
 
 .separator{
 	display: block;
-	height: 2px;
+	height: 1px;
 	margin: 50px 100px 50px 100px;
 	left: 50%;
 	transform: translateX(-100%);
@@ -529,15 +529,15 @@ footer{
 	//background-color: white;
   display: none;
   position: relative;
-  min-width: 150px;
-
+  min-width: 130px;
+  text-align-last: center;
   z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
   color: black;
-  padding: 12px 25px;
+  padding: 12px 0 12px 0;
   margin: 0 auto;
   text-decoration: none;
   display: block;
@@ -633,9 +633,9 @@ ul{
 		top: 15px;
 		  margin: 25px 16px 0 0;
 	  display: none;
-	  &>a{
-	  	padding: 12px 55px;
-	  }
+	//   &>a{
+	//   	padding: 12px 55px;
+	//   }
 	}
 
   	.hamburger-container {
@@ -864,7 +864,7 @@ position: relative;
 
 .flex{
 	display:flex;
-	padding:40px;
+	// padding:40px;
 	@media (max-width:940px)
 		{
 		padding:40px 0;
@@ -928,7 +928,8 @@ position: relative;
 
 .almost-basic-block{
 	//background-color: @lighterbg;
-	padding: 100px 0 0 0;
+	// padding: 100px 0 0 0;
+	padding: 60px 0 0 0;
 }
 
 ///////PICTURES
@@ -1187,7 +1188,7 @@ position: relative;
 	&>a{
 		position: absolute;
 		top: -60px;
-	}	
+	}
 }
 
 #overlay {
@@ -1210,3 +1211,7 @@ position: relative;
 .whiteBg{
 	// background-color: white;
 }
+
+.greyBg {
+	background-color: rgba(0, 0, 0, 0.2);
+  }
