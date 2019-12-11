@@ -225,7 +225,7 @@ body ul li {
 }
 .separator {
   display: block;
-  height: 2px;
+  height: 1px;
   margin: 50px 100px 50px 100px;
   left: 50%;
   transform: translateX(-100%);
@@ -474,13 +474,14 @@ footer {
 .dropdown-content {
   display: none;
   position: relative;
-  min-width: 150px;
+  min-width: 130px;
+  text-align-last: center;
   z-index: 1;
 }
 /* Links inside the dropdown */
 .dropdown-content a {
   color: black;
-  padding: 12px 25px;
+  padding: 12px 0 12px 0;
   margin: 0 auto;
   text-decoration: none;
   display: block;
@@ -554,9 +555,6 @@ ul.hamburger li:nth-child(3) {
     top: 15px;
     margin: 25px 16px 0 0;
     display: none;
-  }
-  .dropdown-content > a {
-    padding: 12px 55px;
   }
   .hamburger-container {
     display: none;
@@ -852,7 +850,6 @@ ul.hamburger li:nth-child(3) {
 }
 .flex {
   display: flex;
-  padding: 40px;
   justify-content: space-around;
   align-items: center;
 }
@@ -921,7 +918,7 @@ ul.hamburger li:nth-child(3) {
   }
 }
 .almost-basic-block {
-  padding: 100px 0 0 0;
+  padding: 60px 0 0 0;
 }
 .pictures {
   margin-top: -145px;
@@ -1170,4 +1167,7 @@ ul.hamburger li:nth-child(3) {
   z-index: 2;
   transition: ease-in-out 0.25s all;
 }
-/*# sourceMappingURL=./main.css.map */
+.greyBg {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/*# sourceMappingURL=main.css.map */
