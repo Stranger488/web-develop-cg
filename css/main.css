@@ -230,7 +230,7 @@ body ul li {
   left: 50%;
   transform: translateX(-100%);
   width: 200px;
-  background-color: gray;
+  background-color: #808080;
 }
 @media (min-width: 1200px) {
   .sep-hor {
@@ -240,7 +240,7 @@ body ul li {
     transform: none;
     top: 190px;
     margin: 0 30px;
-    width: 2px;
+    width: 1px;
     height: 200px;
   }
 }
@@ -249,7 +249,7 @@ body ul li {
   height: 2px;
   margin: 10px 100px 10px 100px;
   width: 200px;
-  background-color: #5472e3;
+  background-color: #808080;
 }
 @media (min-width: 600px) {
   .sep-hor-light {
@@ -257,7 +257,7 @@ body ul li {
     left: 0;
     transform: none;
     margin: 0 30px;
-    width: 2px;
+    width: 1px;
     height: 200px;
   }
 }
@@ -475,17 +475,16 @@ footer {
   display: none;
   position: relative;
   min-width: 130px;
-  text-align-last: center;
   z-index: 1;
 }
 /* Links inside the dropdown */
 .dropdown-content a {
   color: black;
-  padding: 12px 0 12px 0;
+  padding: 12px 0;
   margin: 0 auto;
   text-decoration: none;
   display: block;
-  text-align: right;
+  text-align: center;
 }
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover > p {
@@ -1177,4 +1176,7 @@ ul.hamburger li:nth-child(3) {
   padding: 20px 0 0 0;
   max-height: 3000px;
 }
-/*# sourceMappingURL=main.css.map */
+.upReg {
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=./main.css.map */

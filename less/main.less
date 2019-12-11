@@ -7,6 +7,7 @@
 @darkbg: #343a40;
 @evendarkerbg: #23292f;
 @TextOnWhite:#777777;
+@greySep: rgb(128,128,128);
 
 
 
@@ -255,7 +256,6 @@ body ul li {
 	}
 }
 
-
 .separator{
 	display: block;
 	height: 1px;
@@ -263,8 +263,7 @@ body ul li {
 	left: 50%;
 	transform: translateX(-100%);
 	width: 200px;
-	//background-color: @highlight;
-    background-color: gray;
+    background-color: @greySep;
 }
 .sep-hor{
 	@media (min-width: 1200px){
@@ -273,7 +272,7 @@ body ul li {
 		left: 0; transform: none;
 		top: 190px;
 		margin: 0 30px;
-		width: 2px;
+		width: 1px;
 		height: 200px;
 	}
 	&-light{
@@ -281,14 +280,14 @@ body ul li {
 		height: 2px;
 		margin: 10px 100px 10px 100px;
 		width: 200px;
-		background-color: @highlight;
+		background-color: @greySep;
 		@media (min-width: 600px)
 			{
 			display: inline-block;
 			left: 0; 
 			transform: none;
 			margin: 0 30px;
-			width: 2px;
+			width: 1px;
 			height: 200px;
 		}
 	}
@@ -531,18 +530,17 @@ footer{
   display: none;
   position: relative;
   min-width: 130px;
-  text-align-last: center;
   z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
   color: black;
-  padding: 12px 0 12px 0;
+  padding: 12px 0;
   margin: 0 auto;
   text-decoration: none;
   display: block;
-  text-align: right;
+  text-align: center;
 }
 
 /* Change color of dropdown links on hover */
@@ -634,9 +632,6 @@ ul{
 		top: 15px;
 		  margin: 25px 16px 0 0;
 	  display: none;
-	//   &>a{
-	//   	padding: 12px 55px;
-	//   }
 	}
 
   	.hamburger-container {
@@ -1225,4 +1220,8 @@ position: relative;
 		padding: 20px 0 0 0;
 		max-height: 3000px;
 	}
+}
+
+.upReg {
+	text-transform: uppercase;
 }
