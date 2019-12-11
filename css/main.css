@@ -30,7 +30,7 @@ p {
 }
 main {
   position: relative;
-  text-aling: center;
+  text-align: center;
   z-index: 4;
 }
 body ul li {
@@ -226,7 +226,7 @@ body ul li {
 .separator {
   display: block;
   height: 2px;
-  margin: 0 100px 50px 100px;
+  margin: 50px 100px 50px 100px;
   left: 50%;
   transform: translateX(-100%);
   width: 200px;
@@ -434,7 +434,7 @@ body ul li {
   }
 }
 .footer-text {
-  color: #ffffff;
+  color: white;
 }
 @media (max-width: 740px) {
   .footer-text {
@@ -1159,6 +1159,15 @@ ul.hamburger li:nth-child(3) {
   position: absolute;
   top: -60px;
 }
-.whiteBg {
-  background-color: white;
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: ease-in-out 0.25s all;
 }
+/*# sourceMappingURL=./main.css.map */
