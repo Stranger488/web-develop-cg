@@ -1231,6 +1231,9 @@ ul.hamburger li:nth-child(3) {
   margin-top: 10px;
   font-size: 18px;
 }
+.my-fix-whiteBg {
+  transition: background-color 0.2s ease-out;
+}
 @media screen and (max-width: 1099px) {
   .my-fix-whiteBg {
     background-color: #fff;
@@ -1244,4 +1247,4 @@ ul.hamburger li:nth-child(3) {
     transition: background-color 0.2s ease-out;
   }
 }
-/*# sourceMappingURL=./main.css.map */
+/*# sourceMappingURL=main.css.map */
