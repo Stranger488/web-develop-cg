@@ -475,8 +475,9 @@ footer {
   display: none;
   position: relative;
   min-width: 130px;
-  text-align-last: center;
   z-index: 1;
+  box-sizing: border-box;
+  padding: 0 15px 0;
 }
 /* Links inside the dropdown */
 .dropdown-content a {
@@ -485,6 +486,9 @@ footer {
   margin: 0 auto;
   text-decoration: none;
   display: block;
+  text-align: center;
+}
+.dropdown-content a.text-align-right {
   text-align: right;
 }
 /* Change color of dropdown links on hover */
@@ -494,6 +498,10 @@ footer {
 .dropdown-content > a > p {
   font-weight: 400;
   display: inline-block;
+}
+.dropdown-content .fa {
+  margin-right: 5px;
+  font-size: 14px;
 }
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -1247,4 +1255,4 @@ ul.hamburger li:nth-child(3) {
     transition: background-color 0.2s ease-out;
   }
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=./main.css.map */
