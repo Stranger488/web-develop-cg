@@ -173,18 +173,8 @@ body ul li {
 	height: 100%;
 	max-height: calc(~"var(--vh, 1vh) * 100");
 	&>.slider-arrow{
-		opacity: 0;
+		opacity: 1;
 		transition: opacity .2s ease-out;
-	}
-	@media screen and (max-width: 1100px) {
-		&>.slider-arrow{
-			opacity: 1;
-		}
-	}	
-	&:hover{
-		&>.slider-arrow{
-			opacity: 1;
-		}
 	}
 }
 
