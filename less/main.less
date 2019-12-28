@@ -277,13 +277,12 @@ body ul li {
 		height: 200px;
 	}
 	&-light{
-		display: block;
+		display: inline-block;
 		height: 2px;
 		margin: 10px 100px 10px 100px;
 		width: 200px;
 		background-color: @highlight;
-		@media (min-width: 600px)
-			{
+		@media (min-width: 940px) {
 			display: inline-block;
 			left: 0; 
 			transform: none;
@@ -294,6 +293,14 @@ body ul li {
 	}
 }
 
+.sep-hor-wrap {
+	flex-basis: 485px;
+
+	@media (min-width: 940px) {
+		flex-basis: 62px;
+	}
+}
+
 
 .about{
 
@@ -301,6 +308,7 @@ body ul li {
 		position: relative;
 		z-index: 2;
 		display: inline-block;
+		margin-bottom: 25px;
 		h1{
 			@media (max-width:405px)
 				{
@@ -530,9 +538,8 @@ footer{
 	//background-color: white;
   display: none;
   position: relative;
-  min-width: 130px;
+  min-width: 134px;
   z-index: 1;
-  box-sizing: border-box;
   padding: 0 15px 0;
 
 }
@@ -644,10 +651,10 @@ ul{
 @media screen and (min-width: 1100px) {
 	.dropdown-content {
 		position: absolute;
-		left: -15px;
+		left: -25px;
 		top: 15px;
-		  margin: 25px 16px 0 0;
-	  display: none;
+		margin-top: 25px;
+	  	display: none;
 	//   &>a{
 	//   	padding: 12px 55px;
 	//   }
@@ -862,17 +869,16 @@ position: relative;
 		.training(@darkbg,@lightbg);
 	}
 	&-info{
-		padding:20px 10px;
+		padding:25px 10px;
 		text-align:center;
 		display:flex;
 		justify-content:center;
-		align-items:center;
+		flex-wrap: wrap;
 		p{
-			padding:10px 10px;
-			width:300px;	
+			padding:10px 10px;	
 		}
 		@media (max-width:940px){
-			flex-direction:column;
+
 		}
 	}
 }
@@ -1222,15 +1228,6 @@ position: relative;
 	transition: ease-in-out .25s all;
 }
 
-.first-slider{
-	//top: 60px;
-	//padding-bottom: 85px;
-}
-
-.whiteBg{
-	// background-color: white;
-}
-
 .greyBg {
 	background-color: rgba(0, 0, 0, 0.2);
   }
@@ -1298,15 +1295,32 @@ position: relative;
 
 
 .training-info-element-wrap {
+	padding: 20px;
+
+	align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
 	i.fa {
 		font-size: 58px;
 		color: @highlight;
+
+		@media screen and (max-width: 700px) {
+			font-size: 48px;
+		}
 	}
+
+	
 
 	h4 {
 		margin-top: 10px;
 		font-size: 18px;
 	}
+}
+
+.training-info-row {
+	flex-direction: row;
 }
 
 .my-fix-whiteBg {

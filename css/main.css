@@ -245,13 +245,13 @@ body ul li {
   }
 }
 .sep-hor-light {
-  display: block;
+  display: inline-block;
   height: 2px;
   margin: 10px 100px 10px 100px;
   width: 200px;
   background-color: #5472e3;
 }
-@media (min-width: 600px) {
+@media (min-width: 940px) {
   .sep-hor-light {
     display: inline-block;
     left: 0;
@@ -261,10 +261,19 @@ body ul li {
     height: 200px;
   }
 }
+.sep-hor-wrap {
+  flex-basis: 485px;
+}
+@media (min-width: 940px) {
+  .sep-hor-wrap {
+    flex-basis: 62px;
+  }
+}
 .about-text {
   position: relative;
   z-index: 2;
   display: inline-block;
+  margin-bottom: 25px;
 }
 @media (max-width: 405px) {
   .about-text h1 {
@@ -474,9 +483,8 @@ footer {
 .dropdown-content {
   display: none;
   position: relative;
-  min-width: 130px;
+  min-width: 134px;
   z-index: 1;
-  box-sizing: border-box;
   padding: 0 15px 0;
 }
 /* Links inside the dropdown */
@@ -559,9 +567,9 @@ ul.hamburger li:nth-child(3) {
 @media screen and (min-width: 1100px) {
   .dropdown-content {
     position: absolute;
-    left: -15px;
+    left: -25px;
     top: 15px;
-    margin: 25px 16px 0 0;
+    margin-top: 25px;
     display: none;
   }
   .hamburger-container {
@@ -839,20 +847,14 @@ ul.hamburger li:nth-child(3) {
   width: auto;
 }
 .training-info {
-  padding: 20px 10px;
+  padding: 25px 10px;
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
 }
 .training-info p {
   padding: 10px 10px;
-  width: 300px;
-}
-@media (max-width: 940px) {
-  .training-info {
-    flex-direction: column;
-  }
 }
 .flex {
   display: flex;
@@ -1231,13 +1233,28 @@ ul.hamburger li:nth-child(3) {
     bottom: 15px;
   }
 }
+.training-info-element-wrap {
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 .training-info-element-wrap i.fa {
   font-size: 58px;
   color: #5472e3;
 }
+@media screen and (max-width: 700px) {
+  .training-info-element-wrap i.fa {
+    font-size: 48px;
+  }
+}
 .training-info-element-wrap h4 {
   margin-top: 10px;
   font-size: 18px;
+}
+.training-info-row {
+  flex-direction: row;
 }
 .my-fix-whiteBg {
   transition: background-color 0.2s ease-out;
