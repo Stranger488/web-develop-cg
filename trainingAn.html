@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="white">
 	<title>Авиатренажеры</title>
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-	<link href="css/main.css" type="text/css" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="js/jquery-ui.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/all.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+    <script src="vendor/jquery/jquery-2.3.1.min.js"></script>
 </head>
 <body>
 	<div class="header-panel" id="training">
@@ -35,24 +36,24 @@
 	 
 				<ul id="menu">
 				 	<li>
-						<a href="main.html" class="header-text menu-link whiteBg"><p class="header-text hoverable">Главная</p></a>
+						<a href="main.html" class="my-fix-header-text header-text menu-link my-fix-whiteBg whiteBg"><p class="my-fix-header-text header-text hoverable">Главная</p></a>
 					</li>
 					<li>
-						<div class="dropdown dropbtn header-text menu-link whiteBg">
-							<p class="header-text">Тренажеры</p>
+						<div class="dropdown dropbtn my-fix-header-text header-text menu-link my-fix-whiteBg whiteBg">
+							<p class="my-fix-header-text header-text">Тренажеры</p>
 						  	<div class="dropdown-content">
-						    	<a href="#main"><p class="header-text hoverable">Ан-148</p></a>
-						    	<a href="#main"><p class="header-text hoverable">КТС</p></a>
-						    	<a href="#pts"><p class="header-text hoverable">ПТС</p></a>
-						    	<a href="#bortpr"><p class="header-text hoverable">Бортпроводников</p></a>
-						    	<a href="#study"><p class="header-text hoverable">Учебный класс</p></a>
-						    	<a href="trainingIl.html"><p class="header-text hoverable">Ил-96</p></a>
+						    	<a href="#main"><p class="my-fix-header-text header-text hoverable">Ан-148</p></a>
+						    	<a href="#main"><p class="my-fix-header-text header-text hoverable">КТС</p></a>
+						    	<a href="#pts"><p class="my-fix-header-text header-text hoverable">ПТС</p></a>
+						    	<a href="#bortpr"><p class="my-fix-header-text header-text hoverable">Бортпроводников</p></a>
+						    	<a href="#study"><p class="my-fix-header-text header-text hoverable">Учебный класс</p></a>
+						    	<a href="trainingIl.html"><p class="my-fix-header-text header-text hoverable">Ил-96</p></a>
 							 </div>
 						</div>
 					</li>
-					<li><a href="#obuch" class="menu-link whiteBg"><p class="header-text text-dark hoverable">Обучение</p></a></li>
-					<li><a href="#plane" class="menu-link whiteBg"><p class="header-text text-dark hoverable">О самолете</p></a></li>
-					<li><a href="#contact" class="menu-link whiteBg"><p class="header-text text-dark hoverable">Как добраться</p></a></li>
+					<li><a href="#obuch" class="menu-link my-fix-whiteBg whiteBg"><p class="my-fix-header-text header-text hoverable">Обучение</p></a></li>
+					<li><a href="#plane" class="menu-link my-fix-whiteBg whiteBg"><p class="my-fix-header-text header-text hoverable">О самолете</p></a></li>
+					<li><a href="#contact" class="menu-link my-fix-whiteBg whiteBg"><p class="my-fix-header-text header-text hoverable">Как добраться</p></a></li>
 				</ul>
 			</nav>
 		</div>		
@@ -72,11 +73,26 @@
 				</div>
 			</div>
 			<div class="basic-block bb-white training-info">
-				<p class="p400" >Комплексный тренажер Ан-148 («КТС Ан-148») разработан и построен российской компанией ЗАО «Транзас» (Санкт-Петербург) по заказу лизинговой компании ОАО «Ильюшин Финанс Ко.»</p>	
-				<div class=" sep-hor-light"></div>
-				<p class="p400">Это первый в России тренажер отечественного производства, соответствующий уровню «D» - наивысшему уроню классификации авиационных тренажеров по международным стандартам, позволяющий осуществлять подготовку летного персонала без тренировок на реальном самолете. </p>	
-				<div class=" sep-hor-light"></div>
-				<p class="p400">Комплексный (Full Flight Simulator - FFS) тренажер - это пилотажный тренажер, который имеет систему подвижности, имитирующую полет самолета, оборудован кабиной полностью соответствующей кабине пилотов реального воздушного судна, имеет совершенную систему визуализации и предназначен для отработки комплексных навыков выполнения полетов.</p>
+				<div class="training-info-element-wrap">
+					<i class="fa fa-cogs"></i>
+					<h4>Разработка ЗАО «Транзас»</h4>
+					<p class="p400" >Комплексный тренажер Ан-148 («КТС Ан-148») разработан и построен российской компанией ЗАО «Транзас» (Санкт-Петербург) по заказу лизинговой компании ОАО «Ильюшин Финанс Ко.»</p>
+				</div>
+
+				<!-- <div class=" sep-hor-light"></div> -->
+				<div class="training-info-element-wrap">
+						<i class="fa fa-thumbs-up"></i>
+						<h4>Соответствие уровню D</h4>
+						<p class="p400">Это первый в России тренажер отечественного производства, соответствующий уровню «D» - наивысшему уроню классификации авиационных тренажеров по международным стандартам, позволяющий осуществлять подготовку летного персонала без тренировок на реальном самолете. </p>
+				</div>
+
+				<!-- <div class=" sep-hor-light"></div> -->
+				<div class="training-info-element-wrap">
+						<i class="fa fa-plane"></i>
+						<h4>Имитация полета самолета</h4>
+						<p class="p400">Комплексный (Full Flight Simulator - FFS) тренажер - это пилотажный тренажер, который имеет систему подвижности, имитирующую полет самолета, оборудован кабиной полностью соответствующей кабине пилотов реального воздушного судна, имеет совершенную систему визуализации и предназначен для отработки комплексных навыков выполнения полетов.</p>
+				</div>
+
 			</div>
 		
 			<!-- <div class="basic-block bb-black training-info">
@@ -1088,7 +1104,7 @@
 			<p class="footer-text">ifctra@gmail.com</p>
 		</div>
 	</footer>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
 		<script type="text/javascript">
 		$('.slider').slick({
 			dots: true,
