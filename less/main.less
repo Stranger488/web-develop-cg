@@ -7,6 +7,7 @@
 @darkbg: #343a40;
 @evendarkerbg: #23292f;
 @TextOnWhite:#777777;
+@greySep: rgb(128,128,128);
 
 
 
@@ -253,8 +254,7 @@ body ul li {
 	left: 50%;
 	transform: translateX(-100%);
 	width: 200px;
-	//background-color: @highlight;
-    background-color: gray;
+    background-color: @greySep;
 }
 .sep-hor{
 	@media (min-width: 1200px){
@@ -263,7 +263,7 @@ body ul li {
 		left: 0; transform: none;
 		top: 190px;
 		margin: 0 30px;
-		width: 2px;
+		width: 1px;
 		height: 200px;
 	}
 	&-light{
@@ -271,13 +271,14 @@ body ul li {
 		height: 2px;
 		margin: 10px 100px 10px 100px;
 		width: 200px;
-		background-color: @highlight;
-		@media (min-width: 940px) {
+		background-color: @greySep;
+		@media (min-width: 940px)
+			{
 			display: inline-block;
 			left: 0; 
 			transform: none;
 			margin: 0 30px;
-			width: 2px;
+			width: 1px;
 			height: 200px;
 		}
 	}
@@ -504,7 +505,8 @@ footer{
   	height: 60px;
   	position: fixed;
   	z-index: 10;
-  	clear: both;
+	clear: both;
+	text-transform: uppercase;
 }
 
 .dropbtn {
@@ -532,12 +534,13 @@ footer{
   z-index: 1;
   padding: 0 15px 0;
 
+  text-transform: capitalize;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
   color: black;
-  padding: 12px 0 12px 0;
+  padding: 12px 0;
   margin: 0 auto;
   text-decoration: none;
   display: block;
@@ -576,8 +579,6 @@ footer{
   //background-color: #3e8e41;
   color: @highlight !important;
 }
-
-
 
 ul{
 	&#menu{
@@ -645,9 +646,6 @@ ul{
 		top: 15px;
 		margin-top: 25px;
 	  	display: none;
-	//   &>a{
-	//   	padding: 12px 55px;
-	//   }
 	}
 
   	.hamburger-container {
@@ -735,7 +733,7 @@ position: relative;
 					font-size:16px;
 					height:32px;
 				}		
-	color:#fff-@color;
+	color: #fff-@color;
 }
 .aandopen-light{
 	.aandopen(darken(@lightbg,5%));
@@ -865,7 +863,7 @@ position: relative;
 		justify-content:center;
 		flex-wrap: wrap;
 		p{
-			padding:10px 10px;	
+			padding:10px 10px;
 		}
 		@media (max-width:940px){
 
@@ -1203,6 +1201,7 @@ position: relative;
 	&>a{
 		position: absolute;
 		top: -60px;
+		text-shadow: 1px 1px 10px rgba(0,0,0,1);
 	}
 }
 
@@ -1232,6 +1231,17 @@ position: relative;
 		max-height: 3000px;
 	}
 }
+
+.upReg {
+	text-transform: uppercase;
+}
+
+.dark_block {
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+}
+
+
 
 .slider {
 	h1 {
@@ -1301,7 +1311,7 @@ position: relative;
 		}
 	}
 
-	
+
 
 	h4 {
 		margin-top: 10px;

@@ -147,8 +147,16 @@ body ul li {
   max-height: calc(var(--vh, 1vh) * 100);
 }
 .slider > .slider-arrow {
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.2s ease-out;
+}
+@media screen and (max-width: 1100px) {
+  .slider > .slider-arrow {
+    opacity: 1;
+  }
+}
+.slider:hover > .slider-arrow {
+  opacity: 1;
 }
 .triangles {
   z-index: 1 !important;
@@ -222,7 +230,7 @@ body ul li {
   left: 50%;
   transform: translateX(-100%);
   width: 200px;
-  background-color: gray;
+  background-color: #808080;
 }
 @media (min-width: 1200px) {
   .sep-hor {
@@ -232,40 +240,31 @@ body ul li {
     transform: none;
     top: 190px;
     margin: 0 30px;
-    width: 2px;
+    width: 1px;
     height: 200px;
   }
 }
 .sep-hor-light {
-  display: inline-block;
+  display: block;
   height: 2px;
   margin: 10px 100px 10px 100px;
   width: 200px;
-  background-color: #5472e3;
+  background-color: #808080;
 }
-@media (min-width: 940px) {
+@media (min-width: 600px) {
   .sep-hor-light {
     display: inline-block;
     left: 0;
     transform: none;
     margin: 0 30px;
-    width: 2px;
+    width: 1px;
     height: 200px;
-  }
-}
-.sep-hor-wrap {
-  flex-basis: 485px;
-}
-@media (min-width: 940px) {
-  .sep-hor-wrap {
-    flex-basis: 62px;
   }
 }
 .about-text {
   position: relative;
   z-index: 2;
   display: inline-block;
-  margin-bottom: 25px;
 }
 @media (max-width: 405px) {
   .about-text h1 {
@@ -461,6 +460,7 @@ footer {
   position: fixed;
   z-index: 10;
   clear: both;
+  text-transform: uppercase;
 }
 .dropbtn {
   border: none;
@@ -475,21 +475,18 @@ footer {
 .dropdown-content {
   display: none;
   position: relative;
-  min-width: 134px;
+  min-width: 130px;
   z-index: 1;
-  padding: 0 15px 0;
+  text-transform: capitalize;
 }
 /* Links inside the dropdown */
 .dropdown-content a {
   color: black;
-  padding: 12px 0 12px 0;
+  padding: 12px 0;
   margin: 0 auto;
   text-decoration: none;
   display: block;
   text-align: center;
-}
-.dropdown-content a.text-align-right {
-  text-align: right;
 }
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover > p {
@@ -498,10 +495,6 @@ footer {
 .dropdown-content > a > p {
   font-weight: 400;
   display: inline-block;
-}
-.dropdown-content .fa {
-  margin-right: 5px;
-  font-size: 14px;
 }
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -559,9 +552,9 @@ ul.hamburger li:nth-child(3) {
 @media screen and (min-width: 1100px) {
   .dropdown-content {
     position: absolute;
-    left: -25px;
+    left: -15px;
     top: 15px;
-    margin-top: 25px;
+    margin: 25px 16px 0 0;
     display: none;
   }
   .hamburger-container {
@@ -839,14 +832,20 @@ ul.hamburger li:nth-child(3) {
   width: auto;
 }
 .training-info {
-  padding: 25px 10px;
+  padding: 20px 10px;
   text-align: center;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
 }
 .training-info p {
   padding: 10px 10px;
+  width: 300px;
+}
+@media (max-width: 940px) {
+  .training-info {
+    flex-direction: column;
+  }
 }
 .flex {
   display: flex;
@@ -1155,6 +1154,7 @@ ul.hamburger li:nth-child(3) {
 .slider-parent > a {
   position: absolute;
   top: -60px;
+  text-shadow: 1px 1px 10px #000000;
 }
 #overlay {
   position: absolute;
@@ -1178,6 +1178,13 @@ ul.hamburger li:nth-child(3) {
 .info-dropdown_active {
   padding: 20px 0 0 0;
   max-height: 3000px;
+}
+.upReg {
+  text-transform: uppercase;
+}
+.dark_block {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
 }
 @media screen and (max-width: 700px) {
   .slider h1 {
@@ -1225,28 +1232,13 @@ ul.hamburger li:nth-child(3) {
     bottom: 15px;
   }
 }
-.training-info-element-wrap {
-  padding: 20px;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
 .training-info-element-wrap i.fa {
   font-size: 58px;
   color: #5472e3;
 }
-@media screen and (max-width: 700px) {
-  .training-info-element-wrap i.fa {
-    font-size: 48px;
-  }
-}
 .training-info-element-wrap h4 {
   margin-top: 10px;
   font-size: 18px;
-}
-.training-info-row {
-  flex-direction: row;
 }
 .my-fix-whiteBg {
   transition: background-color 0.2s ease-out;
@@ -1264,4 +1256,4 @@ ul.hamburger li:nth-child(3) {
     transition: background-color 0.2s ease-out;
   }
 }
-/*# sourceMappingURL=./main.css.map */
+/*# sourceMappingURL=main.css.map */
