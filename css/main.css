@@ -1028,6 +1028,9 @@ ul.hamburger li:nth-child(3) {
 .slick-arrow {
   z-index: 3;
 }
+.slick-arrow.main-arrow {
+  z-index: 1;
+}
 .down-arrow {
   position: absolute;
   z-index: 4;
@@ -1244,7 +1247,7 @@ ul.hamburger li:nth-child(3) {
 }
 .training-info-element-wrap i.fa {
   font-size: 58px;
-  color: #5472e3;
+  color: #343a40;
 }
 @media screen and (max-width: 700px) {
   .training-info-element-wrap i.fa {
@@ -1274,4 +1277,4 @@ ul.hamburger li:nth-child(3) {
     transition: background-color 0.2s ease-out;
   }
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=./main.css.map */
