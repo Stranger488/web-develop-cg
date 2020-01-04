@@ -732,7 +732,7 @@ position: relative;
 					font-size:16px;
 					height:32px;
 				}		
-	color: @color;
+	color: #fff-@color;
 }
 .aandopen-light{
 	.aandopen(darken(@lightbg,5%));
@@ -1211,6 +1211,13 @@ position: relative;
 	}
 }
 
+#my-training-slider-id {
+	bottom: 5px;
+	@media screen and (max-width: 700px) {
+		bottom: 55px;
+	}
+}
+
 .slider-parent{
 	position: relative;
 	text-align: center;
@@ -1286,7 +1293,6 @@ position: relative;
 	.training-slider-header {
 		@media screen and (max-width: 700px) {
 			font-size: 28px;
-			bottom: 30px;
 		}
 		@media screen and (max-width: 420px) {
 			font-size: 22px;

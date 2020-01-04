@@ -627,7 +627,7 @@ ul.hamburger li:nth-child(3) {
   border-top: 2px solid rgba(0, 0, 0, 0.1);
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   font-size: 30px;
-  color: #e8e8e8;
+  color: #171717;
 }
 @media (max-width: 940px) {
   .aandopen-light {
@@ -654,7 +654,7 @@ ul.hamburger li:nth-child(3) {
   border-top: 2px solid rgba(0, 0, 0, 0.1);
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   font-size: 30px;
-  color: #292d32;
+  color: #d6d2cd;
 }
 @media (max-width: 940px) {
   .aandopen-dark {
@@ -1167,6 +1167,14 @@ ul.hamburger li:nth-child(3) {
   transform: translate(-50%, 0);
   text-shadow: 0 0 15px black;
 }
+#my-training-slider-id {
+  bottom: 5px;
+}
+@media screen and (max-width: 700px) {
+  #my-training-slider-id {
+    bottom: 55px;
+  }
+}
 .slider-parent {
   position: relative;
   text-align: center;
@@ -1234,7 +1242,6 @@ ul.hamburger li:nth-child(3) {
 @media screen and (max-width: 700px) {
   .slider-parent .training-slider-header {
     font-size: 28px;
-    bottom: 30px;
   }
 }
 @media screen and (max-width: 420px) {
