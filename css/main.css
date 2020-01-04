@@ -335,10 +335,9 @@ body ul li {
 }
 .slide-content {
   position: absolute;
-  bottom: 0;
+  bottom: 55px;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 50px;
   z-index: 3;
   text-align: center;
 }
@@ -628,7 +627,7 @@ ul.hamburger li:nth-child(3) {
   border-top: 2px solid rgba(0, 0, 0, 0.1);
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   font-size: 30px;
-  color: #171717;
+  color: #e8e8e8;
 }
 @media (max-width: 940px) {
   .aandopen-light {
@@ -655,7 +654,7 @@ ul.hamburger li:nth-child(3) {
   border-top: 2px solid rgba(0, 0, 0, 0.1);
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   font-size: 30px;
-  color: #d6d2cd;
+  color: #292d32;
 }
 @media (max-width: 940px) {
   .aandopen-dark {
@@ -1053,8 +1052,8 @@ ul.hamburger li:nth-child(3) {
   display: flex;
   justify-content: center;
   margin: 0;
-  padding: 1rem 0;
   list-style-type: none;
+  padding: 1rem 0;
 }
 .slick-dots li {
   margin: 0 0.25rem;
@@ -1086,6 +1085,14 @@ ul.hamburger li:nth-child(3) {
 .slick-dots li.slick-active button {
   background-color: rgba(255, 255, 255, 0.75) !important;
 }
+.slick-dots.my-slick-dots {
+  bottom: 5px;
+}
+@media screen and (max-width: 700px) {
+  .slick-dots.my-slick-dots {
+    bottom: -10px;
+  }
+}
 .slider-arrow {
   position: absolute;
   top: 50%;
@@ -1110,6 +1117,13 @@ ul.hamburger li:nth-child(3) {
 }
 .slider-arrow > div:hover > i {
   opacity: 1;
+}
+@media screen and (max-width: 600px) {
+  .slider-arrow > div {
+    font-size: 32px;
+    height: 60px;
+    width: 35px;
+  }
 }
 .arrow-prev {
   left: 5%;
@@ -1148,7 +1162,7 @@ ul.hamburger li:nth-child(3) {
   position: absolute;
   z-index: 5;
   color: white;
-  bottom: 140px;
+  bottom: 60px;
   left: 50%;
   transform: translate(-50%, 0);
   text-shadow: 0 0 15px black;
@@ -1202,20 +1216,25 @@ ul.hamburger li:nth-child(3) {
     font-size: 22px;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   .slider .slide-content {
-    padding: 30px;
+    bottom: 45px;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 700px) {
   .slider .slide-content {
-    padding: 10px;
+    bottom: 0px;
+  }
+}
+@media screen and (max-width: 588px) {
+  .slider .slide-content {
+    bottom: -20px;
   }
 }
 @media screen and (max-width: 700px) {
   .slider-parent .training-slider-header {
     font-size: 28px;
-    bottom: 80px;
+    bottom: 30px;
   }
 }
 @media screen and (max-width: 420px) {
@@ -1235,7 +1254,7 @@ ul.hamburger li:nth-child(3) {
 }
 @media screen and (max-width: 700px) {
   .slick-dots {
-    bottom: 15px;
+    bottom: -10px;
   }
 }
 .training-info-element-wrap {

@@ -376,10 +376,9 @@ body ul li {
 
 .slide-content{
 	position: absolute;
-  	bottom: 0;
+  	bottom: 55px;
   	left: 50%;
   	transform: translate(-50%, -50%);
-  	padding: 50px;
 	z-index: 3;
 	text-align: center;
 	&>h1{
@@ -733,7 +732,7 @@ position: relative;
 					font-size:16px;
 					height:32px;
 				}		
-	color: #fff-@color;
+	color: @color;
 }
 .aandopen-light{
 	.aandopen(darken(@lightbg,5%));
@@ -1080,9 +1079,8 @@ position: relative;
 	justify-content: center;
 	
 	margin: 0;
-	padding: 1rem 0;
 	list-style-type: none;
-	
+	padding: 1rem 0;
 		li {
 
 			margin: 0 0.25rem;
@@ -1120,6 +1118,14 @@ position: relative;
 		}
 }
 
+.slick-dots.my-slick-dots {
+	bottom: 5px;
+
+	@media screen and (max-width: 700px) {
+		bottom: -10px;
+	}
+}
+
 .slider-arrow{
 	position: absolute;
 	top:50%;
@@ -1150,6 +1156,12 @@ position: relative;
 			&>i{
 				opacity: 1;
 			}
+		}
+
+		@media screen and (max-width: 600px) {
+			font-size: 32px;
+			height: 60px;
+			width: 35px;
 		}
 	}
 }
@@ -1192,7 +1204,7 @@ position: relative;
 		position: absolute;
 		z-index: 5;
 		color: white;
-		bottom: 140px;	
+		bottom: 60px;	
 		left: 50%;
 		transform: translate(-50%, 0);
 		text-shadow: 0 0 15px black;
@@ -1258,11 +1270,14 @@ position: relative;
 	}
 
 	.slide-content {
-		@media screen and (max-width: 700px) {
-			padding: 30px;
+		@media screen and (max-width: 850px) {
+			bottom: 45px;
 		}
-		@media screen and (max-width: 420px) {
-			padding: 10px;
+		@media screen and (max-width: 700px) {
+			bottom: 0px;
+		}
+		@media screen and (max-width: 588px) {
+			bottom: -20px;
 		}
 	}
 }
@@ -1271,7 +1286,7 @@ position: relative;
 	.training-slider-header {
 		@media screen and (max-width: 700px) {
 			font-size: 28px;
-			bottom: 80px;
+			bottom: 30px;
 		}
 		@media screen and (max-width: 420px) {
 			font-size: 22px;
@@ -1293,7 +1308,7 @@ position: relative;
 
 .slick-dots {
 	@media screen and (max-width: 700px) {
-		bottom: 15px;
+		bottom: -10px;
 	}
 }
 

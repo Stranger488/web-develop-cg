@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    if ($("#my-training-slider-id").hasClass("training-slider-header")) {
+        $(".slick-dots").addClass("my-slick-dots");
+    }
+
     if (window.innerWidth > 1100) {
         $('.dropdown').hover(function () {
             $('#overlay').css('background-color', 'rgba(0,0,0, 0.5)');
