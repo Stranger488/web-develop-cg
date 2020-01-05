@@ -1,0 +1,23 @@
+{
+  "name": "web-develop-cg",
+  "version": "1.0.0",
+  "description": "IFK-training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --config .prettierrc.json --write /**/*.ts  '{static,js,less}/**/*.{js,html,less}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stranger488/web-develop-cg.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stranger488/web-develop-cg/issues"
+  },
+  "homepage": "https://github.com/Stranger488/web-develop-cg#readme",
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
+}
