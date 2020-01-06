@@ -18,12 +18,16 @@
   },
   "homepage": "https://github.com/Stranger488/web-develop-cg#readme",
   "devDependencies": {
+    "@commitlint/cli": "^8.3.4",
+    "commitizen": "^4.0.3",
+    "cz-customizable": "^6.2.0",
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1"
   },
   "husky": {
     "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS -g '.config/git/commitlint.js'",
       "pre-commit": "lint-staged"
     }
   },
@@ -32,5 +36,13 @@
       "npm run prettier",
       "git add"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": ".config/git/commitizen.js"
+    }
   }
 }
