@@ -1,6 +1,6 @@
 $(document).ready(function() {
-	if ($("#my-training-slider-id").hasClass("training-slider-header")) {
-		$(".slick-dots").addClass("my-slick-dots");
+	if ($('#my-training-slider-id').hasClass('training-slider-header')) {
+		$('.slick-dots').addClass('my-slick-dots');
 	}
 
 	if (window.innerWidth > 1100) {

@@ -1,81 +1,130 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="theme-color" content="white">
-	<title>Авиатренажеры</title>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="white" />
+        <title>Авиатренажеры</title>
 
-	<link rel="stylesheet" type="text/css" href="../vendor/slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="../vendor/slick/slick-theme.css"/>
-	<link rel="stylesheet" type="text/css" href="../css/main.css">
-	<link rel="stylesheet" type="text/css" href="../css/fonts.css">
-	<link rel="stylesheet" type="text/css" href="../vendor/fontawesome/css/all.css">
-	<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
+        <link rel="stylesheet" type="text/css" href="../vendor/slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="../vendor/slick/slick-theme.css" />
+        <link rel="stylesheet" type="text/css" href="../css/main.css" />
+        <link rel="stylesheet" type="text/css" href="../css/fonts.css" />
+        <link rel="stylesheet" type="text/css" href="../vendor/fontawesome/css/all.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png" />
 
-	<script src="../vendor/jquery/jquery-2.3.1.min.js"></script>
-</head>
-<body>
-	<div class="header-panel" id="training">
-		<div class="header-panel-bg"></div>
-		<div class="header-logo">
-			<a href="main.html"><img src="../img/header-logo.png"></a>
-		</div>
-		<div class="header-phone">
-			<p class="header-text">+7 (495) 710-99-60 (Доб. 335)</p>
-		</div>
-		<div class="header-nav">
-			<nav class="nav">
-				 <div class="hamburger-container">
-				    <ul class="hamburger">
-					    <li class="ham-li" style="background-color: white;"></li>
-					    <li class="ham-li" style="background-color: white;"></li>
-					    <li class="ham-li" style="background-color: white;"></li>
-					</ul>
-				 </div>
-
-				<ul id="menu">
-				 	<li>
-						<a href="main.html" class="my-fix-header-text header-text menu-link my-fix-whiteBg whiteBg"><p class="my-fix-header-text header-text hoverable">Главная</p></a>
-					</li>
-					<li>
-						<div class="dropdown dropbtn my-fix-header-text header-text menu-link my-fix-whiteBg whiteBg">
-							<p class="my-fix-header-text header-text">Тренажеры</p>
-						  	<div class="dropdown-content my-fix-header-text header-text" >
-						    	<a href="trainingAn.html"><p class="my-fix-header-text header-text hoverable">Ан-148</p></a>
-						    	<a href="#main"><p class="my-fix-header-text header-text hoverable">Ил-96</p></a>
-						    	<a href="#main" class="text-align-right"><p class="my-fix-header-text header-text hoverable"><i class="fa fa-caret-down"></i>Комплексный</p></a>
-						    	<a href="#snt" class="text-align-right"><p class="my-fix-header-text header-text hoverable"><i class="fa fa-caret-down"></i>СНТ</p></a>
-							 </div>
-						</div>
-					</li>
-					<li><a href="#obuch" class="my-fix-header-text header-text menu-link my-fix-whiteBg whiteBg"><p class="my-fix-header-text header-text hoverable">Обучение</p></a></li>
-					<li><a href="#plane" class="my-fix-header-text header-text menu-link my-fix-whiteBg whiteBg"><p class="my-fix-header-text header-text hoverable">О самолете</p></a></li>
-					<li><a href="#contact" class="my-fix-header-text header-text menu-link my-fix-whiteBg whiteBg"><p class="my-fix-header-text header-text hoverable">Как добраться</p></a></li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-	<main>
-		<a id="main"></a>
-        <div class="training-gradient"></div>
-        <div class="slider-parent first-slider">
-            <div class="slider training-slider">
-                <div class="slide">
-                    <div class="slide-content">
-                        <h1 id="my-training-slider-id" class="training-slider-header">Комплексный тренажер</h1>
-                    </div>
-                    <img class="slideBg" src="../img/Il/kts/0.jpg">
-                </div>
-                <div class="slide"><img class="slideBg" src="../img/Il/kts/1.jpg"></div>
-                <div class="slide"><img class="slideBg" src="../img/Il/kts/2.jpg"></div>
-                <div class="slide"><img class="slideBg" src="../img/Il/kts/3.jpg"></div>
-                <div class="slide"><img class="slideBg" src="../img/Il/kts/4.jpg"></div>
+        <script src="../vendor/jquery/jquery-2.3.1.min.js"></script>
+    </head>
+    <body>
+        <div class="header-panel" id="training">
+            <div class="header-panel-bg"></div>
+            <div class="header-logo">
+                <a href="main.html"><img src="../img/header-logo.png" /></a>
             </div>
+            <div class="header-phone">
+                <p class="header-text">+7 (495) 710-99-60 (Доб. 335)</p>
+            </div>
+            <div class="header-nav">
+                <nav class="nav">
+                    <div class="hamburger-container">
+                        <ul class="hamburger">
+                            <li class="ham-li" style="background-color: white;"></li>
+                            <li class="ham-li" style="background-color: white;"></li>
+                            <li class="ham-li" style="background-color: white;"></li>
+                        </ul>
+                    </div>
 
+                    <ul id="menu">
+                        <li>
+                            <a
+                                href="main.html"
+                                class="my-fix-header-text header-text menu-link my-fix-whiteBg whiteBg"
+                            >
+                                <p class="my-fix-header-text header-text hoverable">Главная</p>
+                            </a>
+                        </li>
+                        <li>
+                            <div
+                                class="dropdown dropbtn my-fix-header-text header-text menu-link my-fix-whiteBg whiteBg"
+                            >
+                                <p class="my-fix-header-text header-text">Тренажеры</p>
+                                <div class="dropdown-content my-fix-header-text header-text">
+                                    <a href="trainingAn.html">
+                                        <p class="my-fix-header-text header-text hoverable">
+                                            Ан-148
+                                        </p>
+                                    </a>
+                                    <a href="#main">
+                                        <p class="my-fix-header-text header-text hoverable">
+                                            Ил-96
+                                        </p>
+                                    </a>
+                                    <a href="#main" class="text-align-right">
+                                        <p class="my-fix-header-text header-text hoverable">
+                                            <i class="fa fa-caret-down"></i>
+                                            Комплексный
+                                        </p>
+                                    </a>
+                                    <a href="#snt" class="text-align-right">
+                                        <p class="my-fix-header-text header-text hoverable">
+                                            <i class="fa fa-caret-down"></i>
+                                            СНТ
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a
+                                href="#obuch"
+                                class="my-fix-header-text header-text menu-link my-fix-whiteBg whiteBg"
+                            >
+                                <p class="my-fix-header-text header-text hoverable">Обучение</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#plane"
+                                class="my-fix-header-text header-text menu-link my-fix-whiteBg whiteBg"
+                            >
+                                <p class="my-fix-header-text header-text hoverable">О самолете</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#contact"
+                                class="my-fix-header-text header-text menu-link my-fix-whiteBg whiteBg"
+                            >
+                                <p class="my-fix-header-text header-text hoverable">
+                                    Как добраться
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <div class="basic-block bb-white training-info">
-            <!-- <div class="about-text">
+        <main>
+            <a id="main"></a>
+            <div class="training-gradient"></div>
+            <div class="slider-parent first-slider">
+                <div class="slider training-slider">
+                    <div class="slide">
+                        <div class="slide-content">
+                            <h1 id="my-training-slider-id" class="training-slider-header">
+                                Комплексный тренажер
+                            </h1>
+                        </div>
+                        <img class="slideBg" src="../img/Il/kts/0.jpg" />
+                    </div>
+                    <div class="slide"><img class="slideBg" src="../img/Il/kts/1.jpg" /></div>
+                    <div class="slide"><img class="slideBg" src="../img/Il/kts/2.jpg" /></div>
+                    <div class="slide"><img class="slideBg" src="../img/Il/kts/3.jpg" /></div>
+                    <div class="slide"><img class="slideBg" src="../img/Il/kts/4.jpg" /></div>
+                </div>
+            </div>
+            <div class="basic-block bb-white training-info">
+                <!-- <div class="about-text">
                 <div class="flex">
                     <p class="p400" >Комплексный тренажер Ил-96 разработан и построен российской научно-производственной фирмой «Системы комплексных тренажеров» («НПФ СКТ»)".</p>
                     <div class=" sep-hor-light"></div>
@@ -86,27 +135,39 @@
                 <br><br>
             </div> -->
 
-            <div class="training-info-element-wrap">
-                <i class="fa fa-cogs"></i>
-                <h4>Разработка «НПФ СКТ»</h4>
-                <p class="p400" >Комплексный тренажер Ил-96 разработан и построен российской научно-производственной фирмой «Системы комплексных тренажеров» («НПФ СКТ»)".</p>
+                <div class="training-info-element-wrap">
+                    <i class="fa fa-cogs"></i>
+                    <h4>Разработка «НПФ СКТ»</h4>
+                    <p class="p400">
+                        Комплексный тренажер Ил-96 разработан и построен российской
+                        научно-производственной фирмой «Системы комплексных тренажеров» («НПФ
+                        СКТ»)".
+                    </p>
+                </div>
+
+                <div class="training-info-element-wrap">
+                    <i class="fa fa-handshake"></i>
+                    <h4>Более 20 лет работы</h4>
+                    <p class="p400">
+                        На протяжении более 20 лет «НПФ СКТ» работает с ОАО «ИЛ». За это время была
+                        создана полная линейка средств подготовки летного состава на воздушном судне
+                        Ил-96-300, включающая в себя современный компьютерный класс, процедурный
+                        тренажер, полнопилотажный тренажер.
+                    </p>
+                </div>
+
+                <div class="training-info-element-wrap">
+                    <i class="fa fa-tools"></i>
+                    <h4>Технические средства</h4>
+                    <p class="p400">
+                        Технические средства установлены в учебном центре ПАО «Аэрофлот» и успешно
+                        используются для подготовки летного состава на воздушном судне Ил-96-300 и в
+                        настоящее время.
+                    </p>
+                </div>
             </div>
 
-            <div class="training-info-element-wrap">
-                <i class="fa fa-handshake"></i>
-                <h4>Более 20 лет работы</h4>
-                <p class="p400" >На протяжении более 20 лет «НПФ СКТ» работает с ОАО «ИЛ». За это время была создана полная линейка средств подготовки летного состава на воздушном судне Ил-96-300, включающая в себя современный компьютерный класс, процедурный тренажер, полнопилотажный тренажер.</p>
-            </div>
-
-            <div class="training-info-element-wrap">
-                <i class="fa fa-tools"></i>
-                <h4>Технические средства</h4>
-                <p class="p400">Технические средства установлены в учебном центре ПАО «Аэрофлот» и успешно используются для подготовки летного состава на воздушном судне Ил-96-300 и в настоящее время.</p>
-            </div>
-
-        </div>
-
-        <!-- <div class="basic-block bb-black flex flexcol">
+            <!-- <div class="basic-block bb-black flex flexcol">
             <div class="pictures">
                 <img src="img/temp2.jpg" class="first">
                 <img src="img/temp.jpg" class="second">
@@ -114,969 +175,1285 @@
             </div>
             <p class="p400">Комплексный (Full Flight Simulator - FFS) тренажер - это пилотажный тренажер, который имеет систему подвижности, имитирующую полет самолета, оборудован кабиной полностью соответствующей кабине пилотов реального воздушного судна, имеет совершенную систему визуализации и предназначен для отработки комплексных навыков выполнения полетов.</p>
         </div> -->
-        <div class="slider-parent">
-            <a id="snt"></a>
-            <div class="slider training-slider">
-                <div class="slide">
-                    <div class="slide-content">
-                        <h1 id="my-training-slider-id" class="training-slider-header">Тренажер СНТ</h1>
+            <div class="slider-parent">
+                <a id="snt"></a>
+                <div class="slider training-slider">
+                    <div class="slide">
+                        <div class="slide-content">
+                            <h1 id="my-training-slider-id" class="training-slider-header">
+                                Тренажер СНТ
+                            </h1>
+                        </div>
+                        <img class="slideBg" src="../img/Il/snt/0.jpg" />
                     </div>
-                    <img class="slideBg" src="../img/Il/snt/0.jpg">
+                    <div class="slide"><img class="slideBg" src="../img/Il/snt/1.jpg" /></div>
+                    <div class="slide"><img class="slideBg" src="../img/Il/snt/2.jpg" /></div>
                 </div>
-                <div class="slide"><img class="slideBg" src="../img/Il/snt/1.jpg"></div>
-                <div class="slide"><img class="slideBg" src="../img/Il/snt/2.jpg"></div>
             </div>
-        </div>
-        <div class="basic-block bb-white">
-            <div class="about-text">
-                <div class="flex">
-                    <p class="p400"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="basic-block bb-white">
+                <div class="about-text">
+                    <div class="flex">
+                        <p class="p400">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat.
+                        </p>
+                    </div>
+                    <br />
+                    <br />
                 </div>
-                <br><br>
             </div>
-        </div>
 
-
-        <div class="basic-block bb-black flex flexcol">
-            <!--div class="pictures">
+            <div class="basic-block bb-black flex flexcol">
+                <!--div class="pictures">
                 <img src="img/temp2.jpg" class="first">
                 <img src="img/temp.jpg" class="second">
                 <img src="img/temp3.jpg" class="third">
             </div><br><br-->
 
-            <p class="p400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
+                <p class="p400">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
 
-		<a id="obuch"></a>
-		<div class="basic-block bb-white almost-basic-block">
-			<div class="about-text"> <h1>Обучение</h1>
-				<div class="flex " >
-					<p class="p400">Обучение проводится по трем направлениям: переобучение/переподготовка <b>пилотов (летных экипажей)</b>, переобучение/переподготовка <b>бортпроводников (кабинных экипажей)</b> и переобучение/переподготовка <b>инженерно-технического персонала (ИТП АиРЭО и СиД)</b>.</p>
-				</div>
+            <a id="obuch"></a>
+            <div class="basic-block bb-white almost-basic-block">
+                <div class="about-text">
+                    <h1>Обучение</h1>
+                    <div class="flex ">
+                        <p class="p400">
+                            Обучение проводится по трем направлениям: переобучение/переподготовка
+                            <b>пилотов (летных экипажей)</b>
+                            , переобучение/переподготовка
+                            <b>бортпроводников (кабинных экипажей)</b>
+                            и переобучение/переподготовка
+                            <b>инженерно-технического персонала (ИТП АиРЭО и СиД)</b>
+                            .
+                        </p>
+                    </div>
 
-				<br>
-			</div>
+                    <br />
+                </div>
 
-			<div class="aandopen-light"  onclick="closeopen('crew')" >Летный состав </div>
-			<div id="crew" class="training-light info-dropdown">
-			    <div>Переобучение/переподготовка пилотов (летных экипажей) на самолет Ан-148 проводится с продолжительностью:</div>
-				<table class="table">
-				<tbody >
-					<tr>
-						<td>Наземная подготовка(теория)</td>
-						<td>120 часов</td>
-					</tr>
-					<tr>
-						<td>Тренировка на процедурном тренажере
-						(в составе летного экипажа)             </td>
-						<td>20 часов</td>
-					</tr>
-					<tr>
-						<td>Тренировка на комплексном тренажере
-						(в составе летного экипажа)	</td>
-						<td>40 часов</td>
-					</tr>
-				</tbody>
-				</table><br>
+                <div class="aandopen-light" onclick="closeopen('crew')">Летный состав</div>
+                <div id="crew" class="training-light info-dropdown">
+                    <div>
+                        Переобучение/переподготовка пилотов (летных экипажей) на самолет Ан-148
+                        проводится с продолжительностью:
+                    </div>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Наземная подготовка(теория)</td>
+                                <td>120 часов</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Тренировка на процедурном тренажере (в составе летного экипажа)
+                                </td>
+                                <td>20 часов</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Тренировка на комплексном тренажере (в составе летного экипажа)
+                                </td>
+                                <td>40 часов</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br />
 
-			    <div>Программа подготовки для выпускников учебных заведений гражданской авиации и кандидатов для переподготовки на другие (новые) типы воздушных судов (ВС) гражданской авиации, оснащенные дисплейной (цифровой) навигацией, не имевшие опыта эксплуатации ВС аналогичного типа:</div>
-			    <table>
-			    <tbody >
-					<tr>
-						<td>Теоретическая подготовка(теория)</td>
-						<td>80 часов</td>
-					</tr>
-					<tr>
-						<td>Предоставление инструктора для проведения обучения по программе, на комплексном тренажере Ан-148             </td>
-						<td>16 часов</td>
-					</tr>
-					<tr>
-						<td>Предоставление пилота-инструктора для проведения сессий «LOFT» на комплексном тренажере Ан-148 по программе	</td>
-						<td>4 часа</td>
-					</tr>
-					<tr>
-						<td>Предоставление комплексного тренажера Ан-148 по программе </td>
-						<td>4 часа</td>
-					</tr>
-				</tbody>
-				</table><br>
+                    <div>
+                        Программа подготовки для выпускников учебных заведений гражданской авиации и
+                        кандидатов для переподготовки на другие (новые) типы воздушных судов (ВС)
+                        гражданской авиации, оснащенные дисплейной (цифровой) навигацией, не имевшие
+                        опыта эксплуатации ВС аналогичного типа:
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Теоретическая подготовка(теория)</td>
+                                <td>80 часов</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Предоставление инструктора для проведения обучения по программе,
+                                    на комплексном тренажере Ан-148
+                                </td>
+                                <td>16 часов</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Предоставление пилота-инструктора для проведения сессий «LOFT»
+                                    на комплексном тренажере Ан-148 по программе
+                                </td>
+                                <td>4 часа</td>
+                            </tr>
+                            <tr>
+                                <td>Предоставление комплексного тренажера Ан-148 по программе</td>
+                                <td>4 часа</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br />
 
-				<div>Программа подготовки для выпускников учебных заведений гражданской авиации и кандидатов для переподготовки на другие (новые) типы воздушных судов (ВС) гражданской авиации, оснащенные дисплейной (цифровой) навигацией, не имевшие опыта эксплуатации ВС аналогичного типа. Для пилотов с опытом налета более 1000 часов на ВС с ГТД и ТВД, в составе многочленного экипажа: </div>
-				<table>
-			    <tbody >
-					<tr>
-						<td>Теоретическая подготовка(теория)</td>
-						<td>40 часов</td>
-					</tr>
-					<tr>
-						<td>Предоставление инструктора на процедурный тренажер.</td>
-						<td>12 часов</td>
-					</tr>
-				</tbody>
-				</table><br>
+                    <div>
+                        Программа подготовки для выпускников учебных заведений гражданской авиации и
+                        кандидатов для переподготовки на другие (новые) типы воздушных судов (ВС)
+                        гражданской авиации, оснащенные дисплейной (цифровой) навигацией, не имевшие
+                        опыта эксплуатации ВС аналогичного типа. Для пилотов с опытом налета более
+                        1000 часов на ВС с ГТД и ТВД, в составе многочленного экипажа:
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Теоретическая подготовка(теория)</td>
+                                <td>40 часов</td>
+                            </tr>
+                            <tr>
+                                <td>Предоставление инструктора на процедурный тренажер.</td>
+                                <td>12 часов</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br />
 
-				<div>Курсы повышения квалификации летного состава на ВС Ан-148* с продолжительностью: </div>
-				<table>
-			    <tbody >
-					<tr>
-						<td>Модуль 1 (теоретическая подготовка)</td>
-						<td>40 часов</td>
-					</tr>
-					<tr>
-						<td>Модуль 2 (практическая подготовка)</td>
-						<td>17 часов</td>
-					</tr>
-					<tr>
-						<td>Модуль 3 (дополнительная подготовка)</td>
-						<td>22 часа</td>
-					</tr>
-					<tr>
-						<td>Модуль 4 (подготовка к выполнению международных полетов)</td>
-						<td>176 часа</td>
-					</tr>
-				</tbody>
-				</table><br>
+                    <div>
+                        Курсы повышения квалификации летного состава на ВС Ан-148* с
+                        продолжительностью:
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Модуль 1 (теоретическая подготовка)</td>
+                                <td>40 часов</td>
+                            </tr>
+                            <tr>
+                                <td>Модуль 2 (практическая подготовка)</td>
+                                <td>17 часов</td>
+                            </tr>
+                            <tr>
+                                <td>Модуль 3 (дополнительная подготовка)</td>
+                                <td>22 часа</td>
+                            </tr>
+                            <tr>
+                                <td>Модуль 4 (подготовка к выполнению международных полетов)</td>
+                                <td>176 часа</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br />
 
-				<div>
-					<ul class="about-list">
-						<li>*Продолжительность подготовки по Курсам повышения квалификации летного состава на ВС Ан-148 может быть изменена в случае с внедрением дистанционных образовательных технологий.</li>
-					</ul>
-				</div>
-			</div>
+                    <div>
+                        <ul class="about-list">
+                            <li>
+                                *Продолжительность подготовки по Курсам повышения квалификации
+                                летного состава на ВС Ан-148 может быть изменена в случае с
+                                внедрением дистанционных образовательных технологий.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-
-			<div class="aandopen-light"  onclick="closeopen('crew1')" >Бортпроводники </div>
-			<div id="crew1"  class="training-light info-dropdown">
-				<div>Курс переподготовки бортпроводников на воздушное судно Ан-148 включает в себя следующие дисциплины:</div>
-				<!--<div class="altertable-light">-->
-					<table class="altertable">
-						<tr>
-							<td>1.</td>
-							<td><b>Нормы и требования охраны труда:</b>
-								<p>Лекции - 2 часа, самоподготовка - 1 час</p>
-							</td>
-						</tr>
-						<tr>
-							<td>2.</td>
-							<td><b>Конструкция и эксплуатация систем и оборудования ВС:</b>
-								<p>Лекции - 8 часов, практика - 4 часа. Форма контроля - экзамен</p>
-							</td>
-						</tr>
-						<tr>
-							<td>3.</td>
-							<td><b>Бытовое оборудование ВС и его эксплуатация:</b>
-								<p>Лекции - 1 час, практика - 1 час. Форма контроля - экзамен</p>
-							</td>
-						</tr>
-						<tr>
-							<td>4.</td>
-							<td><b>Технология обслуживания пассажиров на борту ВС. Организация питания на борту ВС:</b>
-								<p>Лекции - 1 час, самоподготовка - 7 часов. Форма контроля - экзамен</p>
-							</td>
-						</tr>
-						<tr>
-							<td>5.</td>
-							<td><b>Аварийно-спасательная подготовка. Бортовое аварийно-спасательное оборудование*:</b>
-								<p>Лекции - 6 часов, практика - 10 часов. Форма контроля - экзамен</p>
-							</td>
-						</tr>
-						<tr>
+                <div class="aandopen-light" onclick="closeopen('crew1')">Бортпроводники</div>
+                <div id="crew1" class="training-light info-dropdown">
+                    <div>
+                        Курс переподготовки бортпроводников на воздушное судно Ан-148 включает в
+                        себя следующие дисциплины:
+                    </div>
+                    <!--<div class="altertable-light">-->
+                    <table class="altertable">
+                        <tr>
+                            <td>1.</td>
+                            <td>
+                                <b>Нормы и требования охраны труда:</b>
+                                <p>Лекции - 2 часа, самоподготовка - 1 час</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>
+                                <b>Конструкция и эксплуатация систем и оборудования ВС:</b>
+                                <p>Лекции - 8 часов, практика - 4 часа. Форма контроля - экзамен</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>
+                                <b>Бытовое оборудование ВС и его эксплуатация:</b>
+                                <p>Лекции - 1 час, практика - 1 час. Форма контроля - экзамен</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>
+                                <b>
+                                    Технология обслуживания пассажиров на борту ВС. Организация
+                                    питания на борту ВС:
+                                </b>
+                                <p>
+                                    Лекции - 1 час, самоподготовка - 7 часов. Форма контроля -
+                                    экзамен
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>
+                                <b>
+                                    Аварийно-спасательная подготовка. Бортовое аварийно-спасательное
+                                    оборудование*:
+                                </b>
+                                <p>
+                                    Лекции - 6 часов, практика - 10 часов. Форма контроля - экзамен
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
                             <td><b>Всего:</b></td>
-							<td><p>Лекции - 17 часов. Практика - 15 часов. Самоподготовка - 8 часов.</p></td>
-						</tr>
-					</table>
-				<!--</div>-->
-			    <table class="toolarge">
-			    <tbody >
-					<tr>
-						<th >№ п.п.</th>
-						<th >Наименование дисциплин</th>
-						<th >Всего, час.</th>
-						<th>Лекции</th>
-						<th>Практические занятия</th>
-						<th>Самоподготовка</th>
-						<th >Форма контроля</th>
-					<tr>
+                            <td>
+                                <p>
+                                    Лекции - 17 часов. Практика - 15 часов. Самоподготовка - 8
+                                    часов.
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
 
-					<tr >
-						<td>1.</td>
-						<td>Нормы и требования охраны труда</td>
-						<td>2</td>
-						<td>1</td>
-						<td >-</td>
-						<td>1</td>
-						<td>-</td>
-					</tr>
-					<tr>
-						<td>2.</td>
-						<td>Конструкция и эксплуатация систем и оборудования ВС.</td>
-						<td>12</td>
-						<td>8</td>
-						<td>4</td>
-						<td>-</td>
-						<td>Экзамен</td>
-					</tr>
-					<tr>
-						<td>3.</td>
-						<td>Бытовое оборудование ВС и его эксплуатация.</td>
-						<td>2</td>
-						<td>1</td>
-						<td>1</td>
-						<td>-</td>
-						<td>Экзамен</td>
-					</tr>
-					<tr>
-						<td>4.</td>
-						<td>Технология обслуживания пассажиров на борту ВС. Организация питания на борту ВС.</td>
-						<td>8</td>
-						<td>1</td>
-						<td>-</td>
-						<td>7</td>
-						<td>Экзамен</td>
-					</tr>
-					<tr>
-						<td>5.</td>
-						<td>Аварийно-спасательная подготовка. Бортовое аварийно-спасательное оборудование. <b>*</b></td>
-						<td>16</td>
-						<td>6</td>
-						<td>10</td>
-						<td>-</td>
-						<td>Экзамен</td>
-					</tr>
-					<tr >
-						<th></th>
-						<th>Итого</th>
-						<th>40</th>
-						<th>17</th>
-						<th>15</th>
-						<th>8</th>
-						<th>Экзамен</th>
-					</tr>
-				</tbody >
-				</table><br>
+                    <!--</div>-->
+                    <table class="toolarge">
+                        <tbody>
+                            <tr>
+                                <th>№ п.п.</th>
+                                <th>Наименование дисциплин</th>
+                                <th>Всего, час.</th>
+                                <th>Лекции</th>
+                                <th>Практические занятия</th>
+                                <th>Самоподготовка</th>
+                                <th>Форма контроля</th>
+                            </tr>
 
-				<div>
-					<ul class="about-list">
-						<li>*  При проведении занятий по дисциплине «Аварийно-спасательная подготовка. Бортовое аварийно-спасательное оборудование» используется программа по аварийно-спасательной подготовке членов летного и кабинного экипажа ВС Ан-148, утвержденная в установленном порядке.</li></ul><br><br>
-				</div>
-				<br>
+                            <tr></tr>
 
-				<div>Курс повышения квалификации бортпроводников, выполняющих полеты на воздушном судне Ан-148 на МВЛ и ВВЛ включает в себя:</div>
-                <table class="altertable">
-                    <tr>
-                        <td>1.</td>
-                        <td><b>Основы воздушно-правовой подготовки:</b>
-                            <p>Лекции - 4 часа. Форма контроля - зачет</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2.</td>
-                        <td><b>Конструкция и эксплуатация систем и оборудования ВС. Бытовое оборудование ВС и его эксплуатация:(1)</b>
-                            <p>Лекции - 4 часа. Практика - 4 часа. Форма контроля - зачет</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3.</td>
-                        <td><b>Аварийно-спасательная подготовка:(2)</b>
-                            <p>Лекции - 8 часов. Практика - 8 часов. Форма контроля - зачет</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>4.</td>
-                        <td><b>Перевозка опасных грузов воздушным транспортом: (3)</b>
-                            <p>Лекции - 11 часов. Практика - 1 час. Форма контроля - зачет</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>5.</td>
-                        <td><b>Организация перевозок на воздушном транспорте:</b>
-                            <p>Лекции - 4 часа. Форма контроля - зачет</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>6.</td>
-                        <td><b>Специальная подготовка в области человеческого фактора (CRM Training)</b>
-                            <p>Лекции - 4 часа. Форма контроля - зачет</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>7.</td>
-                        <td><b>Обеспечение авиационной безопасности: (4)</b>
-                            <p>Лекции - 8 часов. Форма контроля - зачет</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>8.</td>
-                        <td><b>Медицинское обслуживание (оказание первой доврачебной помощи на борту ВС)</b>
-                            <p>Лекции - 6 часов. Практика - 2 часа. Форма контроля - зачет</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>9.</td>
-                        <td><b>Технология обслуживания пассажиров. Организация питания на борту. Психология общения:</b>
-                            <p>Лекции - 4 часов. Практика - 4 часа. Форма контроля - зачет</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>10.</td>
-                        <td><b>Профессиональный английский язык</b>
-                            <p>Лекции - 4 часов. Практика - 4 часа. Форма контроля - зачет</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><b>Всего:</b></td>
-                        <td><p>Лекции - 57 часов. Практика - 23 часов.</p></td>
-                    </tr>
-				</table>
-				<table class="toolarge">
-				<tbody>
-					<tr>
-						<th>№ п.п.</th>
-						<th>Наименование дисциплин</th>
-						<th>Всего, час.</th>
-						<th>Лекции</th>
-						<th>Практические занятия</th>
-						<th>Форма контроля</th>
-					</tr>
-					<tr>
-						<td>1.</td>
-						<td>Основы воздушно-правовой подготовки.</td>
-						<td>4</td>
-						<td>4</td>
-						<td width="113px">-</td>
-						<td>Зачет</td>
-					</tr>
-					<tr>
-						<td>2.</td>
-						<td>Конструкция и эксплуатация систем и оборудования ВС. Бытовое оборудование ВС и его эксплуатация. <b>(1)</b></td>
-						<td>8</td>
-						<td>4</td>
-						<td>4</td>
-						<td>Зачет</td>
-					</tr>
-					<tr>
-						<td>3.</td>
-						<td>Аварийно-спасательная подготовка. <b>(2)</b></td>
-						<td>16</td>
-						<td>8</td>
-						<td>8</td>
-						<td>Зачет</td>
-					</tr>
-					<tr>
-						<td>4.</td>
-						<td>Перевозка опасных грузов воздушным транспортом. <b>(3)</b></td>
-						<td>12</td>
-						<td>11</td>
-						<td>1</td>
-						<td>Зачет</td>
-					</tr>
-					<tr >
-						<td>5.</td>
-						<td>Организация перевозок на воздушном транспорте.</td>
-						<td>4</td>
-						<td>4</td>
-						<td>-</td>
-						<td>Зачет</td>
-					</tr>
-					<tr>
-						<td>6.</td>
-						<td>Специальная подготовка в области человеческого фактора (CRM Training).</td>
-						<td>4</td>
-						<td>4</td>
-						<td>-</td>
-						<td>Зачет</td>
-					</tr>
-					<tr>
-						<td>7.</td>
-						<td>Обеспечение авиационной безопасности. <b>(4)</b></td>
-						<td>8</td>
-						<td>8</td>
-						<td>-</td>
-						<td>Зачет</td>
-						</tr>
-					<tr >
-						<td>8.</td>
-						<td>Медицинское обслуживание (оказание первой доврачебной помощи на борту ВС).</td>
-						<td>8</td>
-						<td>6</td>
-						<td>2</td>
-						<td>Зачет</td>
-					</tr>
-					<tr >
-						<td>9.</td>
-						<td>Технология обслуживания пассажиров. Организация питания на борту. Психология общения.</td>
-						<td>8</td>
-						<td>4</td>
-						<td>4</td>
-						<td>Зачет</td>
-					</tr>
-					<tr>
-						<td>10.</td>
-						<td>Профессиональный английский язык.</td>
-						<td>8</td>
-						<td>4</td>
-						<td>4</td>
-						<td>Зачет</td>
-					</tr>
-					<tr >
-						<td></td>
-						<th>Итого</th>
-						<th>80</th>
-						<th>57</th>
-						<th>23</th>
-						<th>Зачет</th>
-					</tr>
-				</tbody>
-				</table><br>
+                            <tr>
+                                <td>1.</td>
+                                <td>Нормы и требования охраны труда</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>-</td>
+                                <td>1</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Конструкция и эксплуатация систем и оборудования ВС.</td>
+                                <td>12</td>
+                                <td>8</td>
+                                <td>4</td>
+                                <td>-</td>
+                                <td>Экзамен</td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>Бытовое оборудование ВС и его эксплуатация.</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>-</td>
+                                <td>Экзамен</td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>
+                                    Технология обслуживания пассажиров на борту ВС. Организация
+                                    питания на борту ВС.
+                                </td>
+                                <td>8</td>
+                                <td>1</td>
+                                <td>-</td>
+                                <td>7</td>
+                                <td>Экзамен</td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>
+                                    Аварийно-спасательная подготовка. Бортовое аварийно-спасательное
+                                    оборудование.
+                                    <b>*</b>
+                                </td>
+                                <td>16</td>
+                                <td>6</td>
+                                <td>10</td>
+                                <td>-</td>
+                                <td>Экзамен</td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <th>Итого</th>
+                                <th>40</th>
+                                <th>17</th>
+                                <th>15</th>
+                                <th>8</th>
+                                <th>Экзамен</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br />
 
-				<div>
-					<ul class="about-list">
-						<li>(1)  Указанное количество часов при изучении одного из заявленных типов ВС.</li><br>
-						<li>(2)  Указанное количество часов при изучении одного типа ВС.</li><br>
-						<p>Занятия по дисциплине «Аварийно-спасательная подготовка» включают в себя занятия по АСП - водная подготовка. При изучении дополнительного типа ВС, время  на обучение по дисциплине «Аварийно-спасательная подготовка» составляет:</p>
-						<p>2 типа ВС – 20 часов</p>
-						<p>3 типа ВС – 24 часа</p>
-						<p>4 типа ВС – 28 часов</p><br>
+                    <div>
+                        <ul class="about-list">
+                            <li>
+                                * При проведении занятий по дисциплине «Аварийно-спасательная
+                                подготовка. Бортовое аварийно-спасательное оборудование»
+                                используется программа по аварийно-спасательной подготовке членов
+                                летного и кабинного экипажа ВС Ан-148, утвержденная в установленном
+                                порядке.
+                            </li>
+                        </ul>
+                        <br />
+                        <br />
+                    </div>
+                    <br />
 
-						<p>При проведении занятий по дисциплине «Аварийно-спасательная подготовка» используется программа по Ежегодной аварийно-спасательной подготовки членов летного и кабинного экипажа ВС  Ан-148, утвержденная в установленном порядке.</p>
-						<br><li>(3) При проведении занятий по дисциплине «Перевозка опасных грузов воздушным транспортом» используется программа повышения квалификации  членов экипажа (кроме членов летного экипажа) по  курсу «Перевозка опасных грузов воздушным транспортом» (11 категория ИКАО), утвержденная в установленном порядке.</li>
-						<br><li>(4) При проведении занятий по дисциплине «Обеспечение авиационной безопасности» используется программа повышения квалификации  членов экипажа по курсу «КПК по авиационной безопасности членов экипажей», утвержденная в установленном порядке.</li>
-						<br><li>*Продолжительность подготовки по Курсам повышения квалификации летного состава на ВС Ан-148 может быть изменена в случае с внедрением дистанционных образовательных технологий.</li>
-					</ul>
-				</div>
-			</div>
+                    <div>
+                        Курс повышения квалификации бортпроводников, выполняющих полеты на воздушном
+                        судне Ан-148 на МВЛ и ВВЛ включает в себя:
+                    </div>
+                    <table class="altertable">
+                        <tr>
+                            <td>1.</td>
+                            <td>
+                                <b>Основы воздушно-правовой подготовки:</b>
+                                <p>Лекции - 4 часа. Форма контроля - зачет</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>
+                                <b>
+                                    Конструкция и эксплуатация систем и оборудования ВС. Бытовое
+                                    оборудование ВС и его эксплуатация:(1)
+                                </b>
+                                <p>Лекции - 4 часа. Практика - 4 часа. Форма контроля - зачет</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>
+                                <b>Аварийно-спасательная подготовка:(2)</b>
+                                <p>Лекции - 8 часов. Практика - 8 часов. Форма контроля - зачет</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>
+                                <b>Перевозка опасных грузов воздушным транспортом: (3)</b>
+                                <p>Лекции - 11 часов. Практика - 1 час. Форма контроля - зачет</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>
+                                <b>Организация перевозок на воздушном транспорте:</b>
+                                <p>Лекции - 4 часа. Форма контроля - зачет</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td>
+                                <b>
+                                    Специальная подготовка в области человеческого фактора (CRM
+                                    Training)
+                                </b>
+                                <p>Лекции - 4 часа. Форма контроля - зачет</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7.</td>
+                            <td>
+                                <b>Обеспечение авиационной безопасности: (4)</b>
+                                <p>Лекции - 8 часов. Форма контроля - зачет</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8.</td>
+                            <td>
+                                <b>
+                                    Медицинское обслуживание (оказание первой доврачебной помощи на
+                                    борту ВС)
+                                </b>
+                                <p>Лекции - 6 часов. Практика - 2 часа. Форма контроля - зачет</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9.</td>
+                            <td>
+                                <b>
+                                    Технология обслуживания пассажиров. Организация питания на
+                                    борту. Психология общения:
+                                </b>
+                                <p>Лекции - 4 часов. Практика - 4 часа. Форма контроля - зачет</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10.</td>
+                            <td>
+                                <b>Профессиональный английский язык</b>
+                                <p>Лекции - 4 часов. Практика - 4 часа. Форма контроля - зачет</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Всего:</b></td>
+                            <td><p>Лекции - 57 часов. Практика - 23 часов.</p></td>
+                        </tr>
+                    </table>
 
+                    <table class="toolarge">
+                        <tbody>
+                            <tr>
+                                <th>№ п.п.</th>
+                                <th>Наименование дисциплин</th>
+                                <th>Всего, час.</th>
+                                <th>Лекции</th>
+                                <th>Практические занятия</th>
+                                <th>Форма контроля</th>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>Основы воздушно-правовой подготовки.</td>
+                                <td>4</td>
+                                <td>4</td>
+                                <td width="113px">-</td>
+                                <td>Зачет</td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>
+                                    Конструкция и эксплуатация систем и оборудования ВС. Бытовое
+                                    оборудование ВС и его эксплуатация.
+                                    <b>(1)</b>
+                                </td>
+                                <td>8</td>
+                                <td>4</td>
+                                <td>4</td>
+                                <td>Зачет</td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>
+                                    Аварийно-спасательная подготовка.
+                                    <b>(2)</b>
+                                </td>
+                                <td>16</td>
+                                <td>8</td>
+                                <td>8</td>
+                                <td>Зачет</td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>
+                                    Перевозка опасных грузов воздушным транспортом.
+                                    <b>(3)</b>
+                                </td>
+                                <td>12</td>
+                                <td>11</td>
+                                <td>1</td>
+                                <td>Зачет</td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>Организация перевозок на воздушном транспорте.</td>
+                                <td>4</td>
+                                <td>4</td>
+                                <td>-</td>
+                                <td>Зачет</td>
+                            </tr>
+                            <tr>
+                                <td>6.</td>
+                                <td>
+                                    Специальная подготовка в области человеческого фактора (CRM
+                                    Training).
+                                </td>
+                                <td>4</td>
+                                <td>4</td>
+                                <td>-</td>
+                                <td>Зачет</td>
+                            </tr>
+                            <tr>
+                                <td>7.</td>
+                                <td>
+                                    Обеспечение авиационной безопасности.
+                                    <b>(4)</b>
+                                </td>
+                                <td>8</td>
+                                <td>8</td>
+                                <td>-</td>
+                                <td>Зачет</td>
+                            </tr>
+                            <tr>
+                                <td>8.</td>
+                                <td>
+                                    Медицинское обслуживание (оказание первой доврачебной помощи на
+                                    борту ВС).
+                                </td>
+                                <td>8</td>
+                                <td>6</td>
+                                <td>2</td>
+                                <td>Зачет</td>
+                            </tr>
+                            <tr>
+                                <td>9.</td>
+                                <td>
+                                    Технология обслуживания пассажиров. Организация питания на
+                                    борту. Психология общения.
+                                </td>
+                                <td>8</td>
+                                <td>4</td>
+                                <td>4</td>
+                                <td>Зачет</td>
+                            </tr>
+                            <tr>
+                                <td>10.</td>
+                                <td>Профессиональный английский язык.</td>
+                                <td>8</td>
+                                <td>4</td>
+                                <td>4</td>
+                                <td>Зачет</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <th>Итого</th>
+                                <th>80</th>
+                                <th>57</th>
+                                <th>23</th>
+                                <th>Зачет</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br />
 
-			<div class="aandopen-light"  onclick="closeopen('crew2')" >Инженерно-технический персонал </div>
-			<div id="crew2" class="training-light info-dropdown">
-				<div>Программа изучения и практического освоения регламентных работ по авиационному и радиоэлектронному оборудованию самолета Ан-148 инженерно-техническим персоналом:</div>
-				<table class="altertable">
-					<tr>
-						<td>1.</td>
-						<td><b>Электрооборудование самолёта АН-148:</b>
-							<p>Лекции - 53 часа. Практика - 4 часа.</p>
-						</td>
-					</tr>
-					<tr>
-						<td>2.</td>
-						<td><b>Приборное оборудование самолёта АН-148:</b>
-							<p>Лекции - 53 часа. Практика - 4 часа.</p>
-							</td>
-					</tr>
-					<tr>
-						<td>3.</td>
-						<td><b>Радио оборудование самолёта АН-148:</b>
-							<p>Лекции - 53 часа. Практика - 4 часа.</p>
-						</td>
-					</tr>
-					<tr>
-						<td>4.</td>
-						<td><b>Конструкция самолёта АН-148:</b>
-							<p>Лекции - 4 часа</p>
-						</td>
-					</tr>
-					<tr>
-						<td>5.</td>
-						<td><b>Конструкция двигателей и ВСУ:</b>
-							<p>Лекции - 3 часа.</p>
-						</td>
-					</tr>
-					<tr>
-						<td>6.</td>
-						<td><b>Основы практической Аэродинамики:</b>
-							<p>Лекции - 2 часа.</p>
-						</td>
-					</tr>
-					<tr>
-                        <td><b>Всего:</b></td>
-                        <td><p>Лекции - 168 часов. Практика - 16 часов.</p></td>
-					</tr>
-				</table>
-				<table class="toolarge">
-					<tr>
-						<th>№ п.п.</th>
-						<th>Наименование дисциплин</th>
-						<th >Количество академических часов</th>
-						<th>Лекции</th>
-						<th>Практика</th>
-					</tr>
-					<tr>
-						<td>1.</td>
-						<td>Электрооборудование самолёта АН-148</td>
-						<td>57</td>
-						<td>53</td>
-						<td >4</td>
-					</tr>
-					<tr >
-						<td>2.</td>
-						<td>Приборное оборудование самолёта АН-148</td>
-						<td>57</td>
-						<td>53</td>
-						<td>4</td>
-					</tr>
-					<tr >
-						<td>3.</td>
-						<td>Радио оборудование самолёта АН-148</td>
-						<td>57</td>
-						<td>53</td>
-						<td>4</td>
-					</tr>
-					<tr >
-						<td>4.</td>
-						<td>Конструкция самолёта АН-148</td>
-						<td>4</td>
-						<td>4</td>
-						<td> </td>
-					</tr>
-					<tr>
-						<td>5.</td>
-						<td>Конструкция двигателей и ВСУ</td>
-						<td>3</td>
-						<td>3</td>
-						<td> </td>
-					</tr>
-					<tr >
-						<td>6.</td>
-						<td>Основы практической Аэродинамики</td>
-						<td>2</td>
-						<td>2</td>
-						<td>-</td>
-					</tr>
-					<tr >
-						<th></th>
-						<th>Всего:</th>
-						<th>180</th>
-						<th>168</th>
-						<th>18</th>
-					</tr>
-				</table>
-				<br>
+                    <div>
+                        <ul class="about-list">
+                            <li>
+                                (1) Указанное количество часов при изучении одного из заявленных
+                                типов ВС.
+                            </li>
+                            <br />
+                            <li>(2) Указанное количество часов при изучении одного типа ВС.</li>
+                            <br />
+                            <p>
+                                Занятия по дисциплине «Аварийно-спасательная подготовка» включают в
+                                себя занятия по АСП - водная подготовка. При изучении
+                                дополнительного типа ВС, время на обучение по дисциплине
+                                «Аварийно-спасательная подготовка» составляет:
+                            </p>
+                            <p>2 типа ВС – 20 часов</p>
+                            <p>3 типа ВС – 24 часа</p>
+                            <p>4 типа ВС – 28 часов</p>
+                            <br />
 
-				<div>Распределение времени теоретической переподготовки инженерно – технического персонала по ЛАиД на самолет Ан-148:</div>
-				<br>
-				<table class="altertable">
-					<tr>
-						<td>1.</td>
-						<td><b>Конструкция самолета Ан-148:</b>
-							<p>83 часа</p>
-						</td>
-					</tr>
-					<tr>
-						<td>2.</td>
-						<td><b>Конструкция двигателя Д-436-148 и ВСУ АИ-450 МС:</b>
-							<p>71 час</p>
-						</td>
-					</tr>
-					<tr>
-						<td>3.</td>
-						<td><b>Электрооборудование самолета Ан-148:</b>
-							<p>10 часов</p>
-						</td>
-					</tr>
-					<tr>
-						<td>4.</td>
-						<td><b>Приборное оборудование самолета Ан-148:</b>
-							<p>6 часов</p>
-						</td>
-					</tr>
-					<tr>
-						<td>5.</td>
-						<td><b>	Радиооборудование самолета Ан-148:</b>
-							<p>8 часов</p>
-						</td>
-					</tr>
-					<tr>
-                        <td><b>Всего:</b></td>
-						<td><p>180 часов.</p></td>
-					</tr>
-				</table>
-				<table class="toolarge">
-					<tr>
-						<th>№ п.п.</th>
-						<th>Наименование дисциплин</th>
-						<th>Количество часов</th>
-					</tr>
-					<tr >
-						<td>1.</td>
-						<td>Конструкция самолета Ан-148</td>
-						<td>83</td>
-					</tr>
-					<tr>
-						<td>2.</td>
-						<td>Конструкция двигателя Д-436-148 и ВСУ АИ-450 МС</td>
-						<td>71</td>
-					</tr>
-					<tr >
-						<td>3.</td>
-						<td>Электрооборудование самолета Ан-148</td>
-						<td>10</td>
-					</tr>
-					<tr>
-						<td>4.</td>
-						<td>Приборное оборудование самолета Ан-148</td>
-						<td>6</td>
-					</tr>
-					<tr >
-						<td>5.</td>
-						<td>Радиооборудование самолета Ан-148</td>
-						<td>8</td>
-					</tr>
-					<tr >
-						<td>6.</td>
-						<td>Основы практической аэродинамики самолета Ан-148</td>
-						<td>2</td>
-					</tr>
-					<tr >
-						<td></td>
-						<th>Итого:</th>
-						<th>180</th>
-					</tr>
-				</table><br>
-			</div>
-
-        </div>
-
-        <a id="plane"></a>
-        <div class="basic-block bb-black almost-basic-block">
-            <div class="about-text ">
-                <h1>О самолете</h1>
-
-                <div class="flex " >
-                    <p class="p400 p400-right">Ил-96-300 — первый советский дальнемагистральный широкофюзеляжный самолёт, рассчитаный на 300—435 пассажиров и дальность полёта 9000 км. Спроектирован в КБ Ильюшина в конце 1980-х годов. производится серийно на заводе Воронежского акционерного самолётостроительного общества.</p>
-                    <img src="../img/il-1.png" class="toolarge">
+                            <p>
+                                При проведении занятий по дисциплине «Аварийно-спасательная
+                                подготовка» используется программа по Ежегодной
+                                аварийно-спасательной подготовки членов летного и кабинного экипажа
+                                ВС Ан-148, утвержденная в установленном порядке.
+                            </p>
+                            <br />
+                            <li>
+                                (3) При проведении занятий по дисциплине «Перевозка опасных грузов
+                                воздушным транспортом» используется программа повышения квалификации
+                                членов экипажа (кроме членов летного экипажа) по курсу «Перевозка
+                                опасных грузов воздушным транспортом» (11 категория ИКАО),
+                                утвержденная в установленном порядке.
+                            </li>
+                            <br />
+                            <li>
+                                (4) При проведении занятий по дисциплине «Обеспечение авиационной
+                                безопасности» используется программа повышения квалификации членов
+                                экипажа по курсу «КПК по авиационной безопасности членов экипажей»,
+                                утвержденная в установленном порядке.
+                            </li>
+                            <br />
+                            <li>
+                                *Продолжительность подготовки по Курсам повышения квалификации
+                                летного состава на ВС Ан-148 может быть изменена в случае с
+                                внедрением дистанционных образовательных технологий.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="flex">
-                    <img src="../img/il-2.png">
-                    <div class="p400 p400-left">
-                        <div class="p400 p400-leftsuper">
-                            <p>Максимальная дальность полёта:</p>
-                            <p>— 9 000 км, при максимальной загрузке;</p>
-                            <p>— 13 500 км, при количестве пассажиров 269 человек и с полным запасом топлива.</p>
-                            <p>Крейсерская скорость — 870 км/ч.</p>
-                        </div>
-                        <br>
-                        <!-- Не переделал следующий абзац -->
-                        <p >В России продажей, поставками в финансовый и операционный лизинг этих
-                        самолётов занимается лизинговая компания Ильюшин Финанс Ко
-                        (ОАО "ИФК"). Сертификат типа самолёта выдан Авиарегистром МАК
-                        29 декабря 1992 года и сертифицирован по нормам НЛГС-3.</p>
+                <div class="aandopen-light" onclick="closeopen('crew2')">
+                    Инженерно-технический персонал
+                </div>
+                <div id="crew2" class="training-light info-dropdown">
+                    <div>
+                        Программа изучения и практического освоения регламентных работ по
+                        авиационному и радиоэлектронному оборудованию самолета Ан-148
+                        инженерно-техническим персоналом:
                     </div>
+                    <table class="altertable">
+                        <tr>
+                            <td>1.</td>
+                            <td>
+                                <b>Электрооборудование самолёта АН-148:</b>
+                                <p>Лекции - 53 часа. Практика - 4 часа.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>
+                                <b>Приборное оборудование самолёта АН-148:</b>
+                                <p>Лекции - 53 часа. Практика - 4 часа.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>
+                                <b>Радио оборудование самолёта АН-148:</b>
+                                <p>Лекции - 53 часа. Практика - 4 часа.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>
+                                <b>Конструкция самолёта АН-148:</b>
+                                <p>Лекции - 4 часа</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>
+                                <b>Конструкция двигателей и ВСУ:</b>
+                                <p>Лекции - 3 часа.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td>
+                                <b>Основы практической Аэродинамики:</b>
+                                <p>Лекции - 2 часа.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Всего:</b></td>
+                            <td><p>Лекции - 168 часов. Практика - 16 часов.</p></td>
+                        </tr>
+                    </table>
 
-                </div><br>
-            </div><br>
+                    <table class="toolarge">
+                        <tr>
+                            <th>№ п.п.</th>
+                            <th>Наименование дисциплин</th>
+                            <th>Количество академических часов</th>
+                            <th>Лекции</th>
+                            <th>Практика</th>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Электрооборудование самолёта АН-148</td>
+                            <td>57</td>
+                            <td>53</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Приборное оборудование самолёта АН-148</td>
+                            <td>57</td>
+                            <td>53</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Радио оборудование самолёта АН-148</td>
+                            <td>57</td>
+                            <td>53</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Конструкция самолёта АН-148</td>
+                            <td>4</td>
+                            <td>4</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>Конструкция двигателей и ВСУ</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td>Основы практической Аэродинамики</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>Всего:</th>
+                            <th>180</th>
+                            <th>168</th>
+                            <th>18</th>
+                        </tr>
+                    </table>
 
+                    <br />
 
-            <div class="aandopen-dark"  onclick="closeopen('plane1')" >Модификации семейства самолетов Ил-96</div>
-            <div id="plane1" class="training-dark info-dropdown">
-                <table>
-                <tbody>
+                    <div>
+                        Распределение времени теоретической переподготовки инженерно – технического
+                        персонала по ЛАиД на самолет Ан-148:
+                    </div>
+                    <br />
+                    <table class="altertable">
+                        <tr>
+                            <td>1.</td>
+                            <td>
+                                <b>Конструкция самолета Ан-148:</b>
+                                <p>83 часа</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>
+                                <b>Конструкция двигателя Д-436-148 и ВСУ АИ-450 МС:</b>
+                                <p>71 час</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>
+                                <b>Электрооборудование самолета Ан-148:</b>
+                                <p>10 часов</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>
+                                <b>Приборное оборудование самолета Ан-148:</b>
+                                <p>6 часов</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>
+                                <b>Радиооборудование самолета Ан-148:</b>
+                                <p>8 часов</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Всего:</b></td>
+                            <td><p>180 часов.</p></td>
+                        </tr>
+                    </table>
 
-                    <tr>
-                        <th>Тип</th>
-                        <th>Описание</th>
-                    </tr>
-                    <tr>
-                        <td>Ил-96-300ПУ/ПУ(М1)</td>
-                        <td>Специальный вариант Ил-96-300, разработанный для перевозки президента России.</td>
-                    </tr>
-                    <tr>
-                        <td>Ил-96М</td>
-                        <td>Модифицированный Ил-96-300 — удлинён фюзеляж, двигатели PW, приборное оборудование «Коллинз». Способен брать на борт до 435 пассажиров, практическая дальность полёта — 12 800 км.</td>
-                    </tr>
-                    <tr>
-                        <td>Ил-96-400</td>
-                        <td>Получен модификацией Ил-96М, двигатели PW заменены на ПС-90А-1. Отличается увеличенной тягой 17 400 кгс и улучшенной авионикой.</td>
-                    </tr>
-                    <tr>
-                        <td>Ил-96-400Т</td>
-                        <td>Является грузовым вариантом Ил-96-400. Лётно-технические показатели остались неизменными.</td>
-                    </tr>
-                    <tr>
-                        <td>Ил-96Т</td>
-                        <td>Самолёт предназначен для перевозки грузов большой массы на дальние расстояния.</td>
-                    </tr>
-                    <tr>
-                        <td>Ил-96-500Т</td>
-                        <td>В 2019 году разработан эскизный проект самолета Ил-96-500Т с увеличенным фюзеляжем для перевозки негабаритных грузов.</td>
-                    </tr>
-                </tbody></table>
+                    <table class="toolarge">
+                        <tr>
+                            <th>№ п.п.</th>
+                            <th>Наименование дисциплин</th>
+                            <th>Количество часов</th>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Конструкция самолета Ан-148</td>
+                            <td>83</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Конструкция двигателя Д-436-148 и ВСУ АИ-450 МС</td>
+                            <td>71</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Электрооборудование самолета Ан-148</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Приборное оборудование самолета Ан-148</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>Радиооборудование самолета Ан-148</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td>Основы практической аэродинамики самолета Ан-148</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <th>Итого:</th>
+                            <th>180</th>
+                        </tr>
+                    </table>
+
+                    <br />
+                </div>
             </div>
 
-            <div class="aandopen-dark"  onclick="closeopen('plane2')" >Основные летно-технические характеристики</div>
-            <div id="plane2" class="training-dark flex flexcol info-dropdown">
-                <table class="altertable">
-                    <tr>
-                        <td>Пассажировместимость (моноклассная компоновка)</td>
-                        <td>
-                            <ul>
-                                <li><b>Ил-96-300: </b>300 пассажиров</li>
-                                <li><b>Ил-96М: </b>386 пассажиров</li>
-                                <li><b>Ил-96-400: </b>435 пассажиров</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Практическая дальность полета</td>
-                        <td>
-                            <ul>
-                                <li> <b>Ил-96-300: </b>9 000 км</li>
-                                <li> <b>Ил-96М: </b>12 800 км</li>
-                                <li> <b>Ил-96-400: </b>11 000 км</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Максимальный запас топлива</td>
-                        <td><b>Для Ил-96-300, Ил-96М и Ил-96-400</b><br>
-                            150 400 л
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Крейсерская скорость</td>
-                        <td><b>Для Ил-96-300, Ил-96М и Ил-96-400</b><br>
-                            850-900 км/ч
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Высота полета</td>
-                        <td><b>Для Ил-96-300, Ил-96М и Ил-96-400</b><br>
-                            до 12 000 м
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Необходимая длинна ВПП</td>
-                        <td><ul>
-                                <li> <b>Ил-96-300: </b>2 700 м</li>
-                                <li> <b>Ил-96М: </b>3 350 м</li>
-                                <li> <b>Ил-96-400: </b>2 700 м</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Высота аэродрома</td>
-                        <td><b>Для Ил-96-300, Ил-96М и Ил-96-400</b><br>
-                            до 3 000 м
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Диапазон температур эксплуатации</td>
-                        <td><b>Для Ил-96-300, Ил-96М и Ил-96-400</b><br>
-                            -54 °C...+45 °C
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Расход топлива</td>
-                        <td><ul>
-                                <li> <b>Ил-96-300: </b>7 800 кг/ч</li>
-                                <li> <b>Ил-96М: </b>7 800 кг/ч</li>
-                                <li> <b>Ил-96-400: </b>7 500 кг/ч</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Категории посадки</td>
-                        <td><b>Для Ил-96-300, Ил-96М и Ил-96-400</b><br>
-                            IIIA
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Соответствие уровню шума</td>
-                        <td><b>Для Ил-96-300, Ил-96М и Ил-96-400</b><br>
-                            Глава IV ИКАО
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Максимальный взлетный вес</td>
-                        <td><ul>
-                                <li> <b>Ил-96-300: </b>250 т</li>
-                                <li> <b>Ил-96М: </b>270 т</li>
-                                <li> <b>Ил-96-400: </b>270 т</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-                <table class="toolarge">
-                <tbody>
-                    <tr>
-                        <th></th>
-                        <td></td>
-                        <th>Ил-96-300</th>
-                        <th>Ил-96М</th>
-                        <th>Ил-96-400</th>
-                    </tr>
-                    <tr>
-                        <td>Пассажировместимость (моноклассная компоновка)</td>
-                        <td></td>
-                        <td>300 пассажиров</td>
-                        <td>386 пассажиров</td>
-                        <td>435 пассажиров</td>
-                    </tr>
-                    <tr>
-                        <td>Практическая дальность полета</td>
-                        <td></td>
-                        <td>9 000 км</td>
-                        <td>12 800 км</td>
-                        <td>11 000 км</td>
-                    </tr>
-                    <tr>
-                        <td>Максимальный запас топлива</td>
-                        <td></td>
-                        <td colspan="3">150 400 л</td>
-                    </tr>
-                    <tr>
-                        <td>Крейсерская скорость</td>
-                        <td></td>
-                        <td colspan="3">850-900 км/ч</td>
-                    </tr>
-                    <tr>
-                        <td>Высота полета</td>
-                        <td></td>
-                        <td colspan="3">до 12 000 м</td>
-                    </tr>
-                    <tr>
-                        <td>Необходимая длинна ВПП</td>
-                        <td></td>
-                        <td>2 700 м</td>
-                        <td>3 350 м</td>
-                        <td>2 700 м</td>
-                    </tr>
-                    <tr>
-                        <td>Высота аэродрома</td>
-                        <td></td>
-                        <td colspan="3">до 3 000 м</td>
-                    </tr>
-                    <tr>
-                        <td >Диапазон температур эксплуатации</td>
-                        <td></td>
-                        <td colspan="3">-54 &deg;C...+45 &deg;C</td>
-                    </tr>
-                    <tr>
-                        <td>Расход топлива</td>
-                        <td></td>
-                        <td>7 800 кг/ч</td>
-                        <td>7 800 кг/ч</td>
-                        <td>7 500 кг/ч</td>
-                    </tr>
-                    <tr>
-                        <td>Категории посадки</td>
-                        <td></td>
-                        <td colspan="3">III А</td>
-                    </tr>
-                    <tr>
-                        <td>Соответствие уровню шума</td>
-                        <td></td>
-                        <td colspan="3">Глава IV ИКАО</td>
-                    </tr>
-                    <tr>
-                        <td>Максимальный взлетный вес</td>
-                        <td></td>
-                        <td>250 т</td>
-                        <td>270 т</td>
-                        <td>270 т</td>
-                    </tr>
-                </tbody></table>
+            <a id="plane"></a>
+            <div class="basic-block bb-black almost-basic-block">
+                <div class="about-text ">
+                    <h1>О самолете</h1>
 
-                <div class="sponsors">
-                    <div class="flex">
-                        <div class="p300">
-                            Продажа, лизинг,
-                            послепродажное обслуживание:
-                        </div>
-                        <div class="p300">
-                            Изготовитель:
-                        </div>
-                        <div class="p300">
-                            Разработчик:
-                        </div>
-
+                    <div class="flex ">
+                        <p class="p400 p400-right">
+                            Ил-96-300 — первый советский дальнемагистральный широкофюзеляжный
+                            самолёт, рассчитаный на 300—435 пассажиров и дальность полёта 9000 км.
+                            Спроектирован в КБ Ильюшина в конце 1980-х годов. производится серийно
+                            на заводе Воронежского акционерного самолётостроительного общества.
+                        </p>
+                        <img src="../img/il-1.png" class="toolarge" />
                     </div>
 
                     <div class="flex">
-                        <div class="p300">
-                        "Ильюшин Финанс Ко."
-                            (Россия, г.Москва)
+                        <img src="../img/il-2.png" />
+                        <div class="p400 p400-left">
+                            <div class="p400 p400-leftsuper">
+                                <p>Максимальная дальность полёта:</p>
+                                <p>— 9 000 км, при максимальной загрузке;</p>
+                                <p>
+                                    — 13 500 км, при количестве пассажиров 269 человек и с полным
+                                    запасом топлива.
+                                </p>
+                                <p>Крейсерская скорость — 870 км/ч.</p>
+                            </div>
+                            <br />
+                            <!-- Не переделал следующий абзац -->
+                            <p>
+                                В России продажей, поставками в финансовый и операционный лизинг
+                                этих самолётов занимается лизинговая компания Ильюшин Финанс Ко (ОАО
+                                "ИФК"). Сертификат типа самолёта выдан Авиарегистром МАК 29 декабря
+                                1992 года и сертифицирован по нормам НЛГС-3.
+                            </p>
+                        </div>
+                    </div>
+                    <br />
+                </div>
+                <br />
+
+                <div class="aandopen-dark" onclick="closeopen('plane1')">
+                    Модификации семейства самолетов Ил-96
+                </div>
+                <div id="plane1" class="training-dark info-dropdown">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Тип</th>
+                                <th>Описание</th>
+                            </tr>
+                            <tr>
+                                <td>Ил-96-300ПУ/ПУ(М1)</td>
+                                <td>
+                                    Специальный вариант Ил-96-300, разработанный для перевозки
+                                    президента России.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ил-96М</td>
+                                <td>
+                                    Модифицированный Ил-96-300 — удлинён фюзеляж, двигатели PW,
+                                    приборное оборудование «Коллинз». Способен брать на борт до 435
+                                    пассажиров, практическая дальность полёта — 12 800 км.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ил-96-400</td>
+                                <td>
+                                    Получен модификацией Ил-96М, двигатели PW заменены на ПС-90А-1.
+                                    Отличается увеличенной тягой 17 400 кгс и улучшенной авионикой.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ил-96-400Т</td>
+                                <td>
+                                    Является грузовым вариантом Ил-96-400. Лётно-технические
+                                    показатели остались неизменными.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ил-96Т</td>
+                                <td>
+                                    Самолёт предназначен для перевозки грузов большой массы на
+                                    дальние расстояния.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ил-96-500Т</td>
+                                <td>
+                                    В 2019 году разработан эскизный проект самолета Ил-96-500Т с
+                                    увеличенным фюзеляжем для перевозки негабаритных грузов.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="aandopen-dark" onclick="closeopen('plane2')">
+                    Основные летно-технические характеристики
+                </div>
+                <div id="plane2" class="training-dark flex flexcol info-dropdown">
+                    <table class="altertable">
+                        <tr>
+                            <td>Пассажировместимость (моноклассная компоновка)</td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <b>Ил-96-300:</b>
+                                        300 пассажиров
+                                    </li>
+                                    <li>
+                                        <b>Ил-96М:</b>
+                                        386 пассажиров
+                                    </li>
+                                    <li>
+                                        <b>Ил-96-400:</b>
+                                        435 пассажиров
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Практическая дальность полета</td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <b>Ил-96-300:</b>
+                                        9 000 км
+                                    </li>
+                                    <li>
+                                        <b>Ил-96М:</b>
+                                        12 800 км
+                                    </li>
+                                    <li>
+                                        <b>Ил-96-400:</b>
+                                        11 000 км
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Максимальный запас топлива</td>
+                            <td>
+                                <b>Для Ил-96-300, Ил-96М и Ил-96-400</b>
+                                <br />
+                                150 400 л
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Крейсерская скорость</td>
+                            <td>
+                                <b>Для Ил-96-300, Ил-96М и Ил-96-400</b>
+                                <br />
+                                850-900 км/ч
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Высота полета</td>
+                            <td>
+                                <b>Для Ил-96-300, Ил-96М и Ил-96-400</b>
+                                <br />
+                                до 12 000 м
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Необходимая длинна ВПП</td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <b>Ил-96-300:</b>
+                                        2 700 м
+                                    </li>
+                                    <li>
+                                        <b>Ил-96М:</b>
+                                        3 350 м
+                                    </li>
+                                    <li>
+                                        <b>Ил-96-400:</b>
+                                        2 700 м
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Высота аэродрома</td>
+                            <td>
+                                <b>Для Ил-96-300, Ил-96М и Ил-96-400</b>
+                                <br />
+                                до 3 000 м
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Диапазон температур эксплуатации</td>
+                            <td>
+                                <b>Для Ил-96-300, Ил-96М и Ил-96-400</b>
+                                <br />
+                                -54 °C...+45 °C
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Расход топлива</td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <b>Ил-96-300:</b>
+                                        7 800 кг/ч
+                                    </li>
+                                    <li>
+                                        <b>Ил-96М:</b>
+                                        7 800 кг/ч
+                                    </li>
+                                    <li>
+                                        <b>Ил-96-400:</b>
+                                        7 500 кг/ч
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Категории посадки</td>
+                            <td>
+                                <b>Для Ил-96-300, Ил-96М и Ил-96-400</b>
+                                <br />
+                                IIIA
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Соответствие уровню шума</td>
+                            <td>
+                                <b>Для Ил-96-300, Ил-96М и Ил-96-400</b>
+                                <br />
+                                Глава IV ИКАО
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Максимальный взлетный вес</td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <b>Ил-96-300:</b>
+                                        250 т
+                                    </li>
+                                    <li>
+                                        <b>Ил-96М:</b>
+                                        270 т
+                                    </li>
+                                    <li>
+                                        <b>Ил-96-400:</b>
+                                        270 т
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table class="toolarge">
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <td></td>
+                                <th>Ил-96-300</th>
+                                <th>Ил-96М</th>
+                                <th>Ил-96-400</th>
+                            </tr>
+                            <tr>
+                                <td>Пассажировместимость (моноклассная компоновка)</td>
+                                <td></td>
+                                <td>300 пассажиров</td>
+                                <td>386 пассажиров</td>
+                                <td>435 пассажиров</td>
+                            </tr>
+                            <tr>
+                                <td>Практическая дальность полета</td>
+                                <td></td>
+                                <td>9 000 км</td>
+                                <td>12 800 км</td>
+                                <td>11 000 км</td>
+                            </tr>
+                            <tr>
+                                <td>Максимальный запас топлива</td>
+                                <td></td>
+                                <td colspan="3">150 400 л</td>
+                            </tr>
+                            <tr>
+                                <td>Крейсерская скорость</td>
+                                <td></td>
+                                <td colspan="3">850-900 км/ч</td>
+                            </tr>
+                            <tr>
+                                <td>Высота полета</td>
+                                <td></td>
+                                <td colspan="3">до 12 000 м</td>
+                            </tr>
+                            <tr>
+                                <td>Необходимая длинна ВПП</td>
+                                <td></td>
+                                <td>2 700 м</td>
+                                <td>3 350 м</td>
+                                <td>2 700 м</td>
+                            </tr>
+                            <tr>
+                                <td>Высота аэродрома</td>
+                                <td></td>
+                                <td colspan="3">до 3 000 м</td>
+                            </tr>
+                            <tr>
+                                <td>Диапазон температур эксплуатации</td>
+                                <td></td>
+                                <td colspan="3">-54 &deg;C...+45 &deg;C</td>
+                            </tr>
+                            <tr>
+                                <td>Расход топлива</td>
+                                <td></td>
+                                <td>7 800 кг/ч</td>
+                                <td>7 800 кг/ч</td>
+                                <td>7 500 кг/ч</td>
+                            </tr>
+                            <tr>
+                                <td>Категории посадки</td>
+                                <td></td>
+                                <td colspan="3">III А</td>
+                            </tr>
+                            <tr>
+                                <td>Соответствие уровню шума</td>
+                                <td></td>
+                                <td colspan="3">Глава IV ИКАО</td>
+                            </tr>
+                            <tr>
+                                <td>Максимальный взлетный вес</td>
+                                <td></td>
+                                <td>250 т</td>
+                                <td>270 т</td>
+                                <td>270 т</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="sponsors">
+                        <div class="flex">
+                            <div class="p300">
+                                Продажа, лизинг, послепродажное обслуживание:
+                            </div>
+                            <div class="p300">
+                                Изготовитель:
+                            </div>
+                            <div class="p300">
+                                Разработчик:
+                            </div>
                         </div>
 
-                        <div class="p300">
-                            ОАО "ВАСО"
-                            (Россия, г.Воронеж)
-                        </div>
+                        <div class="flex">
+                            <div class="p300">
+                                "Ильюшин Финанс Ко." (Россия, г.Москва)
+                            </div>
 
-                        <div class="p300">
-                            Объединенная авиастроительная корпорация (ОАК)
-                            (Россия, г.Москва)
+                            <div class="p300">
+                                ОАО "ВАСО" (Россия, г.Воронеж)
+                            </div>
+
+                            <div class="p300">
+                                Объединенная авиастроительная корпорация (ОАК) (Россия, г.Москва)
+                            </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="aandopen-dark" onclick="closeopen('plane3')">Компоновки</div>
+                <div id="plane3" class="training-dark info-dropdown">
+                    <!--<div class="about-text nolimit" >-->
+                    <div class="flex flexcol">
+                        <h3>Варианты компоновки пассажирской кабины Ил-96-300</h3>
+                        <div>Одноклассная компоновка на 300 мест с шагом кресел 870мм.</div>
+                        <img src="../img/Il/comp/plane_comp_il-300_1.png" class="layout" />
+                        <div>
+                            Трехклассная компоновка на 253 места. (22 кресла – шаг 1020мм, 40 кресел
+                            – шаг 900мм, 173 кресла - шаг 870мм).
+                        </div>
+                        <img src="../img/Il/comp/plane_comp_il-300_2.png" class="layout" />
+                        <br />
+                        <br />
+                        <h3>Варианты компоновки пассажирской кабины Ил-96-400</h3>
+                        <div>
+                            Двухклассная компоновка на 350 мест. (24 кресла - шаг 787мм, 66 кресел -
+                            шаг 787мм, 260 кресел - шаг 812,8мм).
+                        </div>
+                        <img src="../img/Il/comp/plane_comp_il-400_1.png" class="layout" />
+                        <div>Одноклассная компоновка на 370 мест. Шаг кресел – 812,8мм.</div>
+                        <img src="../img/Il/comp/plane_comp_il-400_2.png" class="layout" />
+                        <div>Одноклассная компоновка на 400 мест. Шаг кресел – 762мм.</div>
+                        <img src="../img/Il/comp/plane_comp_il-400_3.png" class="layout" />
                     </div>
                 </div>
             </div>
 
-
-            <div class="aandopen-dark"  onclick="closeopen('plane3')" >Компоновки </div>
-            <div id="plane3" class="training-dark info-dropdown">
-                        <!--<div class="about-text nolimit" >-->
-                <div class="flex flexcol" >
-                    <h3>Варианты компоновки пассажирской кабины Ил-96-300</h3>
-                    <div>Одноклассная компоновка на 300 мест с шагом кресел 870мм.</div>
-                    <img src="../img/Il/comp/plane_comp_il-300_1.png" class="layout">
-                    <div>Трехклассная компоновка на 253 места. (22 кресла – шаг 1020мм, 40 кресел – шаг 900мм, 173 кресла - шаг 870мм).</div>
-                    <img src="../img/Il/comp/plane_comp_il-300_2.png" class="layout"> <br><br>
-                    <h3>Варианты компоновки пассажирской кабины Ил-96-400</h3>
-                    <div>Двухклассная компоновка на 350 мест. (24 кресла - шаг 787мм, 66 кресел - шаг 787мм, 260 кресел - шаг 812,8мм).</div>
-                    <img src="../img/Il/comp/plane_comp_il-400_1.png" class="layout">
-                    <div>Одноклассная компоновка на 370 мест. Шаг кресел – 812,8мм.</div>
-                    <img src="../img/Il/comp/plane_comp_il-400_2.png" class="layout">
-                    <div>Одноклассная компоновка на 400 мест. Шаг кресел – 762мм.</div>
-                    <img src="../img/Il/comp/plane_comp_il-400_3.png" class="layout">
+            <a id="contact"></a>
+            <div class="basic-block bb-black">
+                <h1>Контакты</h1>
+                <br />
+                <br />
+                <br />
+                <iframe
+                    class="contact-form"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSf3AuLOQ_z7SNJZGVl41nVOVgWjPKrfB2S2feWDQr0pi1oMow/viewform?embedded=true"
+                    width="500"
+                    height="820"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0"
+                >
+                    Загрузка...
+                </iframe>
+                <div class="separator sep-hor"></div>
+                <div class="contact-map">
+                    <p>Адрес: проходная ПАО "Туполев"</p>
+                    <p>Тел./факс: +7 (495) 710-99-60 Доб. 335</p>
+                    <br />
+                    <iframe
+                        class="contact-map"
+                        src="https://www.google.com/maps/d/embed?mid=1uoGaGfEo4HFqKLrKFYYDPGwGcgE"
+                        width="500"
+                        height="480"
+                    ></iframe>
                 </div>
             </div>
-        </div>
-
-
-        <a id="contact"></a>
-        <div class="basic-block bb-black">
-            <h1>Контакты</h1>
-            <br> <br> <br>
-            <iframe class="contact-form" src="https://docs.google.com/forms/d/e/1FAIpQLSf3AuLOQ_z7SNJZGVl41nVOVgWjPKrfB2S2feWDQr0pi1oMow/viewform?embedded=true" width="500" height="820" frameborder="0" marginheight="0" marginwidth="0">Загрузка...</iframe>
-            <div class="separator sep-hor"></div>
-            <div class="contact-map">
-                <p>Адрес: проходная ПАО "Туполев"</p>
-                <p>Тел./факс: +7 (495) 710-99-60 Доб. 335</p>
-                <br>
-                <iframe class="contact-map" src="https://www.google.com/maps/d/embed?mid=1uoGaGfEo4HFqKLrKFYYDPGwGcgE" width="500" height="480"></iframe>
+        </main>
+        <footer>
+            <p class="footer-text copyright">© ООО "ИФК Тренинг" 2020</p>
+            <div class="footer-contact">
+                <p class="footer-text">Рублево-Успенское шоссе д.6</p>
+                <p class="footer-text">+7 (495) 710-99-60 Доб. 335</p>
+                <p class="footer-text">ifctra@gmail.com</p>
             </div>
-
-        </div>
-	</main>
-	<footer>
-		<p class="footer-text copyright">© ООО "ИФК Тренинг" 2020</p>
-		<div class="footer-contact">
-			<p class="footer-text">Рублево-Успенское шоссе д.6</p>
-			<p class="footer-text">+7 (495) 710-99-60 Доб. 335</p>
-			<p class="footer-text">ifctra@gmail.com</p>
-		</div>
-	</footer>
-	<script type="text/javascript" src="../vendor/slick/slick.min.js"></script>
-	<script type="text/javascript">
-		$('.slider').slick({
-			dots: true,
-			nextArrow: '<div class="slider-arrow arrow-next"><div><i class="fa fa-angle-right"></i></div></div>',
-  			prevArrow: '<div class="slider-arrow arrow-prev"><div><i class="fa fa-angle-left"></i></div></div>',
-		});
-
-	</script>
-</body>
-<script src="../js/closeopen.js"></script>
-<script src="../js/menu.js"></script>
-<script src="../js/mobile-menu.js"></script>
-<script type="text/javascript">
-		//code for proper 100vh
-		let vh = window.innerHeight * 0.01;
-		document.documentElement.style.setProperty('--vh', `${vh}px`);
-		window.addEventListener('resize', () => {
-		  let vh = window.innerHeight * 0.01;
-		  document.documentElement.style.setProperty('--vh', `${vh}px`);
-		});
-</script>
-
+        </footer>
+        <script type="text/javascript" src="../vendor/slick/slick.min.js"></script>
+        <script type="text/javascript">
+            $('.slider').slick({
+                dots: true,
+                nextArrow:
+                    '<div class="slider-arrow arrow-next"><div><i class="fa fa-angle-right"></i></div></div>',
+                prevArrow:
+                    '<div class="slider-arrow arrow-prev"><div><i class="fa fa-angle-left"></i></div></div>',
+            });
+        </script>
+    </body>
+    <script src="../js/closeopen.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/mobile-menu.js"></script>
+    <script type="text/javascript">
+        //code for proper 100vh
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+        window.addEventListener('resize', () => {
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        });
+    </script>
 </html>
