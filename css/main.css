@@ -285,7 +285,7 @@ body ul li {
   font-weight: 300;
 }
 .about-list > li::before {
-  content: "●";
+  content: '●';
   color: #5472e3;
   display: inline-block;
   width: 1em;
@@ -527,7 +527,7 @@ ul.hamburger {
 ul.hamburger li {
   height: 5px;
   background: #000;
-  content: "";
+  content: '';
   position: relative;
   transition: 0.5s ease-out;
 }

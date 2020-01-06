@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prettier": "prettier --config .prettierrc.json --write /**/*.ts  '{static,js,less}/**/*.{js,html,less}'"
+    "prettier": "prettier --config .prettierrc.json --write '{static,js,less}/**/*.{js,html,less}'"
   },
   "repository": {
     "type": "git",
