@@ -1,0 +1,195 @@
+// Только размещение основных элементов разметки
+
+.basic-block {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding: 90px 20px 30px 20px;
+
+    & > div {
+        position: relative;
+        z-index: 2;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 120px 5px;
+    }
+}
+
+.almost-basic-block {
+    //background-color: @lighterbg;
+    // padding: 100px 0 0 0;
+    padding: 60px 0 0 0;
+}
+
+.bb {
+    &-white {
+        position: relative;
+        background: @lightbg;
+
+        .triangles-left {
+            transform: scaleY(-1);
+        }
+
+        .triangles-right {
+            transform: scaleX(-1);
+        }
+
+        .p400 {
+            color: @darkbg;
+            max-width: 400px;
+            @media (max-width: 1100px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &-black {
+        position: relative;
+        background: @darkbg;
+
+        .triangles-left {
+            transform: scaleY(-1);
+            filter: invert(100%);
+        }
+
+        .triangles-right {
+            transform: scaleX(-1);
+            filter: invert(100%);
+        }
+
+        .p400 {
+            color: @lightbg;
+            max-width: 400px;
+            margin-top: 20px;
+            @media (max-width: 940px) {
+                font-size: 14px;
+            }
+        }
+
+        h1 {
+            color: @lightbg;
+        }
+        //width:100vw;
+        @media (min-width: 1200px) {
+            padding-bottom: 10px;
+        }
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (max-width: 940px) {
+        padding: 40px 0;
+    }
+
+    @media (max-width: 686px) {
+        flex-direction: column;
+    }
+
+    p {
+        //flex: 2 200px;
+        padding: 20px 20px;
+    }
+
+    img {
+        width: 450px;
+        height: 300px;
+
+        @media (max-width: 940px) {
+            width: 338px; //width(height)= original size/1.33
+            height: 225px;
+        }
+
+        @media (max-width: 686px) {
+            width: 450px;
+            height: 300px;
+        }
+
+        @media (max-width: 490px) {
+            width: 100%;
+            height: auto;
+        }
+
+        &.layout {
+            width: auto;
+            height: auto;
+            @media (max-width: 940px) {
+                width: 100%;
+            }
+        }
+    }
+
+    div {
+        p {
+            padding: 4px 20px;
+        }
+    }
+}
+
+.flexcol {
+    flex-direction: column;
+    align-items: center;
+}
+
+.pictures {
+    margin-top: -145px;
+    @media (max-width: 1240px) {
+        margin-top: -95px;
+    }
+    img {
+        width: 300px;
+        height: 250px;
+        border-radius: 20px;
+        z-index: 2;
+        position: relative;
+        @media (max-width: 1240px) {
+            width: 250px;
+            height: 150px;
+        }
+    }
+
+    .first {
+        @media (max-width: 940px) {
+            width: 250px;
+            height: 150px;
+            margin: 0 20px;
+        }
+        @media (max-width: 645px) {
+            display: none;
+        }
+    }
+
+    .second {
+        margin: -145px -40px -25px -40px;
+        z-index: 3;
+        width: 450px;
+        height: 300px;
+        @media (max-width: 1240px) {
+            width: 350px;
+            height: 200px;
+        }
+
+        @media (max-width: 940px) {
+            width: 250px;
+            height: 150px;
+            margin: 0 20px;
+        }
+
+        @media (max-width: 645px) {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            border-radius: 0;
+        }
+    }
+
+    .third {
+        @media (max-width: 940px) {
+            display: none;
+        }
+    }
+}

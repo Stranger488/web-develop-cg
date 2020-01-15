@@ -21,13 +21,13 @@ function toggleHamburger() {
 $(document).ready(function() {
 	//toggle menu
 	$('.hamburger-container').click(function() {
-		$('#menu').slideToggle();
+		$('.menu-list').slideToggle();
 	});
 
 	//to fix issue that toggle adds style(hides) to nav
 	$(window).resize(function() {
 		if (window.innerWidth > 1024) {
-			$('#menu').removeAttr('style');
+			$('.menu-list').removeAttr('style');
 		}
 	});
 
@@ -42,6 +42,6 @@ $(window).resize(function() {
 	var middleBar = $('.hamburger li:nth-child(2)');
 	if (middleBar.hasClass('rot-45deg')) {
 		toggleHamburger();
-		$('#menu').slideToggle();
+		$('.menu-list').slideToggle();
 	}
 });

@@ -1,0 +1,46 @@
+// Различный независимый функционал
+
+.hidden {
+    opacity: 0;
+}
+
+.rot45deg {
+    transform: rotate(45deg);
+    top: 10px !important;
+}
+
+.rot-45deg {
+    transform: rotate(-45deg);
+}
+
+.p400 {
+    max-width: 400px;
+
+    &-left {
+        text-align: left;
+
+        @media (max-width: 686px) {
+            text-align: center;
+        }
+    }
+
+    &-leftsuper {
+        text-align: left;
+    }
+
+    &-right {
+        text-align: right;
+
+        @media (max-width: 686px) {
+            text-align: center;
+        }
+    }
+}
+
+.p750 {
+    max-width: 750px;
+}
+
+.upReg {
+    text-transform: uppercase;
+}

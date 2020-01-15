@@ -1,0 +1,56 @@
+// Стилизация всего, что связано с футером
+
+.footer {
+    &-contact {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        text-align: right;
+
+        @media (max-width: 480px) {
+            width: 100%;
+            top: 80px;
+            left: 50%;
+            text-align: center;
+            transform: translateX(-50%);
+        }
+    }
+    &-text {
+        color: @lighterbg;
+
+        @media (max-width: 740px) {
+            font-size: 14px;
+        }
+    }
+}
+
+footer {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 85px;
+    background-color: @evendarkerbg;
+
+    @media (max-width: 480px) {
+        height: 180px;
+    }
+}
+
+.copyright {
+    position: absolute;
+    left: 50%;
+    top: 35px;
+    transform: translateX(-50%);
+    text-align: center;
+
+    @media (max-width: 740px) {
+        left: 20px;
+        transform: translateX(0);
+    }
+
+    @media (max-width: 480px) {
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
