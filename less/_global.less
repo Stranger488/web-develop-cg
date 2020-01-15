@@ -1,0 +1,52 @@
+:root {
+    --highlight: #5472e3;
+    --lightbg: #f5f5f5;
+    --lighterbg: white;
+    --darkbg: #343a40;
+    --evendarkerbg: #23292f;
+    --TextOnWhite: #777777;
+    --greySep: rgb(128, 128, 128);
+}
+
+@highlight: #5472e3;
+@lightbg: #f5f5f5;
+@lighterbg: white;
+@darkbg: #343a40;
+@evendarkerbg: #23292f;
+@TextOnWhite: #777777;
+@greySep: rgb(128, 128, 128);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: relative;
+    z-index: 5;
+    box-sizing: border-box;
+    width: 100%;
+    //height: 100vh;
+    //height: calc(~"var(--vh, 1vh) * 100");
+    background-color: #434344;
+    overflow: hidden;
+}
+
+p {
+    font-weight: 300;
+}
+
+main {
+    position: relative;
+    text-align: center;
+    z-index: 4;
+}
+
+body ul li {
+    list-style-type: none;
+}

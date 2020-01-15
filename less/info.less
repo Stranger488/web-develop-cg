@@ -1,0 +1,305 @@
+// Размещение и стилизация блоков информации
+
+.about {
+    &-text {
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        margin-bottom: 25px;
+
+        h1 {
+            @media (max-width: 405px) {
+                font-size: 24px;
+            }
+        }
+
+        &-center {
+            width: 750px;
+        }
+    }
+
+    &-list {
+        display: inline-block;
+        text-align: left;
+        list-style: none;
+        padding-left: 20px;
+
+        & > li {
+            font-weight: 300;
+
+            &::before {
+                content: '●';
+                color: @highlight;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+        }
+    }
+}
+
+.contact {
+    &-form {
+        display: inline-block;
+        position: relative;
+        z-index: 10;
+        vertical-align: top;
+        // background-color: @lightbg;
+        // height: 650px;
+
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+
+        @media (max-width: 350px) {
+            height: 900px;
+        }
+    }
+
+    &-map {
+        display: inline-block;
+        position: relative;
+        z-index: 10;
+        vertical-align: top;
+
+        @media (max-width: 600px) {
+            width: 98%;
+        }
+
+        & > p {
+            color: white;
+        }
+    }
+}
+
+.aandopen(@color) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    user-select: none;
+    cursor: pointer;
+    height: 50px;
+    padding: 5px 0;
+    width: 100%;
+    background-color: @color;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    font-size: 30px;
+    color: #fff- @color;
+
+    @media (max-width: 940px) {
+        font-size: 26px;
+        height: 42px;
+    }
+
+    @media (max-width: 680px) {
+        font-size: 16px;
+        height: 32px;
+    }
+}
+
+.aandopen {
+    &-light {
+        .aandopen(darken(@lightbg, 5%));
+    }
+    &-dark {
+        .aandopen(darken(@darkbg, 5%));
+    }
+}
+
+.info-dropdown {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+    &_active {
+        padding: 20px 0 0 0;
+        max-height: 3000px;
+    }
+}
+
+.training(@MainColor,@SecondaryColor) {
+    text-align: center;
+    background-color: @MainColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5) inset;
+
+    & > div {
+        width: 880px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        text-align: center;
+
+        @media (max-width: 940px) {
+            font-size: 14px;
+            width: 90%;
+            //	padding:0 10px;
+        }
+
+        & when (@MainColor = @darkbg) {
+            .text-light;
+        }
+        & when (@MainColor = @lightbg) {
+            .text-dark;
+        }
+    }
+
+    table {
+        width: 880px;
+
+        @media (max-width: 940px) {
+            font-size: 14px;
+            width: 90%;
+            margin: 0 30px;
+        }
+
+        @media (max-width: 760px) {
+            font-size: 12px;
+            width: 90%;
+            margin: 0 30px;
+        }
+
+        .altertable {
+            @media (min-width: 686px) {
+                display: none;
+            }
+        }
+
+        background-color: @SecondaryColor;
+        border-radius: 10px;
+
+        & when (@MainColor = @darkbg) {
+            color: black;
+            tr:nth-child(2n) {
+                .text-light;
+            }
+        }
+
+        & when (@MainColor = @lightbg) {
+            .text-light;
+        }
+
+        border-spacing: 0;
+        text-align: center;
+        font-weight: 300;
+        overflow: hidden;
+        margin: 10px 0;
+
+        th {
+            padding: 10px 5px;
+            text-align: center;
+        }
+
+        td {
+            padding: 10px 10px;
+        }
+
+        td:nth-child(2) {
+            text-align: left;
+        }
+
+        td:nth-child(1) {
+            text-align: left;
+        }
+
+        td:last-child {
+            min-width: 100px;
+        }
+
+        tr:nth-child(2n) {
+            background: @TextOnWhite;
+        }
+
+        .liketh {
+            background: @TextOnWhite;
+        }
+    }
+
+    .p300 {
+        width: 220px;
+        padding: 10px;
+    }
+
+    .nolimit {
+        width: auto;
+        text-align: center;
+
+        div {
+            width: auto;
+        }
+    }
+}
+
+.training {
+    &-light {
+        .training(@lightbg, @darkbg);
+    }
+
+    &-dark {
+        .training(@darkbg, @lightbg);
+    }
+
+    &-info {
+        padding: 25px 10px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        p {
+            padding: 10px 10px;
+        }
+
+        @media (max-width: 940px) {
+        }
+
+        &-row {
+            flex-direction: row;
+        }
+    }
+}
+
+.training-info-element-wrap {
+    padding: 20px;
+
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    i.fa {
+        font-size: 58px;
+        color: @darkbg;
+
+        @media screen and (max-width: 700px) {
+            font-size: 48px;
+        }
+    }
+
+    h4 {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+}
+
+.flex.training-dark.info-dropdown {
+    @media (max-width: 940px) {
+        padding: 0;
+    }
+}
+
+.sponsors .flex {
+    padding: 0 10px;
+    margin: 0;
+    justify-content: space-around;
+
+    div {
+        text-align: center;
+
+        @media (max-width: 940px) {
+            width: 30%;
+        }
+    }
+}

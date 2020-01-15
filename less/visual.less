@@ -1,0 +1,177 @@
+// Независимая визуальная стилизация и декоративные элементы
+
+.triangles {
+    z-index: 1 !important;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100'><path d='M0 100 V 90 L 10 100 Z' fill='%23212529' fill-opacity='0.03'></path><path d='M0 90 V 80 L 10 90 Z' fill='%23212529' fill-opacity='0.045'></path><path d='M10 100 V 90 L 20 100 Z' fill='%23212529' fill-opacity='0.025'></path><path d='M0 90 H 10 V 100 Z' fill='%23212529' fill-opacity='0.06'></path></svg>");
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 100% auto;
+    box-sizing: border-box;
+}
+
+.separator {
+    display: block;
+    height: 1px;
+    margin: 50px 100px 50px 100px;
+    left: 50%;
+    transform: translateX(-100%);
+    width: 200px;
+    background-color: @greySep;
+}
+
+.sep-hor {
+    @media (min-width: 1200px) {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        transform: none;
+        top: 190px;
+        margin: 0 30px;
+        width: 1px;
+        height: 200px;
+    }
+
+    &-light {
+        display: inline-block;
+        height: 2px;
+        margin: 10px 100px 10px 100px;
+        width: 200px;
+        background-color: @greySep;
+        @media (min-width: 940px) {
+            display: inline-block;
+            left: 0;
+            transform: none;
+            margin: 0 30px;
+            width: 1px;
+            height: 200px;
+        }
+    }
+
+    &-wrap {
+        flex-basis: 485px;
+
+        @media (min-width: 940px) {
+            flex-basis: 62px;
+        }
+    }
+}
+
+.shadow-panel {
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.header-gradient {
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    z-index: 2;
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55) 30%, rgba(0, 0, 0, 0));
+}
+
+.hoverable:hover {
+    color: @highlight !important;
+}
+
+.down-arrow {
+    position: absolute;
+    z-index: 4;
+    font-size: 60px;
+    bottom: 0;
+    opacity: 0.5;
+    left: 50%;
+    transform: translateX(-50%);
+
+    & > a {
+        color: white;
+    }
+
+    &:hover {
+        opacity: 0.75;
+        text-shadow: 0 0 15px rgba(255, 255, 255, 1);
+    }
+
+    @media screen and (max-width: 700px) {
+        display: none;
+    }
+}
+
+.text-dark {
+    color: @TextOnWhite;
+}
+
+.text-light {
+    color: white;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: all ease-in-out 0.25s;
+}
+
+.greyBg {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.whiteBg {
+    transition: background-color 0.2s ease-out;
+    @media screen and (max-width: 1099px) {
+        background-color: #fff;
+    }
+}
+
+//-------- UNUSED ---------//
+
+.trLink {
+    z-index: 5;
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    //transform: translateY(-50%);
+    text-align: center;
+    & > h1 {
+        & > a {
+            color: white;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 48px;
+        }
+    }
+    & > p {
+        font-size: 20px;
+        color: white;
+        opacity: 0.7;
+        font-weight: 300;
+    }
+}
+
+.openList {
+    margin: 20px 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
