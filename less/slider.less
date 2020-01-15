@@ -71,9 +71,9 @@
     z-index: 3;
     text-align: center;
 
-    @media screen and (max-width: 850px) {
-        bottom: 45px;
-    }
+    //@media screen and (max-width: 850px) {
+    //    bottom: 45px;
+    //}
     @media screen and (max-width: 700px) {
         bottom: 0;
     }
@@ -82,7 +82,7 @@
     }
 
     & > h1 {
-        font-size: 40px;
+        //font-size: 40px;
         color: white;
     }
 
@@ -170,8 +170,10 @@
 }
 
 // Для главной страницы
-.dots-upper .slick-dots {
-    bottom: 55px;
+@media screen and (min-width: 700px) {
+    .dots-upper .slick-dots {
+        bottom: 55px;
+    }
 }
 
 .slider-arrow {
@@ -254,24 +256,19 @@
         position: absolute;
         z-index: 5;
         color: white;
-        bottom: 60px;
+        bottom: 5px;
         left: 50%;
         transform: translate(-50%, 0);
         text-shadow: 0 0 15px black;
+        font-size: 40px;
 
         @media screen and (max-width: 700px) {
             font-size: 28px;
+            bottom: 55px;
         }
 
         @media screen and (max-width: 420px) {
             font-size: 22px;
         }
-    }
-}
-
-#my-training-slider-id {
-    bottom: 5px;
-    @media screen and (max-width: 700px) {
-        bottom: 55px;
     }
 }

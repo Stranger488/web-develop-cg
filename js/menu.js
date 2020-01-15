@@ -1,12 +1,18 @@
-$(document).ready(function() {
+const initialHandlers = () => {
 	if (window.innerWidth > 1100) {
 		$('.dropdown').hover(
 			function() {
-				$('#overlay').css('background-color', 'rgba(0,0,0, 0.5)');
+				$('#overlay').css({
+					'z-index': '1',
+					'background-color': 'rgba(0,0,0, 0.5)',
+				});
 			},
 			function() {
 				// on mouseout, reset the background colour
-				$('#overlay').css('background-color', 'rgba(0,0,0,0)');
+				$('#overlay').css({
+					'z-index': '0',
+					'background-color': 'rgba(0,0,0,0)',
+				});
 			},
 		);
 	}
@@ -20,32 +26,20 @@ $(document).ready(function() {
 		$('.whiteBg').css('backgroundColor', 'rgba(255,255,255,1)');
 	}
 
-	if (window.innerWidth < 1100) {
-		$('.menu-list .whiteBg').removeAttr('style');
-		$('.menu-list .header-text').removeAttr('style');
-	}
-});
-
-$(window).resize(function() {
 	if (window.innerWidth < 1100 && $(window).scrollTop() > 50) {
 		$('.whiteBg').css('backgroundColor', 'rgba(255,255,255,1)');
 	} else {
 		$('.whiteBg').css('backgroundColor', 'rgba(0,0,0,0)');
 	}
 
-	if (window.innerWidth > 500 && $(window).scrollTop() < 50) {
-		$('.menu-list').css('background-color', 'rgba(0,0,0,0)');
-		$('.header-text').css('color', '#fff');
-	} else {
-		$('.header-text').css('color', '#000');
-		$('.whiteBg').css('backgroundColor', 'rgba(255,255,255,1)');
-	}
-
 	if (window.innerWidth < 1100) {
 		$('.menu-list .whiteBg').removeAttr('style');
 		$('.menu-list .header-text').removeAttr('style');
 	}
-});
+};
+
+$(document).ready(initialHandlers);
+$(window).resize(initialHandlers);
 
 const scrollHeaderHandler = () => {
 	if ($(window).scrollTop() > 50) {

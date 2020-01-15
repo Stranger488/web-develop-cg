@@ -372,7 +372,7 @@ body ul li {
   display: inline-block;
 }
 .dropdown-content {
-  display: none;
+  display: block;
   position: relative;
   min-width: 134px;
   z-index: 1;
@@ -403,8 +403,13 @@ body ul li {
   font-size: 14px;
 }
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
+@media screen and (min-width: 1099px) {
+  .dropdown-content {
+    display: none;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 }
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
@@ -603,11 +608,6 @@ footer {
   z-index: 3;
   text-align: center;
 }
-@media screen and (max-width: 850px) {
-  .slide-content {
-    bottom: 45px;
-  }
-}
 @media screen and (max-width: 700px) {
   .slide-content {
     bottom: 0;
@@ -619,7 +619,6 @@ footer {
   }
 }
 .slide-content > h1 {
-  font-size: 40px;
   color: white;
 }
 .slide-content > p {
@@ -681,8 +680,10 @@ footer {
 .slick-dots li.slick-active button {
   background-color: rgba(255, 255, 255, 0.75) !important;
 }
-.dots-upper .slick-dots {
-  bottom: 55px;
+@media screen and (min-width: 700px) {
+  .dots-upper .slick-dots {
+    bottom: 55px;
+  }
 }
 .slider-arrow {
   position: absolute;
@@ -750,27 +751,21 @@ footer {
   position: absolute;
   z-index: 5;
   color: white;
-  bottom: 60px;
+  bottom: 5px;
   left: 50%;
   transform: translate(-50%, 0);
   text-shadow: 0 0 15px black;
+  font-size: 40px;
 }
 @media screen and (max-width: 700px) {
   .training-slider-header {
     font-size: 28px;
+    bottom: 55px;
   }
 }
 @media screen and (max-width: 420px) {
   .training-slider-header {
     font-size: 22px;
-  }
-}
-#my-training-slider-id {
-  bottom: 5px;
-}
-@media screen and (max-width: 700px) {
-  #my-training-slider-id {
-    bottom: 55px;
   }
 }
 .triangles {

@@ -140,7 +140,7 @@
 
     &-content {
         //background-color: white;
-        display: none;
+        display: block;
         position: relative;
         min-width: 134px;
         z-index: 1;
@@ -180,8 +180,14 @@
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
+@media screen and (min-width: 1099px) {
+    .dropdown-content {
+        display: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
