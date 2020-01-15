@@ -1085,11 +1085,11 @@ ul.hamburger li:nth-child(3) {
 .slick-dots li.slick-active button {
   background-color: rgba(255, 255, 255, 0.75) !important;
 }
-.slick-dots.my-slick-dots {
+.my-slider .slick-dots {
   bottom: 5px;
 }
 @media screen and (max-width: 700px) {
-  .slick-dots.my-slick-dots {
+  .my-slider .slick-dots {
     bottom: -10px;
   }
 }
@@ -1167,11 +1167,11 @@ ul.hamburger li:nth-child(3) {
   transform: translate(-50%, 0);
   text-shadow: 0 0 15px black;
 }
-#my-training-slider-id {
+.training-slider-header.my-training-slider-header {
   bottom: 5px;
 }
 @media screen and (max-width: 700px) {
-  #my-training-slider-id {
+  .training-slider-header.my-training-slider-header {
     bottom: 55px;
   }
 }
@@ -1303,4 +1303,4 @@ ul.hamburger li:nth-child(3) {
     transition: background-color 0.2s ease-out;
   }
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=./main.css.map */

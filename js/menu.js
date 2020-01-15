@@ -6,10 +6,12 @@ $(document).ready(function() {
 	if (window.innerWidth > 1100) {
 		$('.dropdown').hover(
 			function() {
+				$('#overlay').css('z-index', '1');
 				$('#overlay').css('background-color', 'rgba(0,0,0, 0.5)');
 			},
 			function() {
 				// on mouseout, reset the background colour
+				$('#overlay').css('z-index', '0');
 				$('#overlay').css('background-color', 'rgba(0,0,0,0)');
 			},
 		);
