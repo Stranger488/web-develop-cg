@@ -149,6 +149,8 @@
         padding: 0 15px 0;
         text-transform: capitalize;
 
+        background-image: none;
+
         /* Links inside the dropdown */
         a {
             color: black;
@@ -182,7 +184,7 @@
 }
 
 /* Show the dropdown menu on hover */
-@media screen and (min-width: 1099px) {
+@media screen and (min-width: 1100px) {
     .dropdown-content {
         display: none;
     }
@@ -263,6 +265,7 @@
     }
 }
 
+
 @media screen and (min-width: 1100px) {
     .dropdown-content {
         position: absolute;
@@ -270,10 +273,6 @@
         top: 15px;
         margin-top: 25px;
         display: none;
-
-        &-background {
-            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55) 30%);
-        }
     }
 
     .hamburger-container {
