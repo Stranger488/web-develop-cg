@@ -17,14 +17,16 @@ const initialHandlers = () => {
 	if (window.innerWidth < 1100) {
 		$('.menu-list .whiteBg').removeAttr('style');
 		$('.menu-list .header-text').removeAttr('style');
-
 	}
 
 	if (window.innerWidth >= 1100) {
 		if ($(window).scrollTop() > 50) {
 			$('.dropdown-content-background').css('background-image', 'none');
 		} else {
-			$('.dropdown-content-background').css('background-image', 'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55) 30%)');
+			$('.dropdown-content-background').css(
+				'background-image',
+				'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55) 30%)',
+			);
 		}
 	} else {
 		$('.dropdown-content-background').css('background-image', 'none');
@@ -39,7 +41,10 @@ const scrollHeaderHandler = () => {
 		if ($(window).scrollTop() > 50) {
 			$('.dropdown-content-background').css('background-image', 'none');
 		} else {
-			$('.dropdown-content-background').css('background-image', 'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55) 30%)');
+			$('.dropdown-content-background').css(
+				'background-image',
+				'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55) 30%)',
+			);
 		}
 	} else {
 		$('.dropdown-content-background').css('background-image', 'none');
