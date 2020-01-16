@@ -469,6 +469,8 @@ body ul li {
     top: 15px;
     margin-top: 25px;
     display: none;
+  }
+  .dropdown-content-background {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55) 30%);
   }
   .hamburger-container {
