@@ -1,3 +1,5 @@
+// main: main.less
+
 // Размещение и стилизация блоков информации
 
 .about {
@@ -38,37 +40,40 @@
     }
 }
 
-.contact {
-    &-form {
+.contact-info-row {
+    margin-top: 20px;
+}
+
+.contact-element-wrap {
+    padding: 0 25px;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+
+    @media (min-width: 601px) {
         display: inline-block;
-        position: relative;
-        z-index: 10;
         vertical-align: top;
-        // background-color: @lightbg;
-        // height: 650px;
-
-        @media (max-width: 600px) {
-            width: 100%;
-        }
-
-        @media (max-width: 350px) {
-            height: 900px;
-        }
+        margin: 0 15px;
     }
 
-    &-map {
-        display: inline-block;
-        position: relative;
-        z-index: 10;
-        vertical-align: top;
+    p {
+        color: #fff;
+        padding-top: 10px;
+    }
+}
 
-        @media (max-width: 600px) {
-            width: 98%;
-        }
+@media (max-width: 600px) {
+    .contact-form {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}
 
-        & > p {
-            color: white;
-        }
+.contact-map {
+    margin-bottom: 30px;
+
+    @media (max-width: 600px) {
+        width: 98%;
     }
 }
 
