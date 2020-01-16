@@ -1,22 +1,4 @@
 const initialHandlers = () => {
-	if (window.innerWidth > 1100) {
-		$('.dropdown').hover(
-			function() {
-				$('#overlay').css({
-					'z-index': '1',
-					'background-color': 'rgba(0,0,0, 0.5)',
-				});
-			},
-			function() {
-				// on mouseout, reset the background colour
-				$('#overlay').css({
-					'z-index': '0',
-					'background-color': 'rgba(0,0,0,0)',
-				});
-			},
-		);
-	}
-
 	if (window.innerWidth > 500) {
 		$('.menu-list').css('background-color', 'rgba(0,0,0,0)');
 		$('.header-text').css('color', '#fff');
