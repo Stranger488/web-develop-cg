@@ -1235,6 +1235,7 @@ footer {
 }
 .training-info p {
   padding: 10px 10px;
+  margin-top: 10px;
 }
 .training-info-row {
   flex-direction: row;
@@ -1245,6 +1246,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  text-align: left;
 }
 .training-info-element-wrap i.fa {
   font-size: 58px;
@@ -1256,8 +1258,8 @@ footer {
   }
 }
 .training-info-element-wrap h4 {
-  margin-top: 10px;
-  font-size: 18px;
+  margin-top: 25px;
+  font-size: 22px;
 }
 @media (max-width: 940px) {
   .flex.training-dark.info-dropdown {

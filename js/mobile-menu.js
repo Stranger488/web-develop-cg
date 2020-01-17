@@ -7,6 +7,7 @@ function toggleHamburger() {
 		middleBar.removeClass('rot-45deg');
 		bottomBar.removeClass('hidden');
 
+		$('#overlay').css('z-index', '0');
 		$('#overlay').css('background-color', 'rgba(0,0,0,0)');
 		$('.slick-dots').css('z-index', '3');
 	} else {
@@ -14,6 +15,7 @@ function toggleHamburger() {
 		topBar.addClass('rot45deg');
 		middleBar.addClass('rot-45deg');
 
+		$('#overlay').css('z-index', '1');
 		$('#overlay').css('background-color', 'rgba(0,0,0,0.5)');
 		$('.slick-dots').css('z-index', '0');
 	}
