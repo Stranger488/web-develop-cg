@@ -26,6 +26,22 @@ $(document).ready(function() {
 		$('.menu-list').slideToggle();
 	});
 
+	$('.jsDropdownLabel').click(function() {
+		let list = $(this).siblings('.jsDropdownList');
+		let icon = $(this).siblings('.dropdown-submenu-icon-mobile');
+		if (icon.length === 0) {
+			icon = $(this).children('.dropdown-submenu-icon-mobile');
+		}
+
+		if (list.hasClass('dropdown-content-open')) {
+			list.removeClass('dropdown-content-open');
+			icon.removeClass('dropdown-submenu-icon-mobile-open');
+		} else {
+			list.addClass('dropdown-content-open');
+			icon.addClass('dropdown-submenu-icon-mobile-open');
+		}
+	});
+
 	//to fix issue that toggle adds style(hides) to nav
 	$(window).resize(function() {
 		if (window.innerWidth > 1024) {

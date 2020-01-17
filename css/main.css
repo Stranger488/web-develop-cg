@@ -371,44 +371,140 @@ body ul li {
   position: relative;
   display: inline-block;
 }
+.dropdown-header {
+  min-width: 120px;
+}
+@media screen and (min-width: 1100px) {
+  .dropdown-header {
+    transform: translateX(-50%);
+    left: calc(50%);
+    top: 15px;
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .dropdown-header {
+    margin: -8px 0 0 0;
+  }
+}
 .dropdown-content {
-  display: block;
+  display: none;
   position: relative;
-  min-width: 134px;
   z-index: 1;
-  padding: 0 15px 0;
+  padding: 8px 0;
   text-transform: capitalize;
   background-image: none;
-  /* Links inside the dropdown */
 }
-.dropdown-content a {
-  color: black;
-  padding: 12px 0;
+@media screen and (max-width: 1100px) {
+  .dropdown-content {
+    padding: 0 16px 0 0;
+  }
+  .dropdown-content.dropdown-content-open {
+    display: block;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .dropdown-content {
+    position: absolute;
+    display: none;
+  }
+}
+.dropdown-item {
   margin: 0 auto;
-  text-decoration: none;
-  display: block;
-  text-align: center;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: left;
 }
-.dropdown-content a.text-align-right {
+@media screen and (min-width: 1100px) {
+  .dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .dropdown-item:hover > .dropdown-link {
+    color: #5472e3 !important;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .dropdown-item {
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .dropdown-item-submenu:hover .dropdown-submenu-icon {
+    transform: rotate(90deg);
+  }
+}
+@media screen and (max-width: 1100px) {
+  .dropdown-item-submenu {
+    padding: 0;
+  }
+}
+.dropdown-link {
+  color: black;
+  font-weight: 400;
+  text-decoration: none;
+  width: 100%;
+  margin: -8px -16px;
+  padding: 8px 16px;
+}
+@media screen and (max-width: 1100px) {
+  .dropdown-link {
+    margin-left: auto;
+    width: unset;
+  }
+}
+.dropdown-link.text-align-right {
   text-align: right;
 }
-.dropdown-content a:hover > p {
-  color: #5472e3 !important;
+.dropdown-submenu {
+  min-width: 120px;
 }
-.dropdown-content > a > p {
+@media screen and (min-width: 1100px) {
+  .dropdown-submenu {
+    top: -8px;
+    left: calc(100%);
+  }
+}
+@media screen and (max-width: 1100px) {
+  .dropdown-submenu {
+    margin-left: auto;
+  }
+}
+.dropdown-submenu-link {
   font-weight: 400;
-  display: inline-block;
 }
-.dropdown-content .fa {
-  margin-right: 5px;
-  font-size: 14px;
+@media screen and (max-width: 1100px) {
+  .dropdown-submenu-link {
+    padding: 8px 16px 8px 0;
+  }
+}
+.dropdown-submenu-icon {
+  margin-left: auto;
+  transition: transform 0.2s ease;
+}
+@media screen and (max-width: 1100px) {
+  .dropdown-submenu-icon {
+    display: none !important;
+  }
+}
+.dropdown-submenu-icon-mobile {
+  margin-left: auto;
+  margin-right: 16px;
+  transition: transform 0.2s ease;
+}
+@media screen and (min-width: 1100px) {
+  .dropdown-submenu-icon-mobile {
+    display: none !important;
+  }
+}
+.dropdown-submenu-icon-mobile-open {
+  transform: rotate(180deg);
 }
 /* Show the dropdown menu on hover */
 @media screen and (min-width: 1100px) {
-  .dropdown-content {
-    display: none;
-  }
-  .dropdown:hover .dropdown-content {
+  .dropdown:hover > .dropdown-content {
     display: block;
   }
 }
@@ -421,8 +517,13 @@ body ul li {
   z-index: 5;
   display: none;
   margin: 60px 0 0 0;
-  width: 240px;
-  right: 0px;
+  max-width: 240px;
+  right: 0;
+}
+@media screen and (max-width: 1100px) {
+  .menu-list {
+    background-color: white;
+  }
 }
 .menu-link {
   width: 200px;
@@ -432,7 +533,7 @@ body ul li {
   text-decoration: none;
 }
 .menu-link > p {
-  margin: 15px 16px;
+  padding: 15px 16px;
   text-decoration: none;
 }
 .hamburger {
@@ -464,13 +565,6 @@ body ul li {
   float: right;
 }
 @media screen and (min-width: 1100px) {
-  .dropdown-content {
-    position: absolute;
-    left: -25px;
-    top: 15px;
-    margin-top: 25px;
-    display: none;
-  }
   .hamburger-container {
     display: none;
   }
@@ -482,7 +576,7 @@ body ul li {
     position: relative;
     background-color: rgba(0, 0, 0, 0);
   }
-  .nav .menu-list li {
+  .nav .menu-list > li {
     display: inline-block;
     margin-right: -5px;
   }

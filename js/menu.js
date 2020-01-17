@@ -1,6 +1,6 @@
 const initialHandlers = () => {
 	if (window.innerWidth > 500) {
-		$('.menu-list').css('background-color', 'rgba(0,0,0,0)');
+		// $('.menu-list').css('background-color', 'rgba(0,0,0,0)');
 		$('.header-text').css('color', '#fff');
 		$('.whiteBg').css('backgroundColor', 'rgba(0,0,0,0)');
 	} else {
