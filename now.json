@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "name": "web-develop",
+    "alias": ["web-develop-cg"],
+    "builds": [
+        {
+            "src": "package.json",
+            "use": "@now/static-build",
+            "config": {
+                "distDir": "deploy"
+            }
+        }
+    ],
+    "routes": [
+        {"src": "/", "dest": "static/main.html"},
+        {"src": "(.+\\.html$)", "dest": "static/$1"}
+    ]
+}

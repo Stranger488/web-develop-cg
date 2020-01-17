@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prettier": "prettier --config .prettierrc.json --write '{static,js,less}/**/*.{js,html,less}'"
+    "prettier": "prettier --config .prettierrc.json --write '{static,js,less}/**/*.{js,html,less}'",
+    "build": "mkdir deploy && cp -r css/ deploy/ && cp -r fonts/ deploy/ && cp -r img/ deploy/ && cp -r js/ deploy/ && cp -r static/ deploy/ && cp -r vendor/ deploy/",
+    "deploy:prod": "now --prod"
   },
   "repository": {
     "type": "git",
