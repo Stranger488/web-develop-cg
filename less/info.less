@@ -1,3 +1,5 @@
+// main: main.less
+
 // Размещение и стилизация блоков информации
 
 .about {
@@ -38,37 +40,40 @@
     }
 }
 
-.contact {
-    &-form {
+.contact-info-row {
+    margin-top: 30px;
+}
+
+.contact-element-wrap {
+    padding: 0 25px;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+
+    @media (min-width: 601px) {
         display: inline-block;
-        position: relative;
-        z-index: 10;
         vertical-align: top;
-        // background-color: @lightbg;
-        // height: 650px;
-
-        @media (max-width: 600px) {
-            width: 100%;
-        }
-
-        @media (max-width: 350px) {
-            height: 900px;
-        }
+        margin: 0 15px;
     }
 
-    &-map {
-        display: inline-block;
-        position: relative;
-        z-index: 10;
-        vertical-align: top;
+    p {
+        color: #fff;
+        padding-top: 10px;
+    }
+}
 
-        @media (max-width: 600px) {
-            width: 98%;
-        }
+@media (max-width: 600px) {
+    .contact-form {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}
 
-        & > p {
-            color: white;
-        }
+.contact-map {
+    margin-bottom: 30px;
+
+    @media (max-width: 600px) {
+        width: 98%;
     }
 }
 
@@ -250,9 +255,7 @@
 
         p {
             padding: 10px 10px;
-        }
-
-        @media (max-width: 940px) {
+            margin-top: 10px;
         }
 
         &-row {
@@ -269,6 +272,8 @@
     flex-wrap: wrap;
     flex-direction: column;
 
+    text-align: left;
+
     i.fa {
         font-size: 58px;
         color: @darkbg;
@@ -279,8 +284,8 @@
     }
 
     h4 {
-        margin-top: 10px;
-        font-size: 18px;
+        margin-top: 25px;
+        font-size: 22px;
     }
 }
 
