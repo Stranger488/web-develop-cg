@@ -37,11 +37,11 @@ const initialHandlers = () => {
 
 $(document).ready(() => {
 	initialHandlers();
-	$(".aandopen-light").click(function() {
-		$(this).toggleClass("aandopen_active");
+	$('.aandopen-light').click(function() {
+		$(this).toggleClass('aandopen_active');
 	});
-	$(".aandopen-dark").click(function() {
-		$(this).toggleClass("aandopen_active");
+	$('.aandopen-dark').click(function() {
+		$(this).toggleClass('aandopen_active');
 	});
 });
 $(window).resize(initialHandlers);
