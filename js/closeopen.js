@@ -4,6 +4,7 @@ const classNames = {
 };
 
 function closeopen(id) {
+	$(this).toggleClass("aandopen_active");
 	/*Для создания раскрывающихся по клику кнопочек*/
 	const element = document.getElementById(id);
 	if (element) {
