@@ -1,3 +1,5 @@
+// main: main.less
+
 .modal {
     &-fade {
         display: none;
@@ -7,7 +9,7 @@
         z-index: 16;
         height: 100%;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     &-content {
@@ -16,10 +18,9 @@
         left: calc(50%);
         top: calc(50%);
 
-        padding: 16px;
+        padding: 20px;
 
-        background-image: linear-gradient(rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.75));
-        box-shadow: 1px 5px 1px 1px rgba(0, 0, 0, 0.75), 1px -5px 1px 1px rgba(0, 0, 0, 0.1);
+        background-color: rgba(255, 255, 255, 1);
         min-width: 200px;
         min-height: 100px;
 
@@ -32,26 +33,32 @@
         &-description {
             margin: 8px 16px 0 16px;
             text-align: center;
-            color: white;
+            color: black;
         }
     }
 
     &-close {
         cursor: pointer;
         position: absolute;
-        top: 16px;
-        right: 16px;
+        top: 0px;
+        right: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 38px;
         width: 38px;
         border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.15);
+        background-color: rgba(0, 0, 0, 0.05);
+        background-color: rgba(255, 255, 255, 0.5);
 
+        transition: background-color .2s ease;
         &-icon {
-            fill: white;
+            fill:rgba(0,0,0,0.7);;
             width: 24px;
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.05);
         }
     }
 

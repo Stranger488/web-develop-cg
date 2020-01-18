@@ -1417,16 +1417,15 @@ footer {
   z-index: 16;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .modal-content {
   position: relative;
   transform: translateX(-50%) translateY(-50%);
   left: calc(50%);
   top: calc(50%);
-  padding: 16px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.75));
-  box-shadow: 1px 5px 1px 1px rgba(0, 0, 0, 0.75), 1px -5px 1px 1px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #ffffff;
   min-width: 200px;
   min-height: 100px;
 }
@@ -1438,24 +1437,29 @@ footer {
 .modal-content-description {
   margin: 8px 16px 0 16px;
   text-align: center;
-  color: white;
+  color: black;
 }
 .modal-close {
   cursor: pointer;
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 0px;
+  right: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 38px;
   width: 38px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: background-color 0.2s ease;
 }
 .modal-close-icon {
-  fill: white;
+  fill: rgba(0, 0, 0, 0.7);
   width: 24px;
+}
+.modal-close:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 .modal-active {
   display: block;
@@ -1476,4 +1480,4 @@ footer {
 .content-loaded {
   display: none;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=./main.css.map */
