@@ -1567,21 +1567,41 @@
                     <!--<div class="about-text nolimit" >-->
                     <div class="flex flexcol">
                         <h3>Варианты двухклассной компоновки пассажирской кабины Ан-148</h3>
-                        <div>
+                        <div id="an-plane-1-desc">
                             Двухклассная компоновка на 68 мест. (8 кресел – шаг 889мм (35”), 60
                             кресел – шаг 812,8мм (32”).
                         </div>
-                        <img src="../img/An-148/layouts/x1/plane-comp-1.png" class="layout" />
-                        <div>
+                        <img
+                            id="an-plane-1"
+                            src="../img/An-148/layouts/x1/plane-comp-1.png"
+                            class="layout jsModalTrigger"
+                        />
+                        <div id="an-plane-2-desc">
                             Двухклассная компоновка на 73 места. (8 кресел – шаг 863,6мм (34”), 65
                             кресел – шаг 787,4мм (31”).
                         </div>
-                        <img src="../img/An-148/layouts/x1/plane-comp-2.png" class="layout" />
+                        <img
+                            id="an-plane-2"
+                            src="../img/An-148/layouts/x1/plane-comp-2.png"
+                            class="layout jsModalTrigger"
+                        />
                         <h3>Варианты одноклассной компоновки пассажирской кабины Ан-148</h3>
-                        <div>Одноклассная компоновка на 75 мест. Шаг кресел – 812,8 мм (32”).</div>
-                        <img src="../img/An-148/layouts/x1/plane-comp-3.png" class="layout" />
-                        <div>Одноклассная компоновка на 80 мест. Шаг кресел – 762 мм (30”).</div>
-                        <img src="../img/An-148/layouts/x1/plane-comp-4.png" class="layout" />
+                        <div id="an-plane-3-desc">
+                            Одноклассная компоновка на 75 мест. Шаг кресел – 812,8 мм (32”).
+                        </div>
+                        <img
+                            id="an-plane-3"
+                            src="../img/An-148/layouts/x1/plane-comp-3.png"
+                            class="layout jsModalTrigger"
+                        />
+                        <div id="an-plane-4-desc">
+                            Одноклассная компоновка на 80 мест. Шаг кресел – 762 мм (30”).
+                        </div>
+                        <img
+                            src="../img/An-148/layouts/x1/plane-comp-4.png"
+                            id="an-plane-4"
+                            class="layout jsModalTrigger"
+                        />
                     </div>
                 </div>
 
@@ -1636,10 +1656,28 @@
                     '<div class="slider-arrow arrow-prev"><div><i class="fa fa-angle-left"></i></div></div>',
             });
         </script>
+
+        <div class="modal-fade">
+            <div class="modal-content">
+                <div id="modal-content"></div>
+                <div class="content-loading">
+                    <i class="fas fa-spinner fa-pulse"></i>
+                </div>
+                <div class="modal-close">
+                    <svg class="modal-close-icon" viewBox="0 0 24 24">
+                        <path
+                            d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"
+                        />
+                        <path d="M0 0h24v24h-24z" fill="none" />
+                    </svg>
+                </div>
+            </div>
+        </div>
     </body>
     <script src="../js/closeopen.js"></script>
     <script src="../js/menu.js"></script>
     <script src="../js/mobile-menu.js"></script>
+    <script src="../js/modal.js"></script>
     <script type="text/javascript">
         //code for proper 100vh
         let vh = window.innerHeight * 0.01;

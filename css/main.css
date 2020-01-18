@@ -1383,4 +1383,71 @@ footer {
     display: none;
   }
 }
+.modal-fade {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 16;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.modal-content {
+  position: relative;
+  transform: translateX(-50%) translateY(-50%);
+  left: calc(50%);
+  top: calc(50%);
+  padding: 16px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.75));
+  box-shadow: 1px 5px 1px 1px rgba(0, 0, 0, 0.75), 1px -5px 1px 1px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  min-height: 100px;
+}
+.modal-content-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.modal-content-description {
+  margin: 8px 16px 0 16px;
+  text-align: center;
+  color: white;
+}
+.modal-close {
+  cursor: pointer;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.modal-close-icon {
+  fill: white;
+  width: 24px;
+}
+.modal-active {
+  display: block;
+}
+.jsModalTrigger {
+  cursor: pointer;
+}
+.content-loading {
+  font-size: 28px;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  left: calc(50%);
+  top: calc(50%);
+}
+.content-loading i {
+  color: #5472e3;
+}
+.content-loaded {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */
