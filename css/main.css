@@ -240,7 +240,7 @@ body ul li {
 }
 @media (max-width: 686px) {
   .p400-left {
-    text-align: center;
+    text-align: left;
   }
 }
 .p400-leftsuper {
@@ -251,7 +251,7 @@ body ul li {
 }
 @media (max-width: 686px) {
   .p400-right {
-    text-align: center;
+    text-align: left;
   }
 }
 .p750 {
@@ -1417,7 +1417,7 @@ footer {
   z-index: 16;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .modal-content {
   position: relative;
@@ -1425,7 +1425,7 @@ footer {
   left: calc(50%);
   top: calc(50%);
   padding: 16px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.75));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8) 30%, #000000);
   box-shadow: 1px 5px 1px 1px rgba(0, 0, 0, 0.75), 1px -5px 1px 1px rgba(0, 0, 0, 0.1);
   min-width: 200px;
   min-height: 100px;
@@ -1476,4 +1476,4 @@ footer {
 .content-loaded {
   display: none;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=./main.css.map */
