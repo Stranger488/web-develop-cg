@@ -6,7 +6,7 @@
     box-sizing: border-box;
     width: 100%;
     text-align: center;
-    padding: 90px 20px 30px 20px;
+    padding: 80px 20px 30px 20px;
 
     & > div {
         position: relative;
@@ -14,7 +14,7 @@
     }
 
     @media screen and (max-width: 600px) {
-        padding: 80px 5px;
+        padding: 50px 5px;
     }
 }
 
@@ -84,12 +84,14 @@
     justify-content: space-around;
     align-items: center;
 
-    @media (max-width: 940px) {
-        padding: 40px 0;
-    }
 
     @media (max-width: 686px) {
         flex-direction: column;
+
+
+        p {
+            text-align: left;
+        }
     }
 
     p {
