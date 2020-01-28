@@ -300,13 +300,13 @@
                     <div class="contact-element-wrap">
                         <iframe
                             src="https://docs.google.com/forms/d/e/1FAIpQLSeYzblHTgNvFfUocLrOMfvEl7QmphuZqtXtnFvtW_Z72JaNag/viewform?embedded=true"
-                            width="500"
-                            height="800"
                             frameborder="0"
                             marginheight="0"
                             marginwidth="0"
                             class="contact-form"
-                        >
+                            scrolling="no"
+                            width="500"
+                        >  
                             Загрузка…
                         </iframe>
                     </div>
@@ -321,7 +321,7 @@
 
                         <iframe
                             class="contact-map"
-                            src="https://www.google.com/maps/d/embed?mid=134b1BRDMfhLUmyla4JL4uWB86n4TbXHf&z=10&origin=55.67973,37.46954"
+                            src="https://www.google.com/maps/d/embed?mid=134b1BRDMfhLUmyla4JL4uWB86n4TbXHf&z=10&ll=55.67973,37.46954"
                             width="500"
                             height="480"
                         ></iframe>
@@ -360,6 +360,8 @@
         window.addEventListener('resize', () => {
             let vh = window.innerHeight * 0.01;
             document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+
         });
     </script>
 </html>

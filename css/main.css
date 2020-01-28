@@ -38,7 +38,7 @@ body ul li {
   box-sizing: border-box;
   width: 100%;
   text-align: center;
-  padding: 90px 20px 30px 20px;
+  padding: 80px 20px 30px 20px;
 }
 .basic-block > div {
   position: relative;
@@ -46,7 +46,7 @@ body ul li {
 }
 @media screen and (max-width: 600px) {
   .basic-block {
-    padding: 80px 5px;
+    padding: 50px 5px;
   }
 }
 .almost-basic-block {
@@ -106,14 +106,12 @@ body ul li {
   justify-content: space-around;
   align-items: center;
 }
-@media (max-width: 940px) {
-  .flex {
-    padding: 40px 0;
-  }
-}
 @media (max-width: 686px) {
   .flex {
     flex-direction: column;
+  }
+  .flex p {
+    text-align: left;
   }
 }
 .flex p {
@@ -1171,7 +1169,7 @@ footer {
   transition: all 0.3s ease;
 }
 .info-dropdown_active {
-  padding: 20px 0 0 0;
+  padding: 20px 0;
   max-height: 3000px;
 }
 .training-light {

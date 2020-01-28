@@ -37,6 +37,7 @@ const initialHandlers = () => {
 
 $(document).ready(() => {
 	initialHandlers();
+
 	$('.aandopen-light').click(function() {
 		$(this).toggleClass('aandopen_active');
 	});
