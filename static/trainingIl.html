@@ -46,15 +46,61 @@
                                     <i
                                         class="fas fa-angle-down dropdown-submenu-icon-mobile header-text"
                                     ></i>
-                                    Тренажеры
+                                    Тренажеры&emsp;
+                                    <i class="fas fa-angle-down"></i>
                                 </p>
                                 <ul
                                     class="dropdown-header dropdown-content dropdown-content-background jsDropdownList"
                                 >
-                                    <li class="dropdown-item">
-                                        <a href="trainingAn.html" class="dropdown-link header-text">
+                                    <li class="dropdown dropdown-item dropdown-item-submenu">
+                                        <i
+                                            class="fas fa-angle-down dropdown-submenu-icon-mobile header-text"
+                                        ></i>
+                                        <a
+                                            href="trainingAn.html#main"
+                                            class="dropdown-submenu-link header-text jsDropdownLabel"
+                                        >
                                             Ан-148
                                         </a>
+                                        <i
+                                            class="fas fa-angle-right dropdown-submenu-icon header-text"
+                                        ></i>
+                                        <ul
+                                            class="dropdown-submenu dropdown-content dropdown-content-background jsDropdownList"
+                                        >
+                                            <li class="dropdown-item">
+                                                <a
+                                                    href="trainingAn.html#main"
+                                                    class="dropdown-link header-text"
+                                                >
+                                                    КТС
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <a
+                                                    href="trainingAn.html#pts"
+                                                    class="dropdown-link header-text"
+                                                >
+                                                    ПТС
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <a
+                                                    href="trainingAn.html#bortpr"
+                                                    class="dropdown-link header-text"
+                                                >
+                                                    Бортпроводники
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <a
+                                                    href="trainingAn.html#study"
+                                                    class="dropdown-link header-text"
+                                                >
+                                                    Учебный класс
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li class="dropdown dropdown-item dropdown-item-submenu">
                                         <i
@@ -88,9 +134,32 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#obuch" class=" header-text menu-link  whiteBg">
-                                <p class=" header-text hoverable">Обучение</p>
-                            </a>
+                            <div class="dropdown dropbtn  header-text menu-link  whiteBg">
+                                <p class="header-text jsDropdownLabel">
+                                    <i
+                                        class="fas fa-angle-down dropdown-submenu-icon-mobile header-text"
+                                    ></i>
+                                    Обучение&emsp;
+                                    <i class="fas fa-angle-down"></i>
+                                </p>
+                                <ul
+                                    class="dropdown-header dropdown-content dropdown-content-background jsDropdownList"
+                                >
+                                    <li class="dropdown-item">
+                                        <a
+                                            href="trainingAn.html#obuch"
+                                            class="dropdown-link header-text"
+                                        >
+                                            Ан-148
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#obuch" class="dropdown-link header-text">
+                                            Ил-96
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
                             <div class="dropdown dropbtn  header-text menu-link  whiteBg">
@@ -98,7 +167,8 @@
                                     <i
                                         class="fas fa-angle-down dropdown-submenu-icon-mobile header-text"
                                     ></i>
-                                    О самолетах
+                                    О самолетах&emsp;
+                                    <i class="fas fa-angle-down"></i>
                                 </p>
                                 <ul
                                     class="dropdown-header dropdown-content dropdown-content-background jsDropdownList"
@@ -130,7 +200,8 @@
                                     <i
                                         class="fas fa-angle-down dropdown-submenu-icon-mobile header-text"
                                     ></i>
-                                    Контакты
+                                    Контакты&emsp;
+                                    <i class="fas fa-angle-down"></i>
                                 </p>
                                 <ul
                                     class="dropdown-header dropdown-content dropdown-content-background jsDropdownList"
@@ -287,7 +358,7 @@
             </div>
 
             <a id="obuch"></a>
-            <div class="basic-block bb-white almost-basic-block">
+            <div class="basic-block bb-black almost-basic-block">
                 <div class="about-text">
                     <h1>Обучение</h1>
                     <div class="flex ">
@@ -305,13 +376,13 @@
                     <br />
                 </div>
 
-                <div class="aandopen-light" onclick="closeopen('crew')">
+                <div class="aandopen-dark" onclick="closeopen('crew')">
                     <div class="aandopen-content-wrapper">
                         <span>Летный состав</span>
                         <i class="fa fa-angle-down"></i>
                     </div>
                 </div>
-                <div id="crew" class="training-light info-dropdown">
+                <div id="crew" class="training-dark info-dropdown">
                     <div>
                         Переобучение/переподготовка пилотов (летных экипажей) на самолет Ан-148
                         проводится с продолжительностью:
@@ -430,13 +501,13 @@
                     </div>
                 </div>
 
-                <div class="aandopen-light" onclick="closeopen('crew1')">
+                <div class="aandopen-dark" onclick="closeopen('crew1')">
                     <div class="aandopen-content-wrapper">
                         <span>Бортпроводники</span>
                         <i class="fa fa-angle-down"></i>
                     </div>
                 </div>
-                <div id="crew1" class="training-light info-dropdown">
+                <div id="crew1" class="training-dark info-dropdown">
                     <div>
                         Курс переподготовки бортпроводников на воздушное судно Ан-148 включает в
                         себя следующие дисциплины:
@@ -863,13 +934,13 @@
                     </div>
                 </div>
 
-                <div class="aandopen-light" onclick="closeopen('crew2')">
+                <div class="aandopen-dark" onclick="closeopen('crew2')">
                     <div class="aandopen-content-wrapper">
                         <span>Инженерно-технический персонал</span>
                         <i class="fa fa-angle-down"></i>
                     </div>
                 </div>
-                <div id="crew2" class="training-light info-dropdown">
+                <div id="crew2" class="training-dark info-dropdown">
                     <div>
                         Программа изучения и практического освоения регламентных работ по
                         авиационному и радиоэлектронному оборудованию самолета Ан-148
@@ -1185,7 +1256,7 @@
                         <i class="fa fa-angle-down"></i>
                     </div>
                 </div>
-                <div id="plane2" class="training-dark flex flexcol info-dropdown">
+                <div id="plane2" class="training-dark info-dropdown">
                     <table class="altertable">
                         <tr>
                             <td>Пассажировместимость (моноклассная компоновка)</td>
@@ -1425,17 +1496,23 @@
                     <div class="sponsors">
                         <div class="flex">
                             <div class="p300">
-                                Продажа, лизинг, послепродажное обслуживание:
+                                <h4>Продажа, лизинг, послепродажное обслуживание:</h4>
+                                <br />
+                                "Ильюшин Финанс Ко." (Россия, г.Москва)
                             </div>
                             <div class="p300">
-                                Изготовитель:
+                                <h4>Изготовитель:</h4>
+                                <br />
+                                ОАО "ВАСО" (Россия, г.Воронеж)
                             </div>
                             <div class="p300">
-                                Разработчик:
+                                <h4>Разработчик:</h4>
+                                <br />
+                                Объединенная авиастроительная корпорация (ОАК) (Россия, г.Москва)
                             </div>
                         </div>
 
-                        <div class="flex">
+                        <!-- <div class="flex">
                             <div class="p300">
                                 "Ильюшин Финанс Ко." (Россия, г.Москва)
                             </div>
@@ -1447,7 +1524,7 @@
                             <div class="p300">
                                 Объединенная авиастроительная корпорация (ОАК) (Россия, г.Москва)
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -1461,25 +1538,51 @@
                     <!--<div class="about-text nolimit" >-->
                     <div class="flex flexcol">
                         <h3>Варианты компоновки пассажирской кабины Ил-96-300</h3>
-                        <div>Одноклассная компоновка на 300 мест с шагом кресел 870мм.</div>
-                        <img src="../img/Il-96/layouts/plane_comp_il-300_1.png" class="layout" />
-                        <div>
+                        <div id="il-plane-1-desc">
+                            Одноклассная компоновка на 300 мест с шагом кресел 870мм.
+                        </div>
+                        <img
+                            id="il-plane-1"
+                            src="../img/Il-96/layouts/x1/plane_comp_il-300_1.png"
+                            class="layout jsModalTrigger"
+                        />
+                        <div id="il-plane-2-desc">
                             Трехклассная компоновка на 253 места. (22 кресла – шаг 1020мм, 40 кресел
                             – шаг 900мм, 173 кресла - шаг 870мм).
                         </div>
-                        <img src="../img/Il-96/layouts/plane_comp_il-300_2.png" class="layout" />
+                        <img
+                            id="il-plane-2"
+                            src="../img/Il-96/layouts/x1/plane_comp_il-300_2.png"
+                            class="layout jsModalTrigger"
+                        />
                         <br />
                         <br />
                         <h3>Варианты компоновки пассажирской кабины Ил-96-400</h3>
-                        <div>
+                        <div id="il-plane-3-desc">
                             Двухклассная компоновка на 350 мест. (24 кресла - шаг 787мм, 66 кресел -
                             шаг 787мм, 260 кресел - шаг 812,8мм).
                         </div>
-                        <img src="../img/Il-96/layouts/plane_comp_il-400_1.png" class="layout" />
-                        <div>Одноклассная компоновка на 370 мест. Шаг кресел – 812,8мм.</div>
-                        <img src="../img/Il-96/layouts/plane_comp_il-400_2.png" class="layout" />
-                        <div>Одноклассная компоновка на 400 мест. Шаг кресел – 762мм.</div>
-                        <img src="../img/Il-96/layouts/plane_comp_il-400_3.png" class="layout" />
+                        <img
+                            id="il-plane-3"
+                            src="../img/Il-96/layouts/x1/plane_comp_il-400_1.png"
+                            class="layout jsModalTrigger"
+                        />
+                        <div id="il-plane-4-desc">
+                            Одноклассная компоновка на 370 мест. Шаг кресел – 812,8мм.
+                        </div>
+                        <img
+                            id="il-plane-4"
+                            src="../img/Il-96/layouts/x1/plane_comp_il-400_2.png"
+                            class="layout jsModalTrigger"
+                        />
+                        <div id="il-plane-5-desc">
+                            Одноклассная компоновка на 400 мест. Шаг кресел – 762мм.
+                        </div>
+                        <img
+                            id="il-plane-5"
+                            src="../img/Il-96/layouts/x1/plane_comp_il-400_3.png"
+                            class="layout jsModalTrigger"
+                        />
                     </div>
                 </div>
             </div>
@@ -1521,7 +1624,9 @@
         <footer>
             <p class="footer-text copyright">© ООО "ИФК Тренинг" 2020</p>
             <div class="footer-contact">
-                <p class="footer-text">Рублево-Успенское шоссе д.6</p>
+                <p class="footer-text">
+                    Москва, Мичуринский проспект, Олимпийская деревня, д. 1, корп. 1
+                </p>
                 <p class="footer-text">+7 (495) 710-99-60 Доб. 322</p>
                 <p class="footer-text">ifc.training.chat@gmail.com</p>
             </div>
@@ -1536,10 +1641,28 @@
                     '<div class="slider-arrow arrow-prev"><div><i class="fa fa-angle-left"></i></div></div>',
             });
         </script>
+
+        <div class="modal-fade">
+            <div class="modal-content">
+                <div id="modal-content"></div>
+                <div class="content-loading">
+                    <i class="fas fa-spinner fa-pulse"></i>
+                </div>
+                <div class="modal-close">
+                    <svg class="modal-close-icon" viewBox="0 0 24 24">
+                        <path
+                            d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"
+                        />
+                        <path d="M0 0h24v24h-24z" fill="none" />
+                    </svg>
+                </div>
+            </div>
+        </div>
     </body>
     <script src="../js/closeopen.js"></script>
     <script src="../js/menu.js"></script>
     <script src="../js/mobile-menu.js"></script>
+    <script src="../js/modal.js"></script>
     <script type="text/javascript">
         //code for proper 100vh
         let vh = window.innerHeight * 0.01;

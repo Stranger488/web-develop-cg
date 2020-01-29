@@ -38,7 +38,7 @@ body ul li {
   box-sizing: border-box;
   width: 100%;
   text-align: center;
-  padding: 80px 20px 30px 20px;
+  padding: 90px 20px 30px 20px;
 }
 .basic-block > div {
   position: relative;
@@ -46,7 +46,7 @@ body ul li {
 }
 @media screen and (max-width: 600px) {
   .basic-block {
-    padding: 50px 5px;
+    padding: 80px 5px;
   }
 }
 .almost-basic-block {
@@ -106,12 +106,14 @@ body ul li {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 940px) {
+  .flex {
+    padding: 40px 0;
+  }
+}
 @media (max-width: 686px) {
   .flex {
     flex-direction: column;
-  }
-  .flex p {
-    text-align: left;
   }
 }
 .flex p {
@@ -238,7 +240,7 @@ body ul li {
 }
 @media (max-width: 686px) {
   .p400-left {
-    text-align: center;
+    text-align: left;
   }
 }
 .p400-leftsuper {
@@ -249,7 +251,7 @@ body ul li {
 }
 @media (max-width: 686px) {
   .p400-right {
-    text-align: center;
+    text-align: left;
   }
 }
 .p750 {
@@ -1169,7 +1171,7 @@ footer {
   transition: all 0.3s ease;
 }
 .info-dropdown_active {
-  padding: 20px 0;
+  padding: 20px 0 20px 0;
   max-height: 3000px;
 }
 .training-light {
@@ -1415,15 +1417,16 @@ footer {
   z-index: 16;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .modal-content {
   position: relative;
   transform: translateX(-50%) translateY(-50%);
   left: calc(50%);
   top: calc(50%);
-  padding: 20px;
-  background-color: #ffffff;
+  padding: 16px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8) 30%, #000000);
+  box-shadow: 1px 5px 1px 1px rgba(0, 0, 0, 0.75), 1px -5px 1px 1px rgba(0, 0, 0, 0.1);
   min-width: 200px;
   min-height: 100px;
 }
@@ -1435,29 +1438,24 @@ footer {
 .modal-content-description {
   margin: 8px 16px 0 16px;
   text-align: center;
-  color: black;
+  color: white;
 }
 .modal-close {
   cursor: pointer;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 16px;
+  right: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 38px;
   width: 38px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.05);
-  background-color: rgba(255, 255, 255, 0.5);
-  transition: background-color 0.2s ease;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 .modal-close-icon {
-  fill: rgba(0, 0, 0, 0.7);
+  fill: white;
   width: 24px;
-}
-.modal-close:hover {
-  background-color: rgba(0, 0, 0, 0.05);
 }
 .modal-active {
   display: block;
