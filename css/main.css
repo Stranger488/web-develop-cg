@@ -238,7 +238,7 @@ body ul li {
 }
 @media (max-width: 686px) {
   .p400-left {
-    text-align: center;
+    text-align: left;
   }
 }
 .p400-leftsuper {
@@ -249,7 +249,7 @@ body ul li {
 }
 @media (max-width: 686px) {
   .p400-right {
-    text-align: center;
+    text-align: left;
   }
 }
 .p750 {
@@ -455,6 +455,14 @@ body ul li {
 }
 .dropdown-link.text-align-right {
   text-align: right;
+}
+.dropdown-menu-icon {
+  transition: transform 0.2s ease;
+}
+@media screen and (min-width: 1100px) {
+  .dropdown:hover .dropdown-menu-icon {
+    transform: rotate(-180deg);
+  }
 }
 .dropdown-submenu {
   min-width: 120px;
@@ -1082,6 +1090,10 @@ footer {
     margin-bottom: 25px;
   }
 }
+.contact-form {
+  width: 500px;
+  height: 800px;
+}
 .contact-map {
   margin-bottom: 30px;
 }
@@ -1415,7 +1427,7 @@ footer {
   z-index: 16;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .modal-content {
   position: relative;
@@ -1423,7 +1435,8 @@ footer {
   left: calc(50%);
   top: calc(50%);
   padding: 20px;
-  background-color: #ffffff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8) 30%, #000000);
+  box-shadow: 1px 5px 1px 1px rgba(0, 0, 0, 0.75), 1px -5px 1px 1px rgba(0, 0, 0, 0.1);
   min-width: 200px;
   min-height: 100px;
 }
@@ -1435,29 +1448,24 @@ footer {
 .modal-content-description {
   margin: 8px 16px 0 16px;
   text-align: center;
-  color: black;
+  color: white;
 }
 .modal-close {
   cursor: pointer;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 16px;
+  right: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 38px;
   width: 38px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.05);
-  background-color: rgba(255, 255, 255, 0.5);
-  transition: background-color 0.2s ease;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 .modal-close-icon {
-  fill: rgba(0, 0, 0, 0.7);
+  fill: white;
   width: 24px;
-}
-.modal-close:hover {
-  background-color: rgba(0, 0, 0, 0.05);
 }
 .modal-active {
   display: block;
@@ -1478,4 +1486,4 @@ footer {
 .content-loaded {
   display: none;
 }
-/*# sourceMappingURL=./main.css.map */
+/*# sourceMappingURL=main.css.map */

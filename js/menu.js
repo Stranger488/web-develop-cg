@@ -44,6 +44,12 @@ $(document).ready(() => {
 	$('.aandopen-dark').click(function() {
 		$(this).toggleClass('aandopen_active');
 	});
+
+	// TODO: Попробовать разобраться с проблемой CORS или же найти другой способ нахождения высоты контента iframe
+	// const formIframe = document.getElementById('contact-form');
+	// formIframe.addEventListener('load', () => {
+	// 	formIframe.style.height = formIframe.contentWindow.document.body.offsetHeight + 'px'
+	// });
 });
 $(window).resize(initialHandlers);
 
