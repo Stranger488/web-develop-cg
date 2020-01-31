@@ -297,6 +297,11 @@ body ul li {
   color: white;
   transition: background-color 0.2s ease-out;
 }
+@media screen and (max-width: 1200px) {
+  .header-text {
+    font-size: 11px;
+  }
+}
 @media screen and (max-width: 1099px) {
   .header-text {
     color: #000;
@@ -304,11 +309,18 @@ body ul li {
 }
 .header-phone {
   padding-top: 9px;
-  width: 185px;
 }
 @media screen and (min-width: 1100px) {
   .header-phone {
+    left: 285px;
+    width: 120px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-phone {
     left: 310px;
+    width: 185px;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -385,6 +397,12 @@ body ul li {
     margin: -8px 0 0 0;
   }
 }
+@media screen and (min-width: 1100px) {
+  .dropdown-header-root {
+    top: -10px;
+    margin-top: 0;
+  }
+}
 .dropdown-content {
   display: none;
   position: relative;
@@ -405,6 +423,12 @@ body ul li {
   .dropdown-content {
     position: absolute;
     display: none;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .dropdown-content-root {
+    z-index: -1;
+    padding: 50px 0px 8px;
   }
 }
 .dropdown-item {
@@ -1084,15 +1108,15 @@ footer {
   color: #fff;
   padding-top: 10px;
 }
+.contact-form {
+  width: 500px;
+  height: 800px;
+}
 @media (max-width: 600px) {
   .contact-form {
     width: 100%;
     margin-bottom: 25px;
   }
-}
-.contact-form {
-  width: 500px;
-  height: 800px;
 }
 .contact-map {
   margin-bottom: 30px;
@@ -1486,4 +1510,4 @@ footer {
 .content-loaded {
   display: none;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=./main.css.map */

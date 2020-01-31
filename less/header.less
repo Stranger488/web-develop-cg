@@ -52,6 +52,10 @@
         color: white;
         transition: background-color 0.2s ease-out;
 
+        @media screen and (max-width: 1200px) {
+            font-size: 11px;
+        }
+
         @media screen and (max-width: 1099px) {
             color: #000;
         }
@@ -59,11 +63,16 @@
 
     &-phone {
         padding-top: 9px;
-
-        width: 185px;
-
+        
         @media screen and (min-width: 1100px) {
+            left: 285px;
+            width: 120px;
+            text-align: center;
+        }
+        
+        @media screen and (min-width: 1200px) {
             left: 310px;
+            width: 185px;
         }
 
         @media screen and (max-width: 1100px) {
@@ -164,6 +173,13 @@
         //}
     }
 
+    &-header-root {
+        @media screen and (min-width: 1100px) {
+            top: -10px;
+            margin-top: 0;
+        }
+    }
+
     &-content {
         //background-color: white;
         //display: block;
@@ -186,6 +202,13 @@
         @media screen and (min-width: 1100px) {
             position: absolute;
             display: none;
+        }
+    }
+
+    &-content-root {
+        @media screen and (min-width: 1100px) {
+            z-index: -1;
+            padding: 50px 0px 8px;
         }
     }
 
