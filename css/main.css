@@ -936,7 +936,7 @@ footer {
 }
 .separator {
   margin-bottom: 35px;
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 5%;
@@ -1539,4 +1539,4 @@ footer {
 .content-loaded {
   display: none;
 }
-/*# sourceMappingURL=./main.css.map */
+/*# sourceMappingURL=main.css.map */
