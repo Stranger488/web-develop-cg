@@ -117,7 +117,6 @@
 .nav {
     // background-color: #000;
     display: inline-block;
-    width: 100%;
     height: 60px;
     position: fixed;
     z-index: 10;
@@ -149,44 +148,16 @@
             top: 15px;
             margin-top: 25px;
         }
-
-        @media screen and (max-width: 1100px) {
-            margin: -8px 0 0 0;
-        }
-
-        //&-icon {
-        //    @media screen and (max-width: 1100px) {
-        //        &-mobile {
-        //            margin-left: auto;
-        //            transition: transform .2s ease;
-        //        }
-        //    }
-        //}
     }
 
     &-content {
-        //background-color: white;
-        //display: block;
         display: none;
-        position: relative;
+        position: absolute;
         z-index: 1;
         padding: 8px 0;
         text-transform: capitalize;
 
         background-image: none;
-
-        @media screen and (max-width: 1100px) {
-            padding: 0 16px 0 0;
-
-            &.dropdown-content-open {
-                display: block;
-            }
-        }
-
-        @media screen and (min-width: 1100px) {
-            position: absolute;
-            display: none;
-        }
     }
 
     &-item {
@@ -206,10 +177,6 @@
                     color: @highlight !important;
                 }
             }
-        }
-
-        @media screen and (max-width: 1100px) {
-            padding-left: 0;
         }
 
         &-submenu {
@@ -233,23 +200,26 @@
         margin: -8px -16px;
         padding: 8px 16px;
 
-        @media screen and (max-width: 1100px) {
-            margin-left: auto;
-            width: unset;
-        }
-
-        &.text-align-right {
-            text-align: right;
+        &-mobile {
+            display: none;
         }
     }
 
-    &-menu {
-        &-icon {
-            transition: transform 0.2s ease;
+    // Такой селектор нужен для усиления приоритета по сравнению с библиотекой fa
+    & .dropdown-menu-icon {
+        @media screen and (max-width: 1100px) {
+            display: none;
         }
+
+        margin-left: 6px;
+        transition: transform 0.2s ease;
     }
 
     @media screen and (min-width: 1100px) {
+        &-menu-icon {
+            display: block;
+        }
+
         &:hover .dropdown-menu-icon {
             transform: rotate(-180deg);
         }
@@ -269,10 +239,6 @@
 
         &-link {
             font-weight: 400;
-
-            @media screen and (max-width: 1100px) {
-                padding: 8px 16px 8px 0;
-            }
         }
 
         &-icon {
@@ -284,19 +250,83 @@
             }
 
             &-mobile {
-                margin-left: auto;
-                margin-right: 16px;
-                transition: transform 0.2s ease;
+                margin-left: 16px;
+                margin-right: auto;
+
+                font-size: 1.25em;
 
                 @media screen and (min-width: 1100px) {
                     display: none !important;
                 }
-
-                &-open {
-                    transform: rotate(180deg);
-                }
             }
         }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .dropdown {
+        position: unset;
+    }
+
+    .menu-list {
+        overflow: hidden;
+        width: 200px;
+
+        & .menu-list-item {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+
+    .main-list {
+        transition: all 0.2s ease;
+    }
+
+    .dropdown-content {
+        right: 0;
+        padding: 0;
+
+        display: block;
+        visibility: hidden;
+        top: 0;
+        width: 100%;
+
+        transform: translateX(-200px);
+
+        transition: all 0.3s ease;
+
+        &-active {
+            //transform: translateX(0);
+            visibility: visible;
+        }
+
+        &.dropdown-content-open {
+            display: block;
+        }
+    }
+
+    .dropdown-item {
+        padding: 0;
+        justify-content: flex-end;
+    }
+
+    .dropdown-link,
+    .dropdown-submenu-link {
+        margin: 0;
+        padding: 15px 16px;
+        width: unset;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    a.dropdown-link {
+        width: 100%;
+        text-align: end;
+    }
+
+    .dropdown-link-mobile {
+        display: flex;
     }
 }
 
@@ -325,12 +355,13 @@
 
         @media screen and (max-width: 1100px) {
             background-color: white;
+            max-height: 25em;
+            //overflow-y: auto;
         }
         //	border-bottom: 5px solid rgba(0,0,0,0.2);
     }
 
     &-link {
-        width: 200px;
         display: inline-block;
         //background-color: @lighterbg;
         box-sizing: content-box;
@@ -387,19 +418,17 @@
         display: none;
     }
 
-    .nav {
-        .menu-list {
-            margin-right: 20px;
-            display: inline;
-            text-align: left;
-            width: 100%;
-            position: relative;
-            background-color: rgba(0, 0, 0, 0);
+    .menu-list {
+        margin-right: 20px;
+        display: inline;
+        text-align: left;
+        width: 100%;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0);
 
-            > li {
-                display: inline-block;
-                margin-right: -5px;
-            }
+        &-item {
+            display: inline-block;
+            margin-right: -5px;
         }
     }
 
@@ -409,9 +438,6 @@
     }
 }
 
-@media screen and (max-width: 1099px) {
-    .menu-list {
-        max-height: 25em;
-        overflow-y: auto;
-    }
+.disable {
+    display: none !important;
 }

@@ -34,40 +34,66 @@
                         </ul>
                     </div>
 
-                    <ul class="menu-list">
-                        <li>
-                            <a href="main.html" class=" header-text menu-link  whiteBg">
-                                <p class=" header-text hoverable">Главная</p>
-                            </a>
-                        </li>
-                        <li>
-                            <div class="dropdown dropbtn  header-text menu-link  whiteBg">
+                    <div class="menu-list">
+                        <ul class="main-list" id="mobileMainMenu">
+                            <li class="menu-list-item">
+                                <a href="main.html" class=" header-text menu-link  whiteBg">
+                                    <p class=" header-text hoverable">Главная</p>
+                                </a>
+                            </li>
+                            <li
+                                class="menu-list-item dropdown dropbtn header-text menu-link whiteBg jsMobileMenu-label"
+                            >
+                                <i
+                                    class="fas fa-angle-left dropdown-submenu-icon-mobile header-text"
+                                ></i>
                                 <p class="header-text jsDropdownLabel">
-                                    <i
-                                        class="fas fa-angle-down dropdown-submenu-icon-mobile header-text"
-                                    ></i>
-                                    Тренажеры&emsp;
+                                    Тренажеры
                                     <i class="fas fa-angle-down dropdown-menu-icon"></i>
                                 </p>
                                 <ul
-                                    class="dropdown-header dropdown-content dropdown-content-background jsDropdownList"
+                                    class="dropdown-header dropdown-content dropdown-content-background jsMobileMenu-menu"
+                                    id="trainingMenuPage"
                                 >
-                                    <li class="dropdown dropdown-item dropdown-item-submenu">
+                                    <li
+                                        class="dropdown-item jsMobileMenu-label dropdown-link-mobile"
+                                        data-back="mobileMainMenu"
+                                    >
                                         <i
-                                            class="fas fa-angle-down dropdown-submenu-icon-mobile header-text"
+                                            class="fas fa-angle-right dropdown-submenu-icon-mobile header-text"
                                         ></i>
-                                        <a
-                                            href="trainingAn.html#main"
+                                        <p class="dropdown-link header-text">
+                                            Назад
+                                        </p>
+                                    </li>
+                                    <li
+                                        class="dropdown dropdown-item dropdown-item-submenu jsMobileMenu-label"
+                                    >
+                                        <i
+                                            class="fas fa-angle-left dropdown-submenu-icon-mobile header-text"
+                                        ></i>
+                                        <p
                                             class="dropdown-submenu-link header-text jsDropdownLabel"
                                         >
                                             Ан-148
-                                        </a>
+                                        </p>
                                         <i
                                             class="fas fa-angle-right dropdown-submenu-icon header-text"
                                         ></i>
                                         <ul
-                                            class="dropdown-submenu dropdown-content dropdown-content-background jsDropdownList"
+                                            class="dropdown-submenu dropdown-content dropdown-content-background jsMobileMenu-menu"
                                         >
+                                            <li
+                                                class="dropdown-item jsMobileMenu-label dropdown-link-mobile"
+                                                data-back="trainingMenuPage"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right dropdown-submenu-icon-mobile header-text"
+                                                ></i>
+                                                <p class="dropdown-link header-text">
+                                                    Тренажеры
+                                                </p>
+                                            </li>
                                             <li class="dropdown-item">
                                                 <a
                                                     href="trainingAn.html#main"
@@ -102,22 +128,34 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown dropdown-item dropdown-item-submenu">
+                                    <li
+                                        class="dropdown dropdown-item dropdown-item-submenu jsMobileMenu-label"
+                                    >
                                         <i
-                                            class="fas fa-angle-down dropdown-submenu-icon-mobile header-text"
+                                            class="fas fa-angle-left dropdown-submenu-icon-mobile header-text"
                                         ></i>
-                                        <a
-                                            href="#main"
+                                        <p
                                             class="dropdown-submenu-link header-text jsDropdownLabel"
                                         >
                                             Ил-96
-                                        </a>
+                                        </p>
                                         <i
                                             class="fas fa-angle-right dropdown-submenu-icon header-text"
                                         ></i>
                                         <ul
-                                            class="dropdown-submenu dropdown-content dropdown-content-background jsDropdownList"
+                                            class="dropdown-submenu dropdown-content dropdown-content-background jsMobileMenu-menu"
                                         >
+                                            <li
+                                                class="dropdown-item jsMobileMenu-label dropdown-link-mobile"
+                                                data-back="trainingMenuPage"
+                                            >
+                                                <i
+                                                    class="fas fa-angle-right dropdown-submenu-icon-mobile header-text"
+                                                ></i>
+                                                <p class="dropdown-link header-text">
+                                                    Тренажеры
+                                                </p>
+                                            </li>
                                             <li class="dropdown-item">
                                                 <a href="#main" class="dropdown-link header-text">
                                                     Комплексный
@@ -131,20 +169,31 @@
                                         </ul>
                                     </li>
                                 </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="dropdown dropbtn  header-text menu-link  whiteBg">
-                                <p class="header-text jsDropdownLabel">
-                                    <i
-                                        class="fas fa-angle-down dropdown-submenu-icon-mobile header-text"
-                                    ></i>
-                                    Обучение&emsp;
+                            </li>
+                            <li
+                                class="menu-list-item dropdown dropbtn header-text menu-link whiteBg jsMobileMenu-label"
+                            >
+                                <i
+                                    class="fas fa-angle-left dropdown-submenu-icon-mobile header-text"
+                                ></i>
+                                <p class="header-text">
+                                    Обучение
                                     <i class="fas fa-angle-down dropdown-menu-icon"></i>
                                 </p>
                                 <ul
-                                    class="dropdown-header dropdown-content dropdown-content-background jsDropdownList"
+                                    class="dropdown-header dropdown-content dropdown-content-background jsMobileMenu-menu"
                                 >
+                                    <li
+                                        class="dropdown-item jsMobileMenu-label dropdown-link-mobile"
+                                        data-back="mobileMainMenu"
+                                    >
+                                        <i
+                                            class="fas fa-angle-right dropdown-submenu-icon-mobile header-text"
+                                        ></i>
+                                        <p class="dropdown-link header-text">
+                                            Назад
+                                        </p>
+                                    </li>
                                     <li class="dropdown-item">
                                         <a
                                             href="trainingAn.html#obuch"
@@ -159,20 +208,31 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="dropdown dropbtn  header-text menu-link  whiteBg">
-                                <p class="header-text jsDropdownLabel">
-                                    <i
-                                        class="fas fa-angle-down dropdown-submenu-icon-mobile header-text"
-                                    ></i>
-                                    О самолетах&emsp;
+                            </li>
+                            <li
+                                class="menu-list-item dropdown dropbtn header-text menu-link whiteBg jsMobileMenu-label"
+                            >
+                                <i
+                                    class="fas fa-angle-left dropdown-submenu-icon-mobile header-text"
+                                ></i>
+                                <p class="header-text">
+                                    О самолетах
                                     <i class="fas fa-angle-down dropdown-menu-icon"></i>
                                 </p>
                                 <ul
-                                    class="dropdown-header dropdown-content dropdown-content-background jsDropdownList"
+                                    class="dropdown-header dropdown-content dropdown-content-background jsMobileMenu-menu"
                                 >
+                                    <li
+                                        class="dropdown-item jsMobileMenu-label dropdown-link-mobile"
+                                        data-back="mobileMainMenu"
+                                    >
+                                        <i
+                                            class="fas fa-angle-right dropdown-submenu-icon-mobile header-text"
+                                        ></i>
+                                        <p class="dropdown-link header-text">
+                                            Назад
+                                        </p>
+                                    </li>
                                     <li class="dropdown-item">
                                         <a
                                             href="trainingAn.html#plane"
@@ -187,25 +247,36 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="main.html#about" class=" header-text menu-link  whiteBg">
-                                <p class="header-text hoverable">О нас</p>
-                            </a>
-                        </li>
-                        <li>
-                            <div class="dropdown dropbtn  header-text menu-link  whiteBg">
-                                <p class="header-text jsDropdownLabel">
-                                    <i
-                                        class="fas fa-angle-down dropdown-submenu-icon-mobile header-text"
-                                    ></i>
-                                    Контакты&emsp;
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="main.html#about" class="header-text menu-link whiteBg">
+                                    <p class="header-text hoverable">О нас</p>
+                                </a>
+                            </li>
+                            <li
+                                class="menu-list-item dropdown dropbtn header-text menu-link whiteBg jsMobileMenu-label"
+                            >
+                                <i
+                                    class="fas fa-angle-left dropdown-submenu-icon-mobile header-text"
+                                ></i>
+                                <p class="header-text">
+                                    Контакты
                                     <i class="fas fa-angle-down dropdown-menu-icon"></i>
                                 </p>
                                 <ul
-                                    class="dropdown-header dropdown-content dropdown-content-background jsDropdownList"
+                                    class="dropdown-header dropdown-content dropdown-content-background jsMobileMenu-menu"
                                 >
+                                    <li
+                                        class="dropdown-item jsMobileMenu-label dropdown-link-mobile"
+                                        data-back="mobileMainMenu"
+                                    >
+                                        <i
+                                            class="fas fa-angle-right dropdown-submenu-icon-mobile header-text"
+                                        ></i>
+                                        <p class="dropdown-link header-text">
+                                            Назад
+                                        </p>
+                                    </li>
                                     <li class="dropdown-item">
                                         <a
                                             href="main.html#contact"
@@ -228,9 +299,9 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -1600,7 +1671,6 @@
                             marginheight="0"
                             marginwidth="0"
                             id="contact-form"
-                            sandbox="allow-same-origin allow-forms allow-scripts"
                         >
                             Загрузка…
                         </iframe>
