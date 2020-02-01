@@ -44,6 +44,7 @@ class MobileMenu {
 	bootstrap() {
 		// Используется стрелочная функция для прокидывания this объекта вместо JQuery
 		$('.jsMobileMenu-label').click((event) => {
+			if (window.innerWidth >= 1100) return;
 			// Так как архитектура верстки подменю иерархическая - необходимо прервать
 			// bubbling события, чтобы не сработали обработчики выше (несмотря на то, что
 			// элементы не попадают в область клика - они обрабатывают событие по иерархии)
@@ -55,7 +56,6 @@ class MobileMenu {
 			const previousPageId = $(event.currentTarget).attr('data-back');
 			let nextPage = null;
 
-			// debugger;
 			if (previousPageId) {
 				if (previousPageId === 'mobileMainMenu') {
 					nextPage = this.mobileMenu;
