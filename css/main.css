@@ -110,6 +110,7 @@ body ul li {
 @media (max-width: 686px) {
   .flex {
     flex-direction: column;
+    align-items: normal;
   }
   .flex p {
     text-align: left;
