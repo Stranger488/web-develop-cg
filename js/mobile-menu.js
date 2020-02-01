@@ -24,6 +24,7 @@ $(document).ready(function() {
 	//toggle menu
 	$('.hamburger-container').click(function() {
 		$('.menu-list').slideToggle();
+		setTimeout(mobileMenu.refresh.bind(mobileMenu), 320);
 	});
 
 	$('.jsDropdownLabel').click(function() {
