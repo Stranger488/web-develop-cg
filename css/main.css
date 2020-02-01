@@ -892,13 +892,15 @@ footer {
   box-sizing: border-box;
 }
 .separator {
-  display: block;
-  height: 1px;
-  margin: 50px 100px 50px 100px;
-  left: 50%;
-  transform: translateX(-100%);
-  width: 200px;
-  background-color: #808080;
+  margin-bottom: 35px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 2px;
+  background-image: linear-gradient(to right, transparent, #808080, transparent);
 }
 @media (min-width: 1200px) {
   .sep-hor {
@@ -1058,11 +1060,14 @@ footer {
   font-weight: 300;
 }
 .about-list > li::before {
-  content: '●';
   color: #777777;
   display: inline-block;
   width: 1em;
   margin-left: -1em;
+}
+.about-list i.fas {
+  padding-right: 5px;
+  color: #343a40;
 }
 .contact-info-row {
   margin-top: 30px;
@@ -1486,4 +1491,4 @@ footer {
 .content-loaded {
   display: none;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=./main.css.map */
