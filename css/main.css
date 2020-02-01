@@ -1151,23 +1151,28 @@ footer {
 }
 @media (max-width: 768px) {
   .contact-form {
-    height: 750px;
+    height: 775px;
   }
 }
 @media (max-width: 600px) {
   .contact-form {
     width: 100%;
-    margin-bottom: 25px;
   }
 }
 @media (max-width: 450px) {
   .contact-form {
     height: 835px;
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 380px) {
   .contact-form {
-    height: 900px;
+    height: 850px;
+  }
+}
+@media (max-width: 350px) {
+  .contact-form {
+    height: 890px;
   }
 }
 .contact-map {
