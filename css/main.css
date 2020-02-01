@@ -95,6 +95,7 @@ body ul li {
 }
 .bb-black h1 {
   color: #f5f5f5;
+  margin-bottom: 10px;
 }
 @media (min-width: 1200px) {
   .bb-black {
@@ -118,19 +119,17 @@ body ul li {
   padding: 20px 20px;
 }
 .flex img {
-  width: 450px;
-  height: 300px;
+  max-width: 450px;
+  height: auto;
 }
 @media (max-width: 940px) {
   .flex img {
     width: 338px;
-    height: 225px;
   }
 }
 @media (max-width: 686px) {
   .flex img {
     width: 450px;
-    height: 300px;
   }
 }
 @media (max-width: 490px) {
