@@ -1149,7 +1149,7 @@ footer {
   width: 500px;
   height: 800px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1220px) {
   .contact-form {
     height: 775px;
   }
