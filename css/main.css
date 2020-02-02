@@ -1492,6 +1492,11 @@ footer {
 .sponsors .flex h4 {
   padding-bottom: 5px;
 }
+@media (max-width: 686px) {
+  .sponsors .flex {
+    align-items: center;
+  }
+}
 .modal-fade {
   display: none;
   position: fixed;
@@ -1562,4 +1567,4 @@ footer {
 .content-loaded {
   display: none;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=./main.css.map */
