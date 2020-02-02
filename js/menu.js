@@ -1,23 +1,6 @@
-const initialHandlers = () => {
-	if (window.innerWidth > 500) {
-		$('.header-text').css('color', '#fff');
-		$('.whiteBg').css('backgroundColor', 'rgba(0,0,0,0)');
-	} else {
-		$('.header-text').css('color', '#000');
-		$('.whiteBg').css('backgroundColor', 'rgba(255,255,255,1)');
-	}
+import { MobileHamburger } from './mobile-menu.js';
 
-	if (window.innerWidth < 1100 && $(window).scrollTop() > 50) {
-		$('.whiteBg').css('backgroundColor', 'rgba(255,255,255,1)');
-	} else {
-		$('.whiteBg').css('backgroundColor', 'rgba(0,0,0,0)');
-	}
-
-	if (window.innerWidth < 1100) {
-		$('.menu-list .whiteBg').removeAttr('style');
-		$('.menu-list .header-text').removeAttr('style');
-	}
-
+const handleGradient = () => {
 	// gradient in dropdown
 	if (window.innerWidth >= 1100) {
 		if ($(window).scrollTop() > 50) {
@@ -34,65 +17,48 @@ const initialHandlers = () => {
 	}
 };
 
-const scrollHeaderHandler = () => {
-	// gradient in dropdown
-	if (window.innerWidth >= 1100) {
-		if ($(window).scrollTop() > 50) {
-			$('.dropdown-content-background').css('background-image', 'none');
-		} else {
-			$('.dropdown-content-background').css(
-				'background-image',
-				'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55) 30%)',
-			);
-		}
-	} else {
-		// no gradient in dropdown for small resolutions
-		$('.dropdown-content-background').css('background-image', 'none');
-	}
-
+export const headerHandler = () => {
 	if ($(window).scrollTop() > 50) {
-		if (window.innerWidth > 500) {
-			$('.header-text').css('color', '#000');
-
-			if (window.innerWidth < 1100) {
-				$('.whiteBg').css('backgroundColor', '#fff');
-			} else {
-				$('.dropdown-content').css('backgroundColor', '#fff');
-			}
-		}
-
+		$('.header-text').css('color', '#000');
 		$('.header-panel-bg').css('opacity', '1');
 		$('.ham-li').css('backgroundColor', '#000');
-	} else {
-		if (window.innerWidth > 500) {
-			$('.header-text').css('color', '#fff');
-			$('.whiteBg').css('backgroundColor', 'rgba(0,0,0,0)');
 
-			if (window.innerWidth < 1100) {
-				$('.whiteBg').css('backgroundColor', 'rgba(0,0,0,0)');
-				$('.dropdown-content').css('backgroundColor', 'rgba(0,0,0,0)');
-			} else {
-				$('.dropdown-content').css('backgroundColor', 'rgba(0,0,0,0)');
-			}
+		if (window.innerWidth >= 1100) {
+			$('.dropdown-content').css('background-color', '#fff');
 		}
-
+	} else {
+		$('.header-text').css('color', '#fff');
 		$('.header-panel-bg').css('opacity', '0');
 		$('.ham-li').css('backgroundColor', '#fff');
+
+		if (window.innerWidth >= 1100) {
+			$('.dropdown-content').css('backgroundColor', 'rgba(0,0,0,0)');
+		}
 	}
 
-	if (window.innerWidth < 1100) {
-		$('.menu-list .whiteBg').removeAttr('style');
+	handleGradient();
+
+	// Отключение slideToggle от jQuery на desktop разрешении
+	if (window.innerWidth > 1100) {
+		$('.menu-list').removeAttr('style');
+	}
+
+	// Черный цвет в мобильном меню
+	if (window.innerWidth <= 1100) {
 		$('.menu-list .header-text').removeAttr('style');
 	}
 };
 
-class MobileMenu {
+export class MobileMenu {
 	constructor() {
 		this.mobileMenu = $('#mobileMainMenu');
 		this.currentPage = this.mobileMenu;
+
+		this.hamburger = new MobileHamburger(this.toggle.bind(this));
 	}
 
 	bootstrap() {
+		this.hamburger.bootstrap();
 		// Используется стрелочная функция для прокидывания this объекта вместо JQuery
 		$('.jsMobileMenu-label').click((event) => {
 			if (window.innerWidth >= 1100) return;
@@ -137,24 +103,19 @@ class MobileMenu {
 		this.mobileMenu.css('transform', `translateX(0)`);
 		this.currentPage = this.mobileMenu;
 	}
+
+	toggle() {
+		$('.menu-list').slideToggle();
+		setTimeout(this.refresh.bind(this), 320);
+	}
+
+	closeIfOpen() {
+		this.hamburger.closeIfOpen();
+	}
 }
 
-const mobileMenu = new MobileMenu();
-
-$(document).ready(() => {
-	initialHandlers();
-	scrollHeaderHandler();
-
-	$('.aandopen-light').click(function() {
+export const aandopenHandler = () => {
+	$('.aandopen-light, .aandopen-dark').click(function() {
 		$(this).toggleClass('aandopen_active');
 	});
-	$('.aandopen-dark').click(function() {
-		$(this).toggleClass('aandopen_active');
-	});
-
-	mobileMenu.bootstrap();
-});
-
-$(window).resize(initialHandlers);
-
-$(window).scroll(scrollHeaderHandler);
+};

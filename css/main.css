@@ -304,7 +304,7 @@ body ul li {
     font-size: 11px;
   }
 }
-@media screen and (max-width: 1099px) {
+@media screen and (max-width: 1100px) {
   .header-text {
     color: #000;
   }
@@ -312,7 +312,7 @@ body ul li {
 .header-phone {
   padding-top: 9px;
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1101px) {
   .header-phone {
     left: 285px;
     width: 120px;
@@ -618,7 +618,7 @@ body ul li {
   cursor: pointer;
   float: right;
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1101px) {
   .hamburger-container {
     display: none;
   }
@@ -1047,14 +1047,6 @@ footer {
 }
 .greyBg {
   background-color: rgba(0, 0, 0, 0.2);
-}
-.whiteBg {
-  transition: background-color 0.2s ease-out;
-}
-@media screen and (max-width: 1099px) {
-  .whiteBg {
-    background-color: #fff;
-  }
 }
 .trLink {
   z-index: 5;
