@@ -79,13 +79,13 @@ export class MobileMenu {
 				} else {
 					nextPage = this.mobileMenu.find(`#${previousPageId}`);
 				}
-				offset -= 200;
+				offset += 200;
 			} else {
 				nextPage = $(event.target).siblings('.jsMobileMenu-menu');
 				if (nextPage.length === 0) {
 					nextPage = $(event.target).children('.jsMobileMenu-menu');
 				}
-				offset += 200;
+				offset -= 200;
 			}
 
 			if (nextPage.length === 0) return;
