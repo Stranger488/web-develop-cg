@@ -1,39 +1,46 @@
-$(document).ready(() => {
-	const modal = $('.modal-fade');
-	const innerModal = modal.find('#modal-content');
+export default class ModalWindow {
+	constructor() {
+		this.modal = $('.modal-fade');
+		this.innerModal = this.modal.find('#modal-content');
+	}
 
-	modal
-		.children()
-		.children('.modal-close')
-		.click(() => {
-			modal.toggleClass('modal-active');
-			$('body').removeAttr('style');
-			innerModal.html('');
-			modal
-				.children()
-				.children('.content-loading')
-				.toggleClass('content-loaded');
+	bootstrap() {
+		this.modal
+			.children()
+			.children('.modal-close')
+			.click(() => {
+				this.modal.toggleClass('modal-active');
+				$('body').removeAttr('style');
+				this.innerModal.html('');
+				this.modal
+					.children()
+					.children('.content-loading')
+					.toggleClass('content-loaded');
+			});
+
+		$('.jsModalTrigger').click((event) => {
+			const currentElem = event.currentTarget;
+
+			this.modal.toggleClass('modal-active');
+			$('body').css('overflow-y', 'hidden');
+
+			const contentImg = $(currentElem)
+				.attr('src')
+				.replace('x1', 'x2');
+
+			const descriptionId = $(currentElem).attr('id') + '-desc';
+			const description = $(currentElem)
+				.siblings(`#${descriptionId}`)
+				.text();
+
+			this.innerModal.append(`<img class="modal-content-img" src="${contentImg}">`);
+			this.innerModal.append(`<div class="modal-content-description">${description}</div>`);
+			this.innerModal.children('.modal-content-img').load(() => {
+				this.modal
+					.children()
+					.children('.content-loading')
+					.toggleClass('content-loaded');
+			});
 		});
-
-	$('.jsModalTrigger').click(function() {
-		modal.toggleClass('modal-active');
-		$('body').css('overflow-y', 'hidden');
-
-		const contentImg = $(this)
-			.attr('src')
-			.replace('x1', 'x2');
-		const descriptionId = $(this).attr('id') + '-desc';
-		const description = $(this)
-			.siblings(`#${descriptionId}`)
-			.text();
-		console.log('test:', contentImg);
-		innerModal.append(`<img class="modal-content-img" src="${contentImg}">`);
-		innerModal.append(`<div class="modal-content-description">${description}</div>`);
-		innerModal.children('.modal-content-img').load(function() {
-			modal
-				.children()
-				.children('.content-loading')
-				.toggleClass('content-loaded');
-		});
-	});
-});
+	}
+}

@@ -561,7 +561,7 @@
                     <br />
                 </div>
 
-                <div class="aandopen-dark" onclick="closeopen('crew')">
+                <div class="aandopen-dark" data-info-id="crew">
                     <div class="aandopen-content-wrapper">
                         <span>Летный состав</span>
                         <i class="fa fa-angle-down"></i>
@@ -686,7 +686,7 @@
                     </div>
                 </div>
 
-                <div class="aandopen-dark" onclick="closeopen('crew1')">
+                <div class="aandopen-dark" data-info-id="crew1">
                     <div class="aandopen-content-wrapper">
                         <span>Бортпроводники</span>
                         <i class="fa fa-angle-down"></i>
@@ -1120,7 +1120,7 @@
                     </div>
                 </div>
 
-                <div class="aandopen-dark" onclick="closeopen('crew2')">
+                <div class="aandopen-dark" data-info-id="crew2">
                     <div class="aandopen-content-wrapper">
                         <span>Инженерно-технический персонал</span>
                         <i class="fa fa-angle-down"></i>
@@ -1376,7 +1376,7 @@
                 </div>
                 <br />
 
-                <div class="aandopen-dark" onclick="closeopen('plane1')">
+                <div class="aandopen-dark" data-info-id="plane1">
                     <div class="aandopen-content-wrapper">
                         <span>Модификации семейства самолетов АН-148</span>
                         <i class="fa fa-angle-down"></i>
@@ -1439,7 +1439,7 @@
                     </table>
                 </div>
 
-                <div class="aandopen-dark" onclick="closeopen('plane2')">
+                <div class="aandopen-dark" data-info-id="plane2">
                     <div class="aandopen-content-wrapper">
                         <span>Основные летно-технические характеристики</span>
                         <i class="fa fa-angle-down"></i>
@@ -1705,7 +1705,7 @@
                     </div>
                 </div>
 
-                <div class="aandopen-dark" onclick="closeopen('plane3')">
+                <div class="aandopen-dark" data-info-id="plane3">
                     <div class="aandopen-content-wrapper">
                         <span>Компоновки</span>
                         <i class="fa fa-angle-down"></i>
@@ -1799,21 +1799,13 @@
             </div>
         </footer>
         <script type="text/javascript" src="../vendor/slick/slick.min.js"></script>
-        <script type="text/javascript">
-            $('.slider').slick({
-                dots: true,
-                nextArrow:
-                    '<div class="slider-arrow arrow-next"><div><i class="fa fa-angle-right"></i></div></div>',
-                prevArrow:
-                    '<div class="slider-arrow arrow-prev"><div><i class="fa fa-angle-left"></i></div></div>',
-            });
-        </script>
 
         <div class="modal-fade">
             <div class="modal-content">
                 <div id="modal-content"></div>
                 <div class="content-loading">
                     <i class="fas fa-spinner fa-pulse"></i>
+                    Загрузка изображения
                 </div>
                 <div class="modal-close">
                     <svg class="modal-close-icon" viewBox="0 0 24 24">
@@ -1826,19 +1818,5 @@
             </div>
         </div>
     </body>
-    <script src="../js/closeopen.js"></script>
-    <!--    <script src="../js/menu.js"></script>-->
-    <!--    <script src="../js/mobile-menu.js"></script>-->
     <script type="module" src="../js/main.js"></script>
-    <script src="../js/modal.js"></script>
-    <script type="text/javascript">
-        //code for proper 100vh
-        let vh = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-        window.addEventListener('resize', () => {
-            let vh = window.innerHeight * 0.01;
-            document.documentElement.style.setProperty('--vh', `${vh}px`);
-        });
-    </script>
 </html>

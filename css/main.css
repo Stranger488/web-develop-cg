@@ -140,6 +140,7 @@ body ul li {
   }
 }
 .flex img.layout {
+  max-width: unset;
   width: auto;
   height: auto;
   padding-bottom: 30px;
@@ -1263,7 +1264,7 @@ footer {
   overflow: hidden;
   transition: all 0.3s ease;
 }
-.info-dropdown_active {
+.info-dropdown-active {
   padding: 20px 0;
   max-height: 3000px;
 }
@@ -1555,13 +1556,16 @@ footer {
   cursor: pointer;
 }
 .content-loading {
-  font-size: 28px;
-  position: absolute;
-  transform: translateX(-50%) translateY(-50%);
-  left: calc(50%);
-  top: calc(50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  position: relative;
+  min-height: 200px;
+  color: #5472e3;
 }
 .content-loading i {
+  margin-right: 16px;
   color: #5472e3;
 }
 .content-loaded {

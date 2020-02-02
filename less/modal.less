@@ -68,12 +68,17 @@
 
 .content {
     &-loading {
-        font-size: 28px;
-        position: absolute;
-        transform: translateX(-50%) translateY(-50%);
-        left: calc(50%);
-        top: calc(50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 36px;
+        position: relative;
+        min-height: 200px;
+        color: @highlight;
+
         i {
+            margin-right: 16px;
             color: @highlight;
         }
     }
