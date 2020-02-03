@@ -15,7 +15,7 @@ export default class ModalWindow {
 				this.modal
 					.children()
 					.children('.content-loading')
-					.toggleClass('content-loaded');
+					.removeClass('content-loaded');
 			});
 
 		$('.jsModalTrigger').click((event) => {
@@ -39,7 +39,7 @@ export default class ModalWindow {
 				this.modal
 					.children()
 					.children('.content-loading')
-					.toggleClass('content-loaded');
+					.addClass('content-loaded');
 			});
 		});
 	}

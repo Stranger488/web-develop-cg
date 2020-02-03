@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prettier": "prettier --config .prettierrc.json --write '{static,js,less}/**/*.{js,html,less}'",
+    "postcss": "postcss css/main.css --use autoprefixer -d css/",
     "build": "mkdir deploy && cp -r css/ deploy/ && cp -r fonts/ deploy/ && cp -r img/ deploy/ && cp -r js/ deploy/ && cp -r static/ deploy/ && cp -r vendor/ deploy/",
     "deploy:prod": "now --prod"
   },
@@ -21,16 +22,18 @@
   "homepage": "https://github.com/Stranger488/web-develop-cg#readme",
   "devDependencies": {
     "@commitlint/cli": "^8.3.4",
+    "autoprefixer": "^9.7.4",
     "commitizen": "^4.0.3",
     "cz-customizable": "^6.2.0",
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
+    "postcss-cli": "^7.1.0",
     "prettier": "^1.19.1"
   },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS -g '.config/git/commitlint.js'",
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged && npm run postcss && git add css/main.css"
     }
   },
   "lint-staged": {

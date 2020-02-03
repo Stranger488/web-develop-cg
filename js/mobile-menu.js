@@ -91,6 +91,9 @@ export default class MobileMenu {
 				offset -= 200;
 			}
 
+			// Если пользователь часто свайпает - transform будет не успевать выполниться
+			offset = offset - (offset % 200);
+
 			if (nextPage.length === 0) return;
 
 			nextPage.addClass('dropdown-content-active');
