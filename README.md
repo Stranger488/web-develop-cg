@@ -59,7 +59,7 @@ https://habr.com/ru/company/yandex/blog/431432/
 - `npm run build` - получение папки `deploy/` со всеми конечными production файлами
 
 -----------------------------
-###Команда:
+### Команда:
 **Косенков Александр** - `https://github.com/SoulPhazed`\
 **Гольцов Илья** - `https://github.com/Stranger488`\
 **Гасанов Ислам** - `https://github.com/mafrien`
