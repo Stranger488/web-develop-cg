@@ -4,15 +4,6 @@
 // Переопределение классов библиотеки slick
 
 .slider {
-    h1 {
-        @media screen and (max-width: 700px) {
-            font-size: 28px;
-        }
-        @media screen and (max-width: 420px) {
-            font-size: 22px;
-        }
-    }
-
     margin-bottom: 0 !important;
     height: 100%;
     max-height: calc(~'var(--vh, 1vh) * 100');
@@ -247,6 +238,15 @@
     //padding: 50px 10px 50px 70px;
 }
 
+.main-slider-header {
+    @media screen and (max-width: 700px) {
+        font-size: 28px;
+    }
+    @media screen and (max-width: 420px) {
+        font-size: 22px;
+    }
+}
+
 .training-slider {
     //height: 600px;
 
@@ -264,14 +264,25 @@
         transform: translate(-50%, 0);
         text-shadow: 0 0 15px black;
         font-size: 40px;
+        width: 600px;
 
         @media screen and (max-width: 700px) {
             font-size: 28px;
             bottom: 55px;
         }
 
-        @media screen and (max-width: 420px) {
-            font-size: 22px;
+        @media screen and (max-width: 600px) {
+            width: 500px;
+            font-size: 24px;
+        }
+
+        @media screen and (max-width: 470px) {
+            width: 380px;
+            font-size: 18px;
+        }
+
+        @media screen and (max-width: 370px) {
+            width: 320px;
         }
     }
 }
