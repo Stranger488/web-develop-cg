@@ -62,6 +62,11 @@ export default class MobileMenu {
 
 	bootstrap() {
 		this.hamburger.bootstrap();
+		$('.dropdown-submenu-link').click((event) => {
+			if (window.innerWidth >= 1100) return;
+			event.preventDefault();
+		});
+
 		// Используется стрелочная функция для прокидывания this объекта вместо JQuery
 		$('.jsMobileMenu-label').click((event) => {
 			if (window.innerWidth >= 1100) return;
