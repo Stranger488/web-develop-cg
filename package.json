@@ -4,10 +4,11 @@
   "description": "IFK-training",
   "main": "index.js",
   "scripts": {
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prettier": "prettier --config .prettierrc.json --write '{static,js,less}/**/*.{js,html,less}'",
-    "postcss": "postcss css/main.css --use autoprefixer -d css/",
-    "build": "mkdir deploy && cp -r css/ deploy/ && cp -r fonts/ deploy/ && cp -r img/ deploy/ && cp -r js/ deploy/ && cp -r static/ deploy/ && cp -r vendor/ deploy/",
+    "build": "gulp build",
+    "clear-gulp-cache": "gulp cache:clear",
     "deploy:prod": "now --prod"
   },
   "repository": {
@@ -21,19 +22,36 @@
   },
   "homepage": "https://github.com/Stranger488/web-develop-cg#readme",
   "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
     "@commitlint/cli": "^8.3.4",
     "autoprefixer": "^9.7.4",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.26.7",
+    "browserify": "^16.5.0",
     "commitizen": "^4.0.3",
     "cz-customizable": "^6.2.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cache": "^1.1.3",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-less": "^4.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
     "husky": "^3.1.0",
+    "imagemin-pngquant": "^8.0.0",
     "lint-staged": "^9.5.0",
     "postcss-cli": "^7.1.0",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
   },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS -g '.config/git/commitlint.js'",
-      "pre-commit": "lint-staged && npm run postcss && git add css/main.css"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
@@ -49,5 +67,6 @@
     "cz-customizable": {
       "config": ".config/git/commitizen.js"
     }
-  }
+  },
+  "dependencies": {}
 }
