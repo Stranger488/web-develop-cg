@@ -14,6 +14,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
 const cache = require('gulp-cache');
+const rigger = require('gulp-rigger');
 const browserSync = require('browser-sync').create();
 
 const del = require('del');
@@ -103,6 +104,7 @@ gulp.task('build:less', () => {
 
 gulp.task('build:html', () => {
 	return gulp.src(path.src.html)
+		.pipe(rigger())
 		.pipe(gulp.dest(path.build.html));
 });
 

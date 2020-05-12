@@ -15,294 +15,8 @@
         <script src="vendor/jquery/jquery-2.3.1.min.js"></script>
     </head>
     <body>
-        <div class="header-panel">
-            <div class="header-panel-bg"></div>
-            <div class="header-logo">
-                <a href="main.html"><img src="img/header-logo.png" /></a>
-            </div>
-            <div class="header-phone">
-                <p class="header-text">+7 (495) 710-99-60 (Доб. 322)</p>
-            </div>
-            <div class="header-nav">
-                <nav class="nav">
-                    <div class="hamburger-container">
-                        <ul class="hamburger">
-                            <li class="ham-li" style="background-color: white;"></li>
-                            <li class="ham-li" style="background-color: white;"></li>
-                            <li class="ham-li" style="background-color: white;"></li>
-                        </ul>
-                    </div>
+        //= template/header.html
 
-                    <div class="menu-list">
-                        <ul class="main-list" id="mobileMainMenu">
-                            <li class="menu-list-item">
-                                <a href="main.html" class="header-text menu-link">
-                                    <p class=" header-text hoverable">Главная</p>
-                                </a>
-                            </li>
-                            <li
-                                class="menu-list-item dropdown dropbtn header-text menu-link jsMobileMenu-label"
-                            >
-                                <p class="header-text">
-                                    Тренажеры
-                                    <i class="fas fa-angle-down dropdown-menu-icon"></i>
-                                </p>
-                                <i
-                                    class="fas fa-angle-right dropdown-submenu-icon-mobile header-text"
-                                ></i>
-                                <ul
-                                    class="dropdown-header dropdown-content dropdown-header-root dropdown-content-root dropdown-content-background jsMobileMenu-menu"
-                                    id="trainingMenuPage"
-                                >
-                                    <li
-                                        class="dropdown-item jsMobileMenu-label dropdown-link-mobile"
-                                        data-back="mobileMainMenu"
-                                    >
-                                        <i
-                                            class="fas fa-angle-left dropdown-submenu-icon-mobile header-text"
-                                        ></i>
-                                        <p class="dropdown-link header-text">
-                                            Назад
-                                        </p>
-                                    </li>
-                                    <li
-                                        class="dropdown dropdown-item dropdown-item-submenu jsMobileMenu-label"
-                                    >
-                                        <a
-                                            href="trainingAn.html#main"
-                                            class="dropdown-submenu-link header-text"
-                                        >
-                                            Ан-148
-                                        </a>
-                                        <i
-                                            class="fas fa-angle-right dropdown-submenu-icon-mobile header-text"
-                                        ></i>
-                                        <i
-                                            class="fas fa-angle-right dropdown-submenu-icon header-text"
-                                        ></i>
-                                        <ul
-                                            class="dropdown-submenu dropdown-content dropdown-content-background jsMobileMenu-menu"
-                                        >
-                                            <li
-                                                class="dropdown-item jsMobileMenu-label dropdown-link-mobile"
-                                                data-back="trainingMenuPage"
-                                            >
-                                                <i
-                                                    class="fas fa-angle-left dropdown-submenu-icon-mobile header-text"
-                                                ></i>
-                                                <p class="dropdown-link header-text">
-                                                    Тренажеры
-                                                </p>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a
-                                                    href="trainingAn.html#main"
-                                                    class="dropdown-link header-text"
-                                                >
-                                                    КТС
-                                                </a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a
-                                                    href="trainingAn.html#pts"
-                                                    class="dropdown-link header-text"
-                                                >
-                                                    ПТС
-                                                </a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a
-                                                    href="trainingAn.html#bortpr"
-                                                    class="dropdown-link header-text"
-                                                >
-                                                    ТАСП
-                                                </a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a
-                                                    href="trainingAn.html#study"
-                                                    class="dropdown-link header-text"
-                                                >
-                                                    Учебный класс
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li
-                                        class="dropdown dropdown-item dropdown-item-submenu jsMobileMenu-label"
-                                    >
-                                        <a href="#main" class="dropdown-submenu-link header-text">
-                                            Ил-96
-                                        </a>
-                                        <i
-                                            class="fas fa-angle-right dropdown-submenu-icon-mobile header-text"
-                                        ></i>
-                                        <i
-                                            class="fas fa-angle-right dropdown-submenu-icon header-text"
-                                        ></i>
-                                        <ul
-                                            class="dropdown-submenu dropdown-content dropdown-content-background jsMobileMenu-menu"
-                                        >
-                                            <li
-                                                class="dropdown-item jsMobileMenu-label dropdown-link-mobile"
-                                                data-back="trainingMenuPage"
-                                            >
-                                                <i
-                                                    class="fas fa-angle-left dropdown-submenu-icon-mobile header-text"
-                                                ></i>
-                                                <p class="dropdown-link header-text">
-                                                    Тренажеры
-                                                </p>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a href="#main" class="dropdown-link header-text">
-                                                    КТС
-                                                </a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a href="#snt" class="dropdown-link header-text">
-                                                    СНТ
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li
-                                class="menu-list-item dropdown dropbtn header-text menu-link jsMobileMenu-label"
-                            >
-                                <p class="header-text">
-                                    Обучение
-                                    <i class="fas fa-angle-down dropdown-menu-icon"></i>
-                                </p>
-                                <i
-                                    class="fas fa-angle-right dropdown-submenu-icon-mobile header-text"
-                                ></i>
-                                <ul
-                                    class="dropdown-header dropdown-content dropdown-header-root dropdown-content-root dropdown-content-background jsMobileMenu-menu"
-                                >
-                                    <li
-                                        class="dropdown-item jsMobileMenu-label dropdown-link-mobile"
-                                        data-back="mobileMainMenu"
-                                    >
-                                        <i
-                                            class="fas fa-angle-left dropdown-submenu-icon-mobile header-text"
-                                        ></i>
-                                        <p class="dropdown-link header-text">
-                                            Назад
-                                        </p>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a
-                                            href="trainingAn.html#obuch"
-                                            class="dropdown-link header-text"
-                                        >
-                                            Ан-148
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#obuch" class="dropdown-link header-text">
-                                            Ил-96
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li
-                                class="menu-list-item dropdown dropbtn header-text menu-link jsMobileMenu-label"
-                            >
-                                <p class="header-text">
-                                    О самолетах
-                                    <i class="fas fa-angle-down dropdown-menu-icon"></i>
-                                </p>
-                                <i
-                                    class="fas fa-angle-right dropdown-submenu-icon-mobile header-text"
-                                ></i>
-                                <ul
-                                    class="dropdown-header dropdown-content dropdown-header-root dropdown-content-root dropdown-content-background jsMobileMenu-menu"
-                                >
-                                    <li
-                                        class="dropdown-item jsMobileMenu-label dropdown-link-mobile"
-                                        data-back="mobileMainMenu"
-                                    >
-                                        <i
-                                            class="fas fa-angle-left dropdown-submenu-icon-mobile header-text"
-                                        ></i>
-                                        <p class="dropdown-link header-text">
-                                            Назад
-                                        </p>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a
-                                            href="trainingAn.html#plane"
-                                            class="dropdown-link header-text"
-                                        >
-                                            Ан-148
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#plane" class="dropdown-link header-text">
-                                            Ил-96
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-list-item">
-                                <a href="main.html#about" class="header-text menu-link">
-                                    <p class="header-text hoverable">О нас</p>
-                                </a>
-                            </li>
-                            <li
-                                class="menu-list-item dropdown dropbtn header-text menu-link jsMobileMenu-label"
-                            >
-                                <p class="header-text">
-                                    Контакты
-                                    <i class="fas fa-angle-down dropdown-menu-icon"></i>
-                                </p>
-                                <i
-                                    class="fas fa-angle-right dropdown-submenu-icon-mobile header-text"
-                                ></i>
-                                <ul
-                                    class="dropdown-header dropdown-content dropdown-header-root dropdown-content-root dropdown-content-background jsMobileMenu-menu"
-                                >
-                                    <li
-                                        class="dropdown-item jsMobileMenu-label dropdown-link-mobile"
-                                        data-back="mobileMainMenu"
-                                    >
-                                        <i
-                                            class="fas fa-angle-left dropdown-submenu-icon-mobile header-text"
-                                        ></i>
-                                        <p class="dropdown-link header-text">
-                                            Назад
-                                        </p>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a
-                                            href="main.html#contact"
-                                            class="dropdown-link header-text"
-                                        >
-                                            Главный офис
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a
-                                            href="trainingAn.html#contact"
-                                            class="dropdown-link header-text"
-                                        >
-                                            Ан-148
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#contact" class="dropdown-link header-text">
-                                            Ил-96
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
         <main>
             <a id="main"></a>
             <div class="header-gradient"></div>
@@ -395,19 +109,22 @@
                     <i class="fa fa-desktop"></i>
                     <h4>Имитаторы</h4>
                     <p class="p400">
-                        &emsp;Специализированные навигационные тренажеры
-                        предназначены для отработки экипажем процедур работы с ВСС, поэтому процесс взлёта и посадки автоматизирован программным обеспечением тренажера.
-						В тренажерах подобного назначения пульты, приборы и органы управления обычно имитируются с минимизированной функциональностью.
+                        &emsp;Специализированные навигационные тренажеры предназначены для отработки
+                        экипажем процедур работы с ВСС, поэтому процесс взлёта и посадки
+                        автоматизирован программным обеспечением тренажера. В тренажерах подобного
+                        назначения пульты, приборы и органы управления обычно имитируются с
+                        минимизированной функциональностью.
                     </p>
                 </div>
-				
+
                 <div class="training-info-element-wrap">
                     <i class="fa fa-keyboard"></i>
                     <h4>Процесс обучения</h4>
                     <p class="p400">
                         &emsp;На специализированном навигационном тренажере Ил-96 пилоты обучаются
-						азам работы с ВСС: методами задания маршрутов, использованию функций HOLD, DIRECT и других.
-						Кроме того, на СНТ Ил-96 летным составом осваиваются полёты методом векторения, изучается индикация устройств КИНО.
+                        азам работы с ВСС: методами задания маршрутов, использованию функций HOLD,
+                        DIRECT и других. Кроме того, на СНТ Ил-96 летным составом осваиваются полёты
+                        методом векторения, изучается индикация устройств КИНО.
                     </p>
                 </div>
 
@@ -415,9 +132,9 @@
                     <i class="fa fa-cogs"></i>
                     <h4>Разработка НПФ «СКТ»</h4>
                     <p class="p400">
-                        &emsp;Специализированный навигационный тренажер Ил-96 разработан и построен российской
-                        научно-производственной фирмой «Системы комплексных тренажеров» («НПФ
-                        СКТ»)".
+                        &emsp;Специализированный навигационный тренажер Ил-96 разработан и построен
+                        российской научно-производственной фирмой «Системы комплексных тренажеров»
+                        («НПФ СКТ»)".
                     </p>
                 </div>
             </div>
@@ -428,8 +145,10 @@
                     <h1>Обучение</h1>
                     <div class="flex ">
                         <p class="p400">
-                            Обучение проводится по направлению ввод в строй/переобучение/переподготовка
-                            <b>пилотов (летных экипажей)</b>.
+                            Обучение проводится по направлению ввод в
+                            строй/переобучение/переподготовка
+                            <b>пилотов (летных экипажей)</b>
+                            .
                         </p>
                     </div>
                 </div>
