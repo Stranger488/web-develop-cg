@@ -29,7 +29,7 @@
     "babelify": "^10.0.0",
     "browser-sync": "^2.26.7",
     "browserify": "^16.5.0",
-    "commitizen": "^4.0.3",
+    "commitizen": "^4.1.2",
     "cz-customizable": "^6.2.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
@@ -51,7 +51,7 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS -g '.config/git/commitlint.js'",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS -g .config/git/commitlint.js",
       "pre-commit": "lint-staged"
     }
   },
